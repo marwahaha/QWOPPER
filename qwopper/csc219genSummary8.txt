@@ -1,0 +1,140 @@
+##########  Generation 1  ##########
+
+1)  10.0  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2)  3.4  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+3)  0.8  |  QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+4)  10.9  |  OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+5)  0.0  |  PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op
+6)  5.2  |  P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo
+7)  1.1  |  +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo
+8)  0.9  |  QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+9)  0.9  |  OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+10)  0.3  |  +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+11)  0.2  |  QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op
+12)  5.1  |  Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+13)  0.2  |  +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+14)  3.5  |  QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+15)  1.4  |  P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+16)  0.2  |  WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+Generation 1 Average Fitness: 2.7562501
+
+##########  Generation 2  ##########
+
+1)  0.9  |  P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+o+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2)  1.0  |  QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPqW++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+3)  0.3  |  OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+po+O+qwoP+p
+4)  8.5  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q+q+w
+5)  0.8  |  +WP+pwO+WQo+++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+6)  9.1  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+7)  9.1  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+OqWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+8)  11.8  |  W+++OP+wop+P+O++wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+9)  15.1  |  +WP+pw+QW+q+wo
+10)  1.1  |  +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO+O+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo
+11)  10.5  |  OPW++pwQ+oP++O+o++OpW+q+w+WPQoWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+12)  1.0  |  QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qPPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+13)  0.3  |  P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+PP+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+14)  0.7  |  QPO++qp++W+Qow++q+O+o++Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+15)  8.6  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+16)  0.5  |  Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ+++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo
+Generation 2 Average Fitness: 4.9562497
+
+##########  Generation 3  ##########
+
+1)  5.6  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+OqWqo+QP+Ow+qopW++PQw+Oq+o+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2)  11.1  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wpW+wo
+3)  0.3  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow+Qw+Oq+pW+wo
+4)  11.2  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW++Q+q+w
+5)  4.1  |  W+++++pW++Q+q+w
+6)  7.1  |  QWP+pqO+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+OqWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+7)  2.2  |  W+++OP+wop+P+O+W+ow+QpW++wqoQPw+OpWq+wQ+oW+qw
+8)  0.5  |  QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+Ow+qopW++PQw+Oq+pW+wo
+9)  5.8  |  QWP+pqO+Qwo+WP+pw+QW+q+wo
+10)  10.9  |  W+++OP+wop+W++Q++O+qwoP+p
+11)  8.5  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q+q+wo
+12)  2.3  |  ++o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+13)  0.3  |  +WP+pwO+WQo+++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W+wo
+14)  14.5  |  +WP+pw+QW+qPq++opw++P+p
+15)  1.2  |  OPW++pwQ+oP++O+o++OpW+q+w+WPQoWPQ++pwQ+oP++O+o++OpW+q+w+WPQoWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+16)  1.0  |  OPWo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Generation 3 Average Fitness: 5.4125
+
+##########  Generation 4  ##########
+
+1)  0.3  |  +WP+pw+QW+qPq++opw++PO+oP+O++o++OWQ+q+q+wo
+2)  10.7  |  W+++OP+wop+P+O+W+ow+QpW++wq+p
+3)  6.1  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o+++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+OqWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+4)  1.4  |  +++Q+q+W+wQ+OP+oq+p+W+++++w++O+qwoP+p
+5)  9.6  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+p
+6)  8.6  |  +WP+pw+QW+qPq++opw++P++P+wpW+wo
+7)  13.0  |  +WP+pw+QW+qP+OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow+Qw+Oq+pW+wo
+8)  2.0  |  +WP+pw+QW+qPq++opw+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wpW+wo
+9)  1.0  |  OwQ+oW+qw
+10)  12.3  |  W+++OP+wop+P+O+W+ow+QpW++wqoQPw+OpWq+w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW++Q+q+w
+11)  0.3  |  QWP+pqO+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+OqWqo+QP+Ow+qopW++PQwqO+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+OqWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+12)  12.5  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wpW+wq+w
+13)  4.5  |  QWP+pqO+Qwo+W++Q++O+qwoP+p
+14)  7.9  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OW+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW++Q+q+w
+15)  13.7  |  QWP+pqO+Qwo+WP+pw++QpW++wqoQPw+OpWq+wQ+oW+qw
+16)  6.2  |  W+++OP+wop+P+O+W+owQW+q+wo
+Generation 4 Average Fitness: 6.88125
+
+##########  Generation 5  ##########
+
+1)  19.2  |  QWP+pqO+Qwo+WP+pw+Qw+Oq+pW+wo
+2)  10.2  |  +++Q+q+W+wQ+OP+oq+p+Wq+p+W+++++w+OWP++o+p
+3)  0.3  |  W+++OP+wop+P+O+W+ow+Qp+qw
+4)  9.3  |  QWP+pqO+Qwo+WP+pw++QpW++wqoQPw+OpWq+w+w
+5)  5.7  |  +++Q+q+W+wQ+OP+oq+p+W+++++w++p+W+++++w+OWP++o++P+wpW+wo
+6)  5.2  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++++o++OW+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW++Q+q+w
+7)  7.3  |  W+++OP+wop+P+O+W+ow+QpW++wqO+oP+Oo++P+wpW+wq+w
+8)  13.5  |  QWP+pqO+Qwo+WP+p+P+O+W+ow+QpW++wq+p
+9)  2.0  |  W+++OP+wop+P+O+WW+qPq++opw+W+wQ+OP+oq+p+W+++++w+OWP++o++P+wpW+wo
+10)  7.5  |  QWP+pqO+Qwo+WP+pw++QpW++wqoQPw+OpWq+wQ+o++OP+wop+P+O+W+owQW+q+wo
+11)  9.2  |  +++Q+q+W+wQ+OP+oq+p+W+++++++Q+q+w
+12)  7.4  |  W+++OP+wop+P+O+W+ow+QpW++wqoQPw+OpWq+w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pWw+OWP++o+p
+13)  0.3  |  +WP+pw+QW+qP+OP+wop+P+O+W+ow+QpW++wqO+o+wop+P+O+W+ow+QpW++wqoQPw+OpWq+w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW++Q+q+w
+14)  7.2  |  W+++OPP+O++o++OWQ+q++ow+Qw+Oq+pW+wo
+15)  10.5  |  QWP+pqO+Qwo+WP+pw++QpW++wq+pw++QpW++wqoQPw+OpWq+wQ+oW+qw
+16)  19.2  |  QWP+pqO+Qwo+WPoQPw+OpWq+wQ+oW+qw
+Generation 5 Average Fitness: 8.375
+
+##########  Generation 6  ##########
+
+1)  8.5  |  QWP+pqwo+WPoQPw+OpWq+wQ+oW+qw
+2)  10.5  |  QWP+pqO+QO+Qwo+WPoQPw+OpWq+wQ+oW+qw
+3)  5.5  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++++o++OW+W+wQ+OP+oq+p+w+qopW++P+++pW++Q+q+w
+4)  8.8  |  +WP+pw+QW+qP+OP+wop+P+O+W+ow+QpW++wqO+o+wop+P+O+W+ow+QpW++wqoQPw+OpWq+w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW+++pW+wo
+5)  0.3  |  W+++OPP+O++o++OWQ+q++ow+Qw+OqQ+q+w
+6)  5.2  |  +++Q+q+W+wQ+OP+oq+p+W+++++w++p+W+++++w+OWP++o++P+wPP+O++o++OWQ+q++ow+Qw+Oq+pW+wo
+7)  2.3  |  W+++OpW+wo
+8)  17.3  |  QWP+pqO+Qwo+WP+pwpw+Qw+Oq+pW+wo
+9)  7.0  |  +++Q+q+W+wQ+OP+oq+p+W+++++w++p+W+++++w+OWPp+P+O+W+ow+QpW++wq+p
+10)  20.7  |  QWP+pqO+Qwo+WPoQPw+OpWq+QWP+pqO+Qwo+WP+pw+Qw+Oq+pW+wo
+11)  16.6  |  QWP+pqO+Qwo+WP+pw++Oq+pW+wo
+12)  6.2  |  QWP+pqO+Qwo+WP+pw+Qw+QpW++wqoQPw+OpWq+w+w
+13)  -0.3  |  QWP+pqO+Qwo+WWq+wQ+oW+qw
+14)  22.5  |  QWP+pqO+Qwo+WPoQPw+OpPoQPw+OpWq+wQ+oW+qw
+15)  0.3  |  QWP+pqO+Qwo+WP+pQPw+OpWq+wQ+oW+qw
+16)  4.3  |  QWP+pqO+Qwo+WP+pw++QpW++wq+pw++QpW++wqow++QpW++wqoQPw+OpWq+w+w
+Generation 6 Average Fitness: 8.481249
+
+##########  Generation 7  ##########
+
+1)  12.6  |  QWP+pqO+QO+Qwo+WPoQPw+OpWq+wQ+oWwo+WPoQPw+OpWq+QWP+pqO+Qwo+WP+pw+Qw+Oq+pW+wo
+2)  13.7  |  QWP+pqOQPw+OpWq+wQ+oW+qw
+3)  9.0  |  +++Q+q+W+wQ+OP+oq+p+W+++++w++p+W+++++w+OWP++o+QP+Ow+qopW++P+++pW+++pW+wo
+4)  13.0  |  QWP+pqO+QO+Qwo+WPoQPw+OpWq+wQO+Qwo+WP+pw++Oq+pW+wo
+5)  16.2  |  QWP+pq+oW+qw
+6)  0.3  |  +++Q+q+W+wQ+OP+oq+p+W+++++w++p+W+++++w+OWPp+PQ+q+W+wQ+OP+oq+p+W+++++w++p+W+++++w+OWP++o++P+wPP+O++o++OWQ+q++ow+Qw+Oq+pW+wo
+7)  -0.5  |  ++++O+W+ow+QpW++wq+p
+8)  4.0  |  QWP+pq+++w+OWP++++o++OW+W+wQ+OP+oq+p+w+qopW++P+++pW++Q+q+w
+9)  4.4  |  QWP+pqO+Qwo+WP+pQPw+OpWq+wQ+oW+W+++++w++p+W+++++w+OWPp+P+O+W+ow+QpW++wq+p
+10)  22.1  |  QWP+pqO+Qwo+WPoQPw+OpPoQPw+OpWq+Pw+OpWq+wQ+oW+qw
+11)  4.8  |  QWP+pqO+Qwo+WP+pQwQ+oW+qw
+12)  4.9  |  +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++++o++OW+W+wQ+OP+oq+p+w+qopW++P+w+OWP++o++P+wo+OQ+pWqo+QP+Ow+qopW++P+++pW+++pW+wo
+13)  2.1  |  QWP+pqO+Qwo+WP+pw+Qw+QpW+qw
+14)  0.0  |  QWP+pqO+Qwo+WWq+wQ+oW++wqoQPw+OpWq+w+w
+15)  19.5  |  WQWP+pqO+Qwo+WP+pw++Oq+pW+wo
+16)  0.3  |  QWP+pqwo+WW+wo
+Generation 7 Average Fitness: 7.9000006
+

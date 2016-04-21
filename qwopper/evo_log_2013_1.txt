@@ -1,0 +1,133 @@
+##########  Generation 0  ##########
+0) com.slowfrog.qwop.Individual@45bc887b    avgFitness: 2.8300004
+1) com.slowfrog.qwop.Individual@1fff7a1e    avgFitness: 10.666666
+2) com.slowfrog.qwop.Individual@3daa57fb    avgFitness: 7.359999
+3) com.slowfrog.qwop.Individual@7a763f5d    avgFitness: 3.5400002
+4) com.slowfrog.qwop.Individual@693a317a    avgFitness: 4.7400002
+5) com.slowfrog.qwop.Individual@6b86768e    avgFitness: 3.02
+6) com.slowfrog.qwop.Individual@48d19bc8    avgFitness: 4.8
+7) com.slowfrog.qwop.Individual@394a8cd1    avgFitness: 4.5699997
+8) com.slowfrog.qwop.Individual@4d630ab9    avgFitness: 1.9
+9) com.slowfrog.qwop.Individual@21551f60    avgFitness: 8.64
+10) com.slowfrog.qwop.Individual@5b7ee8b8    avgFitness: 5.0200005
+11) com.slowfrog.qwop.Individual@68e0b6f5    avgFitness: 4.2
+12) com.slowfrog.qwop.Individual@790bc49d    avgFitness: 7.3
+13) com.slowfrog.qwop.Individual@73995d80    avgFitness: 6.4461536
+14) com.slowfrog.qwop.Individual@59c9b9ca    avgFitness: 4.2833333
+15) com.slowfrog.qwop.Individual@4ac4aad3    avgFitness: 4.7
+16) com.slowfrog.qwop.Individual@35ab28fe    avgFitness: 4.9
+17) com.slowfrog.qwop.Individual@78105738    avgFitness: 3.75
+18) com.slowfrog.qwop.Individual@78ce5b1c    avgFitness: 2.0166667
+19) com.slowfrog.qwop.Individual@33bfc93a    avgFitness: 3.5100002
+20) com.slowfrog.qwop.Individual@74341960    avgFitness: 5.93
+21) com.slowfrog.qwop.Individual@86e293a    avgFitness: 5.2300005
+22) com.slowfrog.qwop.Individual@7854a328    avgFitness: 3.3499997
+23) com.slowfrog.qwop.Individual@7ca3d4cf    avgFitness: 2.9
+24) com.slowfrog.qwop.Individual@67e8a1f6    avgFitness: 2.58
+25) com.slowfrog.qwop.Individual@59e152c5    avgFitness: 5.2599998
+26) com.slowfrog.qwop.Individual@5801319c    avgFitness: 4.0
+27) com.slowfrog.qwop.Individual@366025e7    avgFitness: 3.3333333
+28) com.slowfrog.qwop.Individual@62587c94    avgFitness: 3.4600003
+29) com.slowfrog.qwop.Individual@1f5b0afd    avgFitness: 1.6699998
+###################################
+##########  Generation 1  ##########
+----------  Individual 1  ----------
+Ran 0.2m during 2026ms and crashed
+RunInfo#1|PQW+Ow+Wp+wP+p+Poq+pQ+Oq+W++o+POQ++o++pOw+qPo+Op+PQ+p+P+++oq+p+QO+PWoq+OwQ+o+qOp+o|150|0.2|2026|C
+----------  Individual 2  ----------
+Ran 7.0m during 30083ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|7.0|30083|S
+----------  Individual 3  ----------
+Ran 4.2m during 30143ms and was stopped
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|4.2|30143|S
+----------  Individual 4  ----------
+Ran 3.9m during 30173ms and was stopped
+RunInfo#1|WQ++OPw+poWq+Q+Pw+OWp+owqP+Q+pqWO+oQ+wqPO+poWQ+++qw+OQ+o++PWOq+w+++op+POQ+opWq+w+QW++qw+|150|3.9|30173|S
+----------  Individual 5  ----------
+Ran 0.6m during 2296ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.6|2296|C
+----------  Individual 6  ----------
+Ran 0.8m during 2010ms and crashed
+RunInfo#1|QPO+++W++p++qowP+QpW++O++Pqo+pOQ++q+o++POQ+oq+Qp+PwOq++p+PQ+q+++W+w+op|150|0.8|2010|C
+----------  Individual 7  ----------
+Ran 0.6m during 2447ms and crashed
+RunInfo#1|WQPO++pow+WP+++p+w+O+WoPq+pQ+wOq+WQ++wqo+W++P+w+WQ+qpO++QPow+++WOq+pQ++Pwo+Wp+qw|150|0.6|2447|C
+----------  Individual 8  ----------
+Ran 6.9m during 30125ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|6.9|30125|S
+----------  Individual 9  ----------
+Ran 0.2m during 11939ms and crashed
+RunInfo#1|+++++P+WQOp++P+p++Pq+wp+QP+Wpq+wP++Q+p+++WqoP+p+w+QP+qp++WP+QO+q+wop|150|0.2|11939|C
+----------  Individual 10  ----------
+Ran 0.3m during 4004ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|0.3|4004|C
+----------  Individual 11  ----------
+Ran 0.9m during 4580ms and crashed
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.9|4580|C
+----------  Individual 12  ----------
+Ran 2.8m during 30226ms and was stopped
+RunInfo#1|WQ+PO++po+OP+++oqpw+W+OQ+Po+Owq++Q+W+owp+PW+Op+w+PqW+wp+++o++++PO+W++wop|150|2.8|30226|S
+----------  Individual 13  ----------
+Ran 0.8m during 2919ms and crashed
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|0.8|2919|C
+----------  Individual 14  ----------
+Ran 4.8m during 30207ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|4.8|30207|S
+----------  Individual 15  ----------
+Ran 0.7m during 2342ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.7|2342|C
+----------  Individual 16  ----------
+Ran 0.9m during 3519ms and crashed
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.9|3519|C
+----------  Individual 17  ----------
+Ran 0.3m during 3031ms and crashed
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|0.3|3031|C
+----------  Individual 18  ----------
+Ran 0.5m during 1843ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.5|1843|C
+----------  Individual 19  ----------
+Ran 0.8m during 2294ms and crashed
+RunInfo#1|QOP+Wp+P+w+p+++WPo+++qpw+++OQ++o++W+Pq+w+p+O++Q+q++oQ+Oq+oQP++qpO++Q+++o+P+++qOp+WQ+++qPwo++QOp+qW+QP++q++Q+++qwo+++OWp+wQ+Poq+p|150|0.8|2294|C
+----------  Individual 20  ----------
+Ran 0.3m during 4894ms and crashed
+RunInfo#1|++P++WOpQ++wP+Wo+++p+wOP+++Wo+wq+W+++pO++PQo+++++wqpO+++W+wo|150|0.3|4894|C
+----------  Individual 21  ----------
+Ran 0.2m during 2745ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.2|2745|C
+----------  Individual 22  ----------
+Ran 0.7m during 23902ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|0.7|23902|C
+----------  Individual 23  ----------
+Ran 1.9m during 10122ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|1.9|10122|C
+----------  Individual 24  ----------
+Ran 0.6m during 5364ms and crashed
+RunInfo#1|+Q++W+POqw++p+PQW++++oqpw+WOQ+++Pw++p++qo++WOP+pQ+++qw+oWQP++q+Ow+op|150|0.6|5364|C
+----------  Individual 25  ----------
+Ran -0.4m during 3191ms and crashed
+RunInfo#1|PQWO+owq+pQ+q++++P+++QpO++q++oPW+Qw+O++qop+P+O+o+WQpO+Pw+Wqo+wQ+W+pw+q+O+o|150|-0.4|3191|C
+----------  Individual 26  ----------
+Ran 0.5m during 5148ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.5|5148|C
+----------  Individual 27  ----------
+Ran 0.1m during 12621ms and crashed
+RunInfo#1|QP+O++p+++o++WO+qo+w+WOP+Qp+oqP++w+QOW+qw++opWQ+wO+PWo++++pq+wQPO+++qp+o|150|0.1|12621|C
+----------  Individual 28  ----------
+Ran -0.2m during 3665ms and crashed
+RunInfo#1|QO+++Woq+PQwO+qo++OQpW+q+wPQ+oW++wpO++PW+ow+O+poW++Pq++OQ++q+Qpo+++w+++q|150|-0.2|3665|C
+----------  Individual 29  ----------
+Ran -0.4m during 5296ms and crashed
+RunInfo#1|OQPW+p+w+qo+P++++++p+WOPQ+o+q+++Q+Op+o+O+oq+OwP+Wo+O++Qo++Opq+P+pQ+qwo|150|-0.4|5296|C
+----------  Individual 30  ----------
+Ran 0.3m during 4681ms and crashed
+RunInfo#1|++QWP+++w++qWO+po+P+p+OPQw+Wpq+o+POQ+q+Qw+p+o+O+Pq++o++Q+OW+++++qwop|150|0.3|4681|C
+Generation 1 Average Fitness: 1.3599998
+Crossover: Finding the fittest neighbor
+Runner: PQW+Ow+Wp+wP+p+Poq+pQ+Oq+W++o+POQ++o++pOw+qPo+Op+PQ+p+P+++oq+p+QO+PWoq+OwQ+o+qOp+o| fitness: 0.2
+Fittest Neighbor: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 7.0
+Testing child: PQW+Ow+Wp+wP+p+Poq+qopW++PQw+Oq+pW+wo
+Ran 0.8m during 1861ms and crashed
+RunInfo#1|PQW+Ow+Wp+wP+p+Poq+qopW++PQw+Oq+pW+wo|150|0.8|1861|C
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+pQ+Oq+W++o+POQ++o++pOw+qPo+Op+PQ+p+P+++oq+p+QO+PWoq+OwQ+o+qOp+o
+Ran 0.6m during 8168ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+pQ+Oq+W++o+POQ++o++pOw+qPo+Op+PQ+p+P+++oq+p+QO+PWoq+OwQ+o+qOp+o|150|0.6|8168|C

@@ -1,0 +1,1281 @@
+##########  Generaion 0  ##########
+0) +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo    avgFitness: 10.666666
+1) W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p    avgFitness: 7.359999
+2) QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo    avgFitness: 4.7400002
+3) OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q    avgFitness: 4.5699997
+4) PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op    avgFitness: 8.64
+5) P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo    avgFitness: 5.0200005
+6) +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo    avgFitness: 7.3
+7) QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o    avgFitness: 6.4461536
+8) OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w    avgFitness: 4.2833333
+9) +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo    avgFitness: 4.7
+10) QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op    avgFitness: 4.9
+11) Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop    avgFitness: 3.75
+12) +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++    avgFitness: 5.93
+13) QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p    avgFitness: 5.2300005
+14) P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw    avgFitness: 3.3499997
+15) WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op    avgFitness: 5.2599998
+###################################
+##########  Generation 1  ##########
+----------  Individual 1  ----------
+Ran 8.1m during 45075ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|8.1|45075|S
+Ran 8.9m during 45109ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|8.9|45109|S
+Ran 10.0m during 45076ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|10.0|45076|S
+Ran 9.3m during 45108ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|9.3|45108|S
+Ran 7.4m during 45077ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|7.4|45077|S
+----------  Individual 2  ----------
+Ran 5.6m during 45142ms and was stopped
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|5.6|45142|S
+Ran 1.3m during 18480ms and crashed
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|1.3|18480|C
+Ran 4.2m during 24837ms and crashed
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|4.2|24837|C
+Ran 6.9m during 45173ms and was stopped
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|6.9|45173|S
+Ran 0.3m during 49357ms and was stopped
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|0.3|49357|S
+----------  Individual 3  ----------
+Ran 0.9m during 2429ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.9|2429|C
+Ran 0.8m during 2411ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.8|2411|C
+Ran 0.9m during 2413ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.9|2413|C
+Ran 0.6m during 2278ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.6|2278|C
+Ran 0.6m during 2279ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.6|2279|C
+----------  Individual 4  ----------
+Ran 11.9m during 45143ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|11.9|45143|S
+Ran 12.9m during 45142ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|12.9|45142|S
+Ran 1.3m during 2445ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|1.3|2445|C
+Ran 9.6m during 45143ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|9.6|45143|S
+Ran 0.3m during 4421ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.3|4421|C
+----------  Individual 5  ----------
+Ran 3.9m during 45172ms and was stopped
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|3.9|45172|S
+Ran 0.6m during 1947ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|0.6|1947|C
+Ran 0.3m during 1945ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|0.3|1945|C
+Ran 0.1m during 3461ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|0.1|3461|C
+Ran 0.6m during 1944ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|0.6|1944|C
+----------  Individual 6  ----------
+Ran 0.6m during 2545ms and crashed
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.6|2545|C
+Ran 4.8m during 45174ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|4.8|45174|S
+Ran 0.4m during 2578ms and crashed
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.4|2578|C
+Ran 0.5m during 2412ms and crashed
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.5|2412|C
+Ran 0.3m during 34423ms and crashed
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.3|34423|C
+----------  Individual 7  ----------
+Ran 1.1m during 2877ms and crashed
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|1.1|2877|C
+Ran 1.0m during 2995ms and crashed
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|1.0|2995|C
+Ran 1.2m during 3012ms and crashed
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|1.2|3012|C
+Ran 1.2m during 6083ms and crashed
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|1.2|6083|C
+Ran 1.1m during 2861ms and crashed
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|1.1|2861|C
+----------  Individual 8  ----------
+Ran 5.1m during 45140ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|5.1|45140|S
+Ran 0.9m during 2144ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|0.9|2144|C
+Ran 0.9m during 2149ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|0.9|2149|C
+Ran 4.5m during 45142ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|4.5|45142|S
+Ran 0.3m during 47237ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|0.3|47237|S
+----------  Individual 9  ----------
+Ran 4.7m during 45140ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|4.7|45140|S
+Ran 0.9m during 4215ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.9|4215|C
+Ran 5.4m during 45142ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|5.4|45142|S
+Ran 2.5m during 45142ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|2.5|45142|S
+Ran 4.7m during 45175ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|4.7|45175|S
+----------  Individual 10  ----------
+Ran 0.7m during 3463ms and crashed
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.7|3463|C
+Ran 1.3m during 3947ms and crashed
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|1.3|3947|C
+Ran 4.9m during 45175ms and was stopped
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|4.9|45175|S
+Ran 5.8m during 45144ms and was stopped
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|5.8|45144|S
+Ran 0.3m during 47276ms and was stopped
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.3|47276|S
+----------  Individual 11  ----------
+Ran -0.1m during 3031ms and crashed
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|-0.1|3031|C
+Ran 0.4m during 3046ms and crashed
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|0.4|3046|C
+Ran 0.2m during 3012ms and crashed
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|0.2|3012|C
+Ran 0.3m during 3200ms and crashed
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|0.3|3200|C
+Ran -0.3m during 2713ms and crashed
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|-0.3|2713|C
+----------  Individual 12  ----------
+Ran 4.1m during 45141ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|4.1|45141|S
+Ran 3.8m during 45141ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|3.8|45141|S
+Ran 0.5m during 1979ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.5|1979|C
+Ran 0.5m during 1961ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.5|1961|C
+Ran 0.3m during 47202ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.3|47202|S
+----------  Individual 13  ----------
+Ran 0.2m during 2730ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.2|2730|C
+Ran 0.1m during 2744ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.1|2744|C
+Ran -0.2m during 28375ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|-0.2|28375|C
+Ran 0.2m during 2714ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.2|2714|C
+Ran 0.3m during 2880ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.3|2880|C
+----------  Individual 14  ----------
+Ran 2.5m during 37554ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|2.5|37554|C
+Ran 4.1m during 45109ms and was stopped
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|4.1|45109|S
+Ran 0.9m during 2745ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|0.9|2745|C
+Ran 0.9m during 2745ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|0.9|2745|C
+Ran 0.3m during 4972ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|0.3|4972|C
+----------  Individual 15  ----------
+Ran 1.4m during 11038ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|1.4|11038|C
+Ran 5.0m during 38935ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|5.0|38935|C
+Ran 0.0m during 2276ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.0|2276|C
+Ran 5.4m during 41388ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|5.4|41388|C
+Ran 0.5m during 9720ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.5|9720|C
+----------  Individual 16  ----------
+Ran 0.1m during 4647ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.1|4647|C
+Ran 0.5m during 4899ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.5|4899|C
+Ran 0.3m during 5449ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.3|5449|C
+Ran 0.0m during 5164ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.0|5164|C
+Ran 0.3m during 6758ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.3|6758|C
+Generation 1 Average Fitness: 2.43625
+Crossover: 3 Runners picked at random
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 8.74
+2: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo| fitness: 1.12
+3: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p| fitness: 1.74
+Crossover: Parents selected
+
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O++q+pQw++O+WPq++opw++P+p
+Ran 2.4m during 18146ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O++q+pQw++O+WPq++opw++P+p|150|2.4|18146|C
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 5.6m during 45160ms and was stopped
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|5.6|45160|S
+Child 2 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|5.6
+Replacing: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|1.12
+Crossover: 3 Runners picked at random
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+3: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 1.8399999
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Ran 4.6m during 34246ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|4.6|34246|C
+Child 1 fit enough to join next generation: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|4.6
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|1.1
+Testing child: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o
+Ran 6.6m during 45076ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|6.6|45076|S
+Child 2 fit enough to join next generation: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|6.6
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|1.1
+Crossover: 3 Runners picked at random
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 8.74
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+Crossover: Parents selected
+
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oo++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 1.1m during 7818ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oo++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|1.1|7818|C
+Testing child: OPW++pwQ+oP++O+q+pW+wo
+Ran 1.7m during 3865ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+q+pW+wo|150|1.7|3865|C
+Crossover: 3 Runners picked at random
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 8.74
+2: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 1.32
+3: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 8.74
+Crossover: Parents selected
+
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Testing child: +++Q+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 0.5m during 2713ms and crashed
+RunInfo#1|+++Q+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.5|2713|C
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 12.5m during 45076ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|12.5|45076|S
+Child 2 fit enough to join next generation: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|12.5
+Replacing: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|1.32
+Crossover: 3 Runners picked at random
+1: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+2: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.64
+3: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+Crossover: Parents selected
+
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Testing child: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Ran 2.5m during 45143ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|2.5|45143|S
+Child 1 fit enough to join next generation: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|2.5
+Replacing: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|0.1
+Testing child: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQw++++Q+PWO+poq+w
+Ran 0.3m during 5190ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQw++++Q+PWO+poq+w|150|0.3|5190|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+3: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P++
+Ran 0.9m during 2145ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P++|150|0.9|2145|C
+Testing child: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow+wOp++o
+Ran 0.2m during 2712ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow+wOp++o|150|0.2|2712|C
+Crossover: 3 Runners picked at random
+1: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.24000001
+3: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.75999993
+Crossover: Parents selected
+
+1: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+2: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+Testing child: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW+Q+O++p+W++qwo
+Ran 0.7m during 4830ms and crashed
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW+Q+O++p+W++qwo|150|0.7|4830|C
+Testing child: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP++wqP+op
+Ran 0.9m during 2713ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP++wqP+op|150|0.9|2713|C
+Crossover: 3 Runners picked at random
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.75999993
+2: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+3: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.75999993
+Crossover: Parents selected
+
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+2: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+Testing child: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+qP+Q+O++p+W++qwo
+Ran 0.8m during 2413ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+qP+Q+O++p+W++qwo|150|0.8|2413|C
+Testing child: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+Ran 0.9m during 2293ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.9|2293|C
+Crossover: 3 Runners picked at random
+1: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 2.6000001
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+3: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+Crossover: Parents selected
+
+1: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Testing child: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow++w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Ran 1.3m during 3946ms and crashed
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow++w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|1.3|3946|C
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+Pq+p++OP++Q+p+qo
+Ran -0.4m during 3516ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+Pq+p++OP++Q+p+qo|150|-0.4|3516|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 1.8399999
+3: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 5.3m during 45075ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|5.3|45075|S
+Child 1 fit enough to join next generation: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|5.3
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|1.8399999
+Testing child: OPW++pwQ+oP++O+o+++QpoW+Pw+pqW+P+wOp++o
+Ran 0.3m during 8561ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o+++QpoW+Pw+pqW+P+wOp++o|150|0.3|8561|C
+Crossover: 3 Runners picked at random
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.6599998
+2: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.6599998
+3: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.6599998
+Crossover: Parents selected
+
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+2: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+Testing child: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+Ran 0.4m during 5566ms and crashed
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|0.4|5566|C
+Testing child: W+++OP+wop+P+O+++pW++Q++O+qwoP+p
+Ran 1.8m during 6418ms and crashed
+RunInfo#1|W+++OP+wop+P+O+++pW++Q++O+qwoP+p|150|1.8|6418|C
+Crossover: 3 Runners picked at random
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 1.8399999
+2: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 2.6000001
+3: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 2.6000001
+Crossover: Parents selected
+
+1: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+2: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Testing child: +Q+qPO++q+p++OP++Q+p+qo
+Ran 0.4m during 2312ms and crashed
+RunInfo#1|+Q+qPO++q+p++OP++Q+p+qo|150|0.4|2312|C
+Testing child: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+owoQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Ran -0.6m during 3896ms and crashed
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+owoQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|-0.6|3896|C
+Crossover: 3 Runners picked at random
+1: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.24000001
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 2.46
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+Ran 14.9m during 45176ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|14.9|45176|S
+Child 1 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|14.9
+Replacing: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.24000001
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Ran 0.6m during 1946ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.6|1946|C
+Child 2 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|0.6
+Replacing: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.24000001
+Crossover: 3 Runners picked at random
+1: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.24000001
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+Crossover: Parents selected
+
+1: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op
+Testing child: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op
+Ran 7.7m during 45176ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|7.7|45176|S
+Child 1 fit enough to join next generation: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|7.7
+Replacing: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|0.1
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+Ran 0.3m during 1946ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.3|1946|C
+Child 2 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.3
+Replacing: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|0.1
+Crossover: 3 Runners picked at random
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+3: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 1.8399999
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 8.9m during 45109ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|8.9|45109|S
+Child 1 fit enough to join next generation: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|8.9
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|1.8399999
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w++q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 0.3m during 47405ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w++q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.3|47405|S
+Crossover: 3 Runners picked at random
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.75999993
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+3: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+Crossover: Parents selected
+
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Testing child: QPO++qp++W+Qow++q+O+Pw+pqW+P+wOp++o
+Ran 0.8m during 2282ms and crashed
+RunInfo#1|QPO++qp++W+Qow++q+O+Pw+pqW+P+wOp++o|150|0.8|2282|C
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+Ran 0.9m during 2146ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.9|2146|C
+Crossover: 3 Runners picked at random
+1: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+3: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++++o+q+PQ++pw+q
+Ran 0.9m during 2145ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++++o+q+PQ++pw+q|150|0.9|2145|C
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o
+Ran 12.7m during 45146ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|12.7|45146|S
+Child 2 fit enough to join next generation: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|12.7
+Replacing: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|0.120000005
+Crossover: 3 Runners picked at random
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 2.46
+2: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 1.32
+3: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.6599998
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+2: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+Ran -0.4m during 3448ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|-0.4|3448|C
+Testing child: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Ran 0.6m during 5249ms and crashed
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.6|5249|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 2.46
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 2.46
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Ran 4.3m during 25872ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|4.3|25872|C
+Child 1 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|4.3
+Replacing: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|2.34
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+W+QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Ran 1.2m during 9436ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+W+QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|1.2|9436|C
+Crossover: 3 Runners picked at random
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.6599998
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 1.8399999
+3: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.75999993
+Crossover: Parents selected
+
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Testing child: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++p+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Ran 0.5m during 9318ms and crashed
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++p+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.5|9318|C
+Testing child: Q+++O++Poq+W+Ow+pQ+WW++Q++O+qwoP+p
+Ran 0.3m during 4107ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+WW++Q++O+qwoP+p|150|0.3|4107|C
+Crossover: 3 Runners picked at random
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+2: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 8.74
+3: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.64
+Crossover: Parents selected
+
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP+oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran -0.8m during 4529ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP+oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|-0.8|4529|C
+Testing child: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q+++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 1.2m during 7535ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q+++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|1.2|7535|C
+Crossover: 3 Runners picked at random
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 1.8399999
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+3: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+Crossover: Parents selected
+
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Testing child: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Ran 2.8m during 45142ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|2.8|45142|S
+Child 1 fit enough to join next generation: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|2.8
+Replacing: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|0.120000005
+Testing child: +PW+QOp+P+p+o+P+pq+wQP+++pOq+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Ran 0.2m during 2745ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.2|2745|C
+Crossover: 3 Runners picked at random
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.64
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+3: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+Crossover: Parents selected
+
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Testing child: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++qW+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Ran 0.8m during 3180ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++qW+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|0.8|3180|C
+Testing child: QPOW+po++Ow++++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran 1.0m during 1991ms and crashed
+RunInfo#1|QPOW+po++Ow++++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|1.0|1991|C
+Crossover: 3 Runners picked at random
+1: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 1.32
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 2.46
+3: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 1.32
+Crossover: Parents selected
+
+1: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Testing child: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wW+qw
+Ran 0.6m during 2547ms and crashed
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wW+qw|150|0.6|2547|C
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oq+W+wo
+Ran 0.3m during 10138ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oq+W+wo|150|0.3|10138|C
+Crossover: 3 Runners picked at random
+1: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 1.32
+2: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 2.6000001
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+Crossover: Parents selected
+
+1: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo
+2: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Testing child: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Ran 7.4m during 45144ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|7.4|45144|S
+Child 1 fit enough to join next generation: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|7.4
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|1.1
+Testing child: +Q+qq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo
+Ran 0.3m during 7040ms and crashed
+RunInfo#1|+Q+qq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.3|7040|C
+Crossover: 3 Runners picked at random
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 8.74
+2: QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op| fitness: 0.1
+3: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+Crossover: Parents selected
+
+1: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+++pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Ran 1.2m during 21132ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|1.2|21132|C
+Testing child: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 0.2m during 2715ms and crashed
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.2|2715|C
+Crossover: 3 Runners picked at random
+1: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 2.6000001
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 2.46
+Crossover: Parents selected
+
+1: +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: +Q+qPO+W+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 0.8m during 2744ms and crashed
+RunInfo#1|+Q+qPO+W+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.8|2744|C
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+poQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Ran 1.3m during 2460ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+poQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|1.3|2460|C
+Crossover: 3 Runners picked at random
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 1.1
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.120000005
+3: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 7.1999993
+Crossover: Parents selected
+
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPo++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 0.0m during 3453ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPo++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.0|3453|C
+Testing child: OPW++pwQ+oP++O+q+w+O+op
+Ran 0.7m during 3747ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+q+w+O+op|150|0.7|3747|C
+Crossover: 3 Runners picked at random
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.64
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o| fitness: 2.34
+3: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.24000001
+Crossover: Parents selected
+
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Testing child: OP+W+oQ+++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o
+Ran -1.1m during 5331ms and crashed
+RunInfo#1|OP+W+oQ+++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|-1.1|5331|C
+Testing child: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran 4.3m during 45177ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|4.3|45177|S
+Child 2 fit enough to join next generation: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|4.3
+Replacing: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.24000001
+##########  Generation 2  ##########
+----------  Individual 1  ----------
+Ran 0.9m during 2746ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.9|2746|C
+Ran 0.3m during 4806ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.3|4806|C
+Ran 6.8m during 45177ms and was stopped
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|6.8|45177|S
+Ran 4.2m during 45111ms and was stopped
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|4.2|45111|S
+Ran 0.9m during 2744ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.9|2744|C
+----------  Individual 2  ----------
+Ran 0.9m during 2149ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.9|2149|C
+Ran 2.3m during 12676ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|2.3|12676|C
+Ran 0.9m during 2128ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.9|2128|C
+Ran 0.9m during 2145ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.9|2145|C
+Ran 0.9m during 2146ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.9|2146|C
+----------  Individual 3  ----------
+Ran 5.9m during 45074ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|5.9|45074|S
+Ran 0.3m during 4057ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|0.3|4057|C
+Ran 6.4m during 45091ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|6.4|45091|S
+Ran 0.5m during 1945ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|0.5|1945|C
+Ran 5.8m during 45110ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|5.8|45110|S
+----------  Individual 4  ----------
+Ran 10.7m during 45209ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|10.7|45209|S
+Ran 10.5m during 37499ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|10.5|37499|C
+Ran 11.0m during 45075ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|11.0|45075|S
+Ran 10.3m during 45096ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|10.3|45096|S
+Ran 11.1m during 45209ms and was stopped
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|11.1|45209|S
+----------  Individual 5  ----------
+Ran 5.2m during 45175ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|5.2|45175|S
+Ran 0.3m during 5858ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.3|5858|C
+Ran 3.4m during 45175ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|3.4|45175|S
+Ran 2.7m during 45159ms and was stopped
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|2.7|45159|S
+Ran -0.2m during 4080ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|-0.2|4080|C
+----------  Individual 6  ----------
+Ran 4.3m during 45210ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|4.3|45210|S
+Ran 5.7m during 45209ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|5.7|45209|S
+Ran 4.3m during 45209ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|4.3|45209|S
+Ran 4.9m during 45173ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|4.9|45173|S
+Ran 0.9m during 2146ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.9|2146|C
+----------  Individual 7  ----------
+Ran 0.1m during 1995ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|0.1|1995|C
+Ran 0.3m during 47320ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|0.3|47320|S
+Ran 0.1m during 1960ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|0.1|1960|C
+Ran 14.4m during 45110ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|14.4|45110|S
+Ran 14.8m during 45141ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|14.8|45141|S
+----------  Individual 8  ----------
+Ran 0.5m during 1676ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.5|1676|C
+Ran 0.2m during 1829ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.2|1829|C
+Ran 0.3m during 1810ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.3|1810|C
+Ran -0.1m during 3347ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|-0.1|3347|C
+Ran 0.1m during 3451ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.1|3451|C
+----------  Individual 9  ----------
+Ran 7.6m during 45199ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|7.6|45199|S
+Ran 0.3m during 47304ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|0.3|47304|S
+Ran 5.8m during 45161ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|5.8|45161|S
+Ran 6.2m during 45178ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|6.2|45178|S
+Ran 6.5m during 45077ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|6.5|45077|S
+----------  Individual 10  ----------
+Ran 0.2m during 1860ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.2|1860|C
+Ran -0.1m during 3333ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|-0.1|3333|C
+Ran 0.6m during 1945ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.6|1945|C
+Ran -0.1m during 3345ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|-0.1|3345|C
+Ran 0.3m during 1945ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.3|1945|C
+----------  Individual 11  ----------
+Ran 1.3m during 2444ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|1.3|2444|C
+Ran 0.3m during 47187ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.3|47187|S
+Ran 1.2m during 2429ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|1.2|2429|C
+Ran 7.2m during 45115ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|7.2|45115|S
+Ran 1.4m during 2446ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|1.4|2446|C
+----------  Individual 12  ----------
+Ran 1.3m during 2444ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.3|2444|C
+Ran 11.2m during 45142ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|11.2|45142|S
+Ran 1.2m during 2444ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.2|2444|C
+Ran 1.1m during 2279ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.1|2279|C
+Ran 1.3m during 2428ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.3|2428|C
+----------  Individual 13  ----------
+Ran 7.3m during 45142ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|7.3|45142|S
+Ran 0.3m during 32854ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.3|32854|C
+Ran 0.1m during 1981ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.1|1981|C
+Ran 1.1m during 11972ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|1.1|11972|C
+Ran 0.1m during 1851ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.1|1851|C
+----------  Individual 14  ----------
+Ran 4.0m during 45143ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|4.0|45143|S
+Ran 0.5m during 1978ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.5|1978|C
+Ran 0.5m during 1944ms and crashed
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.5|1944|C
+Ran 2.9m during 45143ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|2.9|45143|S
+Ran 3.2m during 45141ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|3.2|45141|S
+----------  Individual 15  ----------
+Ran 0.7m during 2879ms and crashed
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.7|2879|C
+Ran 0.3m during 47303ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.3|47303|S
+Ran 8.9m during 45160ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|8.9|45160|S
+Ran 0.7m during 2878ms and crashed
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.7|2878|C
+Ran 8.0m during 45177ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|8.0|45177|S
+----------  Individual 16  ----------
+Ran 5.0m during 45209ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|5.0|45209|S
+Ran 3.2m during 45182ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.2|45182|S
+Ran 0.6m during 1860ms and crashed
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.6|1860|C
+Ran 3.7m during 45162ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.7|45162|S
+Ran 3.8m during 45142ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.8|45142|S
+Generation 2 Average Fitness: 3.2925
+Crossover: 3 Runners picked at random
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 1.7800001
+2: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 2.28
+3: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 10.719999
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+2: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Testing child: OPW++pwQ++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 1.7m during 3149ms and crashed
+RunInfo#1|OPW++pwQ++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|1.7|3149|C
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W++oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 0.3m during 7775ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W++oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.3|7775|C
+Crossover: 3 Runners picked at random
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 2.28
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+3: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 10.719999
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+2: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Testing child: P+WQO+o+Ow+opW+wO+q+pW+wo
+Ran 0.3m during 2929ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO+q+pW+wo|150|0.3|2929|C
+Testing child: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+O+Po++WOqp+P+Q++O+op
+Ran 1.4m during 8133ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+O+Po++WOqp+P+Q++O+op|150|1.4|8133|C
+Crossover: 3 Runners picked at random
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o| fitness: 3.22
+3: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+2: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran 2.0m during 45176ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|2.0|45176|S
+Testing child: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpp+P+Q++O+op
+Ran 0.2m during 9454ms and crashed
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpp+P+Q++O+op|150|0.2|9454|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 4.02
+3: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 2.28
+Crossover: Parents selected
+
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: QPOW+po++p+OPq+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 2.2m during 33594ms and crashed
+RunInfo#1|QPOW+po++p+OPq+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|2.2|33594|C
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran 2.9m during 45128ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|2.9|45128|S
+Child 2 fit enough to join next generation: QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|2.9
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|2.28
+Crossover: 3 Runners picked at random
+1: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op| fitness: 5.28
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op| fitness: 5.28
+3: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 2.28
+Crossover: Parents selected
+
+1: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op
+Testing child: WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op
+Ran 6.7m during 45144ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|150|6.7|45144|S
+Child 1 fit enough to join next generation: WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|6.7
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|2.28
+Testing child: WO+o+w+PO+W++o++++Pq+w+O+op
+Ran -1.4m during 45109ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++++Pq+w+O+op|150|-1.4|45109|S
+Crossover: 3 Runners picked at random
+1: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 2.28
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.18
+3: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o| fitness: 3.22
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o
+Testing child: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ+O+pW+Po++pqwO+Q++qP++pW+QP+wOp++o
+Ran 1.3m during 2427ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ+O+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.3|2427|C
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+w+pw+q
+Ran 0.0m during 4421ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+w+pw+q|150|0.0|4421|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 4.02
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 0.2
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.18
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Testing child: QPOW+po++Ow++W+++qP+o+w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Ran 0.1m during 45080ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+o+w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.1|45080|S
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp++pQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 0.3m during 1962ms and crashed
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp++pQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.3|1962|C
+Crossover: 3 Runners picked at random
+1: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 2.28
+2: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+3: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+Crossover: Parents selected
+
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Testing child: QPOW+po++p+OPqw+Wow
+Ran 1.7m during 45211ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wow|150|1.7|45211|S
+Testing child: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran 5.0m during 45174ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|5.0|45174|S
+Child 2 fit enough to join next generation: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|5.0
+Replacing: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|2.28
+Crossover: 3 Runners picked at random
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 2.22
+2: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 3.7199998
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+Crossover: Parents selected
+
+1: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+Testing child: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+QO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+Ran 0.5m during 2421ms and crashed
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+QO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op|150|0.5|2421|C
+Testing child: P+WPo+qpO+QPW+ow+q+p++OP++Q+p+qo
+Ran 0.9m during 8421ms and crashed
+RunInfo#1|P+WPo+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.9|8421|C
+Crossover: 3 Runners picked at random
+1: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 3.7199998
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 1.7800001
+3: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 2.62
+Crossover: Parents selected
+
+1: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Testing child: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+owow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 0.5m during 2411ms and crashed
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+owow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.5|2411|C
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW++q+p++OP++Q+p+qo
+Ran -0.5m during 5316ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW++q+p++OP++Q+p+qo|150|-0.5|5316|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 2.62
+3: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 4.02
+Crossover: Parents selected
+
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q
+Ran 4.5m during 45142ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|150|4.5|45142|S
+Child 1 fit enough to join next generation: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|4.5
+Replacing: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|2.62
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+Ran 0.3m during 49273ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.3|49273|S
+Crossover: 3 Runners picked at random
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o| fitness: 3.22
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 0.2
+3: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 4.02
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Testing child: OPW++pwQ+W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 0.7m during 2562ms and crashed
+RunInfo#1|OPW++pwQ+W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.7|2562|C
+Testing child: QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o
+Ran 10.8m during 45074ms and was stopped
+RunInfo#1|QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|10.8|45074|S
+Child 2 fit enough to join next generation: QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|10.8
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|0.2
+Crossover: 3 Runners picked at random
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+Testing child: P+WQO+o+Ow+opW+wO++Po++O+op
+Ran 0.1m during 1878ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++O+op|150|0.1|1878|C
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op
+Ran 12.0m during 45078ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|150|12.0|45078|S
+Child 2 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|12.0
+Replacing: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|3.2599998
+Crossover: 3 Runners picked at random
+1: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 3.7199998
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o| fitness: 3.22
+3: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 2.28
+Crossover: Parents selected
+
+1: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o
+Testing child: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o
+Ran 6.3m during 45109ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|150|6.3|45109|S
+Child 1 fit enough to join next generation: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|6.3
+Replacing: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|2.28
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo
+Ran 7.2m during 45208ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|150|7.2|45208|S
+Child 2 fit enough to join next generation: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|7.2
+Replacing: OPW++pwQ+oP++O+o++OpWWPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|2.28
+Crossover: 3 Runners picked at random
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op| fitness: 5.28
+3: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o| fitness: 3.7800002
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op
+Ran 0.1m during 3613ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+w+PO+W++o++wQp+PqOW++ow++Pq+w+O+op|150|0.1|3613|C
+Testing child: WO+o+P+Q++O+op
+Ran 7.1m during 45140ms and was stopped
+RunInfo#1|WO+o+P+Q++O+op|150|7.1|45140|S
+Child 2 fit enough to join next generation: WO+o+P+Q++O+op|7.1
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|3.7800002
+Crossover: 3 Runners picked at random
+1: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 10.719999
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 0.2
+3: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 2.28
+Crossover: Parents selected
+
+1: +++Q+q+W+wQ+OP+oq+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+2: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Testing child: +++Q+q+W+wQ+OP+oq+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Ran -0.2m during 3481ms and crashed
+RunInfo#1|+++Q+q+W+wQ+OP+oq+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|-0.2|3481|C
+Testing child: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 0.3m during 9345ms and crashed
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+p+W+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.3|9345|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 4.02
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 1.7800001
+3: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 2.62
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 4.2m during 45161ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|4.2|45161|S
+Child 1 fit enough to join next generation: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|4.2
+Replacing: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|1.7800001
+Testing child: QWP+pqW+Q+++o+q+PQ++pw+q
+Ran 0.4m during 2445ms and crashed
+RunInfo#1|QWP+pqW+Q+++o+q+PQ++pw+q|150|0.4|2445|C
+Crossover: 3 Runners picked at random
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 3.2599998
+2: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 2.28
+3: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo| fitness: 3.7199998
+Crossover: Parents selected
+
+1: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w
+2: P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Testing child: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo
+Ran 3.9m during 45113ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|3.9|45113|S
+Child 1 fit enough to join next generation: QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|3.9
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qp++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|2.28
+Testing child: P+Op+oQ++W+w++PPO+oQ+qp+P+pQq+w
+Ran -1.2m during 45076ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQq+w|150|-1.2|45076|S
+Crossover: 3 Runners picked at random
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.18
+2: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 4.02
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 1.7800001
+Crossover: Parents selected
+
+1: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Testing child: QPOW+po++Ow++W+++qP+opQw+++OW+P+w+W+qw
+Ran 0.9m during 2146ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+W+qw|150|0.9|2146|C
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oWoq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Ran 4.8m during 45144ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oWoq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|4.8|45144|S
+Child 2 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oWoq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|4.8
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.18
+Crossover: 3 Runners picked at random
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 0.2
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.18
+3: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 2.62
+Crossover: Parents selected
+
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+Ran 5.6m during 45176ms and was stopped
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|5.6|45176|S
+Child 1 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|5.6
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.18
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Ran 1.0m during 3492ms and crashed
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|1.0|3492|C
+Child 2 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++PO+q++pQo+WPq+wpqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|1.0
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.18
+Crossover: 3 Runners picked at random
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.18
+Crossover: Parents selected
+
+1: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOW+wO++Po++WOqp+P+Q++O+op
+Ran 0.5m during 1846ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOW+wO++Po++WOqp+P+Q++O+op|150|0.5|1846|C
+Testing child: P+WQO+o+Ow+opqp+P+Q++O+op
+Ran 0.3m during 4506ms and crashed
+RunInfo#1|P+WQO+o+Ow+opqp+P+Q++O+op|150|0.3|4506|C
+Crossover: 3 Runners picked at random
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o| fitness: 3.7800002
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.18
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op| fitness: 5.94
+Crossover: Parents selected
+
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+op
+Testing child: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPp
+Ran 1.1m during 45192ms and was stopped
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPp|150|1.1|45192|S
+Child 1 fit enough to join next generation: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPp|1.1
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.18
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+oo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o
+Ran 12.9m during 45175ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+oo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|150|12.9|45175|S
+Child 2 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++O+oo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+P+wOp++o|12.9
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+W++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.18
+##########  Generation 3  ##########
+----------  Individual 1  ----------
+Ran 4.0m during 45175ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|4.0|45175|S
+Ran 0.9m during 2128ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.9|2128|C
+Ran 0.9m during 2145ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.9|2145|C
+Ran 3.2m during 45144ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.2|45144|S
+Ran 0.9m during 2149ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+ww+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.9|2149|C
+----------  Individual 2  ----------
+Ran 6.5m during 45176ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|150|6.5|45176|S
+Ran 5.6m during 45075ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|150|5.6|45075|S
+Ran 0.3m during 47352ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|150|0.3|47352|S
+Ran 6.7m during 45076ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|150|6.7|45076|S
+Ran 5.8m during 45211ms and was stopped
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++owwQp+PqOW++ow++Pq+w+O+op|150|5.8|45211|S
+----------  Individual 3  ----------
+Ran 3.4m during 45177ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.4|45177|S
+Ran 3.8m during 45209ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.8|45209|S
+Ran 3.4m during 45076ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|3.4|45076|S
+Ran 4.8m during 45174ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|4.8|45174|S
+Ran 4.2m during 45210ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq++OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|4.2|45210|S
+----------  Individual 4  ----------
+Ran 6.3m during 45175ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|150|6.3|45175|S
+Ran 6.0m during 45108ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|150|6.0|45108|S
+Ran 0.3m during 49373ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|150|0.3|49373|S
+Ran 4.6m during 45142ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|150|4.6|45142|S
+Ran 6.5m during 45158ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW+q|150|6.5|45158|S
+----------  Individual 5  ----------
+Ran 11.4m during 45077ms and was stopped
+RunInfo#1|QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|11.4|45077|S
+Ran 11.3m during 45076ms and was stopped
+RunInfo#1|QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|11.3|45076|S
+Ran 1.0m during 2743ms and crashed
+RunInfo#1|QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.0|2743|C
+Ran 13.3m during 45077ms and was stopped
+RunInfo#1|QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|13.3|45077|S
+Ran 1.0m during 2727ms and crashed
+RunInfo#1|QPOW+po++Ow++oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++o|150|1.0|2727|C
+----------  Individual 6  ----------
+Ran 8.9m during 45078ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|150|8.9|45078|S
+Ran 0.1m during 1976ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|150|0.1|1976|C
+Ran 0.3m during 47220ms and was stopped
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|150|0.3|47220|S
+Ran 0.1m during 1845ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|150|0.1|1845|C
+Ran 0.7m during 1828ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q++WOqp+P+Q++O+op|150|0.7|1828|C
+----------  Individual 7  ----------
+Ran 2.9m during 30776ms and crashed
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|150|2.9|30776|C
+Ran 6.1m during 45075ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|150|6.1|45075|S
+Ran 4.5m during 45111ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|150|4.5|45111|S
+Ran 6.6m during 45178ms and was stopped
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|150|6.6|45178|S
+Ran 0.7m during 2880ms and crashed
+RunInfo#1|P+Op+oQ++W+w++PPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+o|150|0.7|2880|C
+----------  Individual 8  ----------
+Ran 1.3m during 2411ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|150|1.3|2411|C
+Ran 7.1m during 45059ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|150|7.1|45059|S
+Ran 0.3m during 49390ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|150|0.3|49390|S
+Ran 1.3m during 2446ms and crashed
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|150|1.3|2446|C
+Ran 4.9m during 45145ms and was stopped
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+QP+wOp++p++OP++Q+p+qo|150|4.9|45145|S
+----------  Individual 9  ----------
+Ran 8.4m during 45078ms and was stopped
+RunInfo#1|WO+o+P+Q++O+op|150|8.4|45078|S
+Ran 1.9m during 2976ms and crashed
+RunInfo#1|WO+o+P+Q++O+op|150|1.9|2976|C
+Ran 1.6m during 2813ms and crashed
+RunInfo#1|WO+o+P+Q++O+op|150|1.6|2813|C
+Ran 2.0m during 3312ms and crashed
+RunInfo#1|WO+o+P+Q++O+op|150|2.0|3312|C
+Ran 9.5m during 45245ms and was stopped
+RunInfo#1|WO+o+P+Q++O+op|150|9.5|45245|S
+----------  Individual 10  ----------
+Ran 3.4m during 45144ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|3.4|45144|S
+Ran 0.9m during 2146ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.9|2146|C
+Ran 0.3m during 49339ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.3|49339|S
+Ran 0.9m during 2146ms and crashed
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|0.9|2146|C
+Ran 6.1m during 45174ms and was stopped
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|6.1|45174|S
+----------  Individual 11  ----------
+Ran 2.7m during 45074ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|2.7|45074|S
+Ran 3.1m during 45075ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|3.1|45075|S
+Ran 2.0m during 45210ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|2.0|45210|S
+Ran 3.5m during 45075ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|3.5|45075|S
+Ran 3.0m during 45075ms and was stopped
+RunInfo#1|QPOW+po++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|3.0|45075|S
+----------  Individual 12  ----------
+Ran 0.1m during 1979ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oWoq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|0.1|1979|C
+Ran 2.3m during 17013ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oWoq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|2.3|17013|C
+Ran 3.3m during 26596ms and crashed
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow+Oq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oWoq+Qw+p+Wq+Q+wPOq+op+PO+OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|3.3|26596|C

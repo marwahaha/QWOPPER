@@ -1,0 +1,9 @@
+Dr. Gordon and Dr. Zhang,
+
+If you would like to run the GA on QWOP, import this project into an IDE (I used Eclipse) and run the class Genetic(). 
+Most of the code I wrote for Vaucher's program is contained in that class. I made tweaks to the controller in other places, 
+mostly for exception handling and bug fixing.
+
+QWOP must be fully visible in your browser when you execute it, otherwise the program will not be able to find the game.
+
+To efficiently test individual runners, or generate single random individuals, you can run the executable jar file 'qwopper.'

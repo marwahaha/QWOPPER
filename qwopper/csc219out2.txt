@@ -1,0 +1,410 @@
+##########  Generaion 0  ##########
+0) +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo    avgFitness: 10.666666
+1) W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p    avgFitness: 7.359999
+2) QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo    avgFitness: 4.7400002
+3) OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q    avgFitness: 4.5699997
+4) PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op    avgFitness: 8.64
+5) P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo    avgFitness: 5.0200005
+6) +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo    avgFitness: 7.3
+7) QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o    avgFitness: 6.4461536
+8) OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w    avgFitness: 4.2833333
+9) +Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo    avgFitness: 4.7
+10) QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op    avgFitness: 4.9
+11) Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop    avgFitness: 3.75
+12) +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++    avgFitness: 5.93
+13) QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p    avgFitness: 5.2300005
+14) P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw    avgFitness: 3.3499997
+15) WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op    avgFitness: 5.2599998
+###################################
+##########  Generation 1  ##########
+----------  Individual 1  ----------
+RunInfo#1|+++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo|150|4.5|30245|S
+----------  Individual 2  ----------
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|3.9|30237|S
+----------  Individual 3  ----------
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|150|0.6|2760|C
+----------  Individual 4  ----------
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|8.8|30125|S
+----------  Individual 5  ----------
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|150|0.4|1719|C
+----------  Individual 6  ----------
+RunInfo#1|P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|150|0.5|2460|C
+----------  Individual 7  ----------
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo|150|-0.6|23134|C
+----------  Individual 8  ----------
+RunInfo#1|QPOW+po++Ow++W+++qP+opQw+++OW+P+w+Woq+Qw+p+Wq+Q+wPOq+op+PO++QpoW+Pw+pqW+P+wOp++o|150|3.6|30166|S
+----------  Individual 9  ----------
+RunInfo#1|OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|150|0.2|4353|C
+----------  Individual 10  ----------
+RunInfo#1|+Q+qPO+oQ+qp+P+pQWO++P+pq+Qow+OW+qP+woQp++P++qOp+Q+Po+qpO+QPW+ow+q+p++OP++Q+p+qo|150|0.3|34314|S
+----------  Individual 11  ----------
+RunInfo#1|QPW+pwq++WO+Qwo+q+WQ+qw+Q+P+O+Wop++wOPq+pW+Q+P++w+op+q+O+PoW+QO+ow+++pWO+oP+wqO+op|150|0.2|3067|C
+----------  Individual 12  ----------
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.4|2356|C
+----------  Individual 13  ----------
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++|150|0.2|2775|C
+----------  Individual 14  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|2.8|30106|S
+----------  Individual 15  ----------
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|3.7|15592|C
+----------  Individual 16  ----------
+RunInfo#1|WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.0|5535|C
+Crossover: 3 Runners picked at random
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 8.0
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 0.0
+3: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.0
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+
+2: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+Child 1 fit enough to join next generation: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|2.7
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|0.0
+Testing child: WO+o+w+PO+W+++Q++qP++pW+Q+++o+q+PQ++pw+q
+Child 2 fit enough to join next generation: WO+o+w+PO+W+++Q++qP++pW+Q+++o+q+PQ++pw+q|1.9
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op|0.0
+Crossover: 3 Runners picked at random
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 0.0
+2: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 0.0
+3: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.0
+Crossover: Parents selected
+
+1: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op
+
+2: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo
+
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WP++po+qP+Q+O++p+W++qwo
+Child 1 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WP++po+qP+Q+O++p+W++qwo|0.2
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|0.0
+Testing child: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op
+Child 2 fit enough to join next generation: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op|0.3
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|0.0
+Crossover: 3 Runners picked at random
+1: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w| fitness: 0.0
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p| fitness: 2.0
+3: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p| fitness: 2.0
+Crossover: Parents selected
+
+1: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+Child 1 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|0.4
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|0.0
+Testing child: QWP+pqO+Qwo+W+qPOw+oPq++opw++P+p
+Child 2 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+oPq++opw++P+p|1.3
+Replacing: OP+W+oQ+++p+OPqw+Wo+OwQp+qoW+PQO++q++pQ+Po+qwpO+WQoP++qwp+++OW+Q+++++qPw+Q++oq++QOW++++q+o+pw+O+o+QW+++qw+QO++P++Wqo+Q++qpw++++Q+PWO+poq+w|0.0
+Crossover: 3 Runners picked at random
+1: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 0.0
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op| fitness: 0.0
+Crossover: Parents selected
+
+1: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+PW++qp++woP+Q++++pqO++QW+q+wo
+
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WPq+w+O+op
+
+Testing child: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op
+Child 1 fit enough to join next generation: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op|0.7
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.0
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo
+Child 2 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|2.1
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.0
+Crossover: 3 Runners picked at random
+1: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p| fitness: 2.0
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 0.0
+3: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 0.0
+Crossover: Parents selected
+
+1: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+
+2: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Child 1 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|4.5
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.0
+Testing child: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+Ww++O+WPq++opw++P+p
+Child 2 fit enough to join next generation: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+Ww++O+WPq++opw++P+p|0.5
+Replacing: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.0
+Crossover: 3 Runners picked at random
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo| fitness: 0.0
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 8.0
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 3.0
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw
+Child 1 fit enough to join next generation: OPW++pwQ+oP++O+o++OpW+q+w+WPqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|1.3
+Replacing: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|0.0
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+Child 2 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|2.6
+Replacing: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+O++po+qP+Q+O++p+W++qwo|0.0
+Crossover: 3 Runners picked at random
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.0
+2: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 0.0
+3: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++| fitness: 0.0
+Crossover: Parents selected
+
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+
+2: +PW+QOp+P+p+o+P+pq+wQP+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+
+Testing child: W+++OP+wop+P+++pOq+oWQ+++O+Pqw+WQ++oq+pQ+wq+WQ+qw+PW+QOw+pWq++ow++
+Testing child: +PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+Child 2 fit enough to join next generation: +PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|0.3
+Replacing: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|0.0
+Crossover: 3 Runners picked at random
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 0.0
+2: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo| fitness: 0.0
+3: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.0
+Crossover: Parents selected
+
+1: Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+2: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+
+Testing child: Q++qwoP+p
+Child 1 fit enough to join next generation: Q++qwoP+p|0.5
+Replacing: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|0.0
+Testing child: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Child 2 fit enough to join next generation: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.9
+Replacing: P+Op+oQ++W+w++Pq+QOp+oW+qP+O+Q+pw+oP++qp+P+OQWp+qP+Qpwo+PW+q+++QO+wo+WpO+wq+W+wo|0.0
+Crossover: 3 Runners picked at random
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 3.0
+2: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo| fitness: 4.0
+3: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 0.0
+Crossover: Parents selected
+
+1: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+
+2: +++Q+q+W+wQ+OP+oq+p+W+++++w+OWP++o+OwQ++qo+O+pW+ow+W+Q++qO+P+wo+OQ+pWqo+QP+Ow+qopW++PQw+Oq+pW+wo
+
+Testing child: W+++O+Oq+pW+wo
+Child 1 fit enough to join next generation: W+++O+Oq+pW+wo|0.6
+Replacing: WO+o+w+PO+W++o++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|0.0
+##########  Generation 2  ##########
+----------  Individual 1  ----------
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|2.5|4864|C
+----------  Individual 2  ----------
+RunInfo#1|WO+o+w+PO+W+++Q++qP++pW+Q+++o+q+PQ++pw+q|150|1.3|2594|C
+----------  Individual 3  ----------
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WP++po+qP+Q+O++p+W++qwo|150|0.4|1811|C
+----------  Individual 4  ----------
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op|150|0.9|2450|C
+----------  Individual 5  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|0.5|2909|C
+----------  Individual 6  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+oPq++opw++P+p|150|0.9|5081|C
+----------  Individual 7  ----------
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op|150|0.3|6475|C
+----------  Individual 8  ----------
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|150|-0.1|3659|C
+----------  Individual 9  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|2.5|30309|S
+----------  Individual 10  ----------
+RunInfo#1|Q+++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+Ww++O+WPq++opw++P+p|150|0.3|2047|C
+----------  Individual 11  ----------
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|150|0.6|6382|C
+----------  Individual 12  ----------
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q|150|3.2|30276|S
+----------  Individual 13  ----------
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p|150|-0.2|4117|C
+----------  Individual 14  ----------
+RunInfo#1|Q++qwoP+p|150|1.3|30248|S
+----------  Individual 15  ----------
+RunInfo#1|W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.3|5790|C
+----------  Individual 16  ----------
+RunInfo#1|W+++O+Oq+pW+wo|150|0.0|30161|S
+Crossover: 3 Runners picked at random
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 2.0
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw| fitness: 0.0
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+Crossover: Parents selected
+
+1: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo
+
+Testing child: OPW++qp++woP+Q++++pqO++QW+q+wo
+Child 1 fit enough to join next generation: OPW++qp++woP+Q++++pqO++QW+q+wo|0.3
+Replacing: OPW++pwQ+oP++O+o++OpW+q+w+WPqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|0.0
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+Child 2 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|2.6
+Replacing: OPW++pwQ+oP++O+o++OpW+q+w+WPqow+P+Qp+P+WOq+ow++QOW+o+w+pWO+P+oqp+O+oQPw+OpWq+wQ+oW+qw|0.0
+Crossover: 3 Runners picked at random
+1: W+++O+Oq+pW+wo| fitness: 0.0
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 2.0
+3: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op| fitness: 0.0
+Crossover: Parents selected
+
+1: W+++O+Oq+pW+wo
+
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+Testing child: W+++O+Oq+OQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WpW+wo
+Child 2 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WpW+wo|1.3
+Replacing: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op|0.0
+Crossover: 3 Runners picked at random
+1: Q++qwoP+p| fitness: 1.0
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+3: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p| fitness: 0.0
+Crossover: Parents selected
+
+1: Q++qwoP+p
+
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+
+Testing child: Q++qwo+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p
+Child 1 fit enough to join next generation: Q++qwo+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|2.0
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+Testing child: QWP+pqO+Qwo+WP+p
+Child 2 fit enough to join next generation: QWP+pqO+Qwo+WP+p|2.5
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+Crossover: 3 Runners picked at random
+1: +PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p| fitness: 0.0
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op| fitness: 2.0
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WP++po+qP+Q+O++p+W++qwo| fitness: 0.0
+Crossover: Parents selected
+
+1: +PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O+qwoP+p
+
+2: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+
+Testing child: +PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++o++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op
+Child 1 fit enough to join next generation: +PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++o++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|1.5
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WP++po+qP+Q+O++p+W++qwo|0.0
+Testing child: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+PO+qwoP+p
+Child 2 fit enough to join next generation: OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+PO+qwoP+p|1.3
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQo+WP++po+qP+Q+O++p+W++qwo|0.0
+Crossover: 3 Runners picked at random
+1: QWP+pqO+Qwo+W+qPOw+oPq++opw++P+p| fitness: 0.0
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 2.0
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+Crossover: Parents selected
+
+1: QWP+pqO+Qwo+W+qPOw+oPq++opw++P+p
+
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+Testing child: QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Child 1 fit enough to join next generation: QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.3
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+qPOw+oPq++opw++P+p
+Child 2 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+qPOw+oPq++opw++P+p|3.9
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+Crossover: 3 Runners picked at random
+1: Q++qwoP+p| fitness: 1.0
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+3: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 0.0
+Crossover: Parents selected
+
+1: Q++qwoP+p
+
+2: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O++O++Poq+W+Ow+pQ+W+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+Testing child: Q+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Child 1 fit enough to join next generation: Q+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|0.3
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+Testing child: W+++OP+wop+P+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++O++O++Poq+W+Ow+pQ+W++qwoP+p
+Crossover: 3 Runners picked at random
+1: W+++O+Oq+pW+wo| fitness: 0.0
+2: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 2.0
+3: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q| fitness: 3.0
+Crossover: Parents selected
+
+1: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+2: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP++pW+Q+++o+q+PQ++pw+q
+
+Testing child: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ++pW+Q+++o+q+PQ++pw+q
+Child 1 fit enough to join next generation: QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ++pW+Q+++o+q+PQ++pw+q|1.3
+Replacing: W+++O+Oq+pW+wo|0.0
+Testing child: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+Child 2 fit enough to join next generation: P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|2.5
+Replacing: W+++O+Oq+pW+wo|0.0
+Crossover: 3 Runners picked at random
+1: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op| fitness: 0.0
+2: W+++O+Oq+pW+wo| fitness: 0.0
+3: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op| fitness: 0.0
+Crossover: Parents selected
+
+1: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op
+
+2: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op
+
+Testing child: +WP+pwO+WQo++++Pw+++q+Q+w+O+op
+Child 1 fit enough to join next generation: +WP+pwO+WQo++++Pw+++q+Q+w+O+op|3.0
+Replacing: W+++O+Oq+pW+wo|0.0
+Testing child: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPqpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op
+Child 2 fit enough to join next generation: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPqpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op|1.0
+Replacing: W+++O+Oq+pW+wo|0.0
+Crossover: 3 Runners picked at random
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op| fitness: 0.0
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+3: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo| fitness: 0.0
+Crossover: Parents selected
+
+1: QPO++qp++W+Qow++q+O+o+P+QO+q+Qo+p+PqO++pWQo+P+w+Oq+w+O+op
+
+2: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo
+
+Testing child: QPO++qp++W+Qow++q+O+o+P+QO+q+Q+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo
+Child 1 fit enough to join next generation: QPO++qp++W+Qow++q+O+o+P+QO+q+Q+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|1.3
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+Testing child: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++wo+p+PqO++pWQo+P+w+Oq+w+O+op
+Child 2 fit enough to join next generation: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++wo+p+PqO++pWQo+P+w+Oq+w+O+op|3.2
+Replacing: PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|0.0
+##########  Generation 3  ##########
+----------  Individual 1  ----------
+RunInfo#1|OPW++qp++woP+Q++++pqO++QW+q+wo|150|0.8|2196|C
+----------  Individual 2  ----------
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++w+Wq+wQ+q+OQ+o+PO+q++pQW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+Po++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.2|1844|C
+----------  Individual 3  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WpW+wo|150|0.3|5459|C
+----------  Individual 4  ----------
+RunInfo#1|Q++qwo+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+W++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQw++O+WPq++opw++P+p|150|4.0|30238|S
+----------  Individual 5  ----------
+RunInfo#1|QWP+pqO+Qwo+WP+p|150|3.0|30133|S
+----------  Individual 6  ----------
+RunInfo#1|+PW+QOp+P+p+o+P+pq+wQP+O+W+ow+QpW++wqO+oP+O++o++OWQ+q++ow++++pW++Q++o++pqwOo++wQp+PqOW++ow++++++p+W+Q+PqwO+Q+Wo+q++pwOQ+P+pW++wqP+op|150|0.8|6223|C
+----------  Individual 7  ----------
+RunInfo#1|OPW++pwQ+oP++O+o++OpW+q+w+WPQo+wO+pW+PO+qwoP+p|150|4.1|30275|S
+----------  Individual 8  ----------
+RunInfo#1|QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|2.3|30243|S
+----------  Individual 9  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop+qPOw+oPq++opw++P+p|150|3.7|30142|S
+----------  Individual 10  ----------
+RunInfo#1|Q+P+pw+P+p++o+W++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.6|2127|C
+----------  Individual 11  ----------
+RunInfo#1|QWP+pqO+Qwo+W+qPOw+o++WOQp+w++oW++qP+pQ++pW+Q+++o+q+PQ++pw+q|150|2.9|15061|C
+----------  Individual 12  ----------
+RunInfo#1|P+WQO+o+Ow+opW+wO++Po++WOqp+P+Q+pQo+wO+pW+Po++pqwO+Q++qP+O+oPqw+WQO+++o++q+pQ++w+OW+wPo++O+qW+Qop++qwO+WP+w+WoQp+++P++Owpq+o+W+Q+qOPw+Qop++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop|150|0.7|1861|C
+----------  Individual 13  ----------
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+Q+w+O+op|150|0.3|27380|C
+----------  Individual 14  ----------
+RunInfo#1|+WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPqpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op|150|1.0|4244|C
+----------  Individual 15  ----------
+RunInfo#1|QPO++qp++W+Qow++q+O+o+P+QO+q+Q+Wq+wQ+q+OQ+o+PO+q++pQW++qp++woP+Q++++pqO++QW+q+wo|150|1.1|2607|C
+----------  Individual 16  ----------
+RunInfo#1|PQW+w+O+Wo+Op++P++o+pq+OQ+wqoP+Q++Wp+++wo+p+PqO++pWQo+P+w+Oq+w+O+op|150|0.3|1827|C
+Crossover: 3 Runners picked at random
+1: QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop| fitness: 2.0
+2: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPqpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op| fitness: 1.0
+3: QWP+pqO+Qwo+WP+p| fitness: 3.0
+Crossover: Parents selected
+
+1: QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+P+Wq+pQ+q+PO+wop
+
+2: QWP+pqO+Qwo+WP+p
+
+Testing child: QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+PQWP+pqO+Qwo+WP+p
+Child 1 fit enough to join next generation: QWP+pqO+Qwo+W++qW+P+wOpQ++q+P+++poWQ+qw+OPQW+++pwo+PQWP+pqO+Qwo+WP+p|4.0
+Replacing: +WP+pwO+WQo++++Pw+++q+QpO+WPq+owQ+O+W+pw+Po+WPqpO+WPq+owQ+O+W+pw+Po+WPq+w+O+op|1.0
+Testing child: +Wq+pQ+q+PO+wop
