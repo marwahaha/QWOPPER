@@ -72,7 +72,7 @@ public class Genetic {
     }
     else
     {
-    	this.readPopulation("runs2.txt"); //contains th
+    	this.readPopulation("runs2.txt"); //contains the filtered list of decent random runners
     }    
     System.out.println("Population: " + this.population.size() + " individuals");
     int totalRuns = 0;
@@ -197,7 +197,7 @@ public class Genetic {
 	    for (int i = 0; i < count; ++i) {
 	      //LOG.logf("Run #%d\n", i);
 	      qwop.startGame();
-	      RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);	//time limit in ms
+	      RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
 	      LOG.log(info.toString());
 	      LOG.log(info.marshal());
 	      evoOut.println(info.toString());
@@ -211,11 +211,11 @@ public class Genetic {
   }
   
   //tests a child runner a specified number of times and returns the average fitness
-  private float testChild(Qwopper qwop, String str, int count) {
+  private float testChild(Qwopper qwop, String str, int runLimit) {
 		float fitness = 0;
 		evoOut.println("Testing child: " + str);
 		LOG.log("Testing child: " + str);
-		for (int i = 0; i < count; ++i) {	//currently we only test each child once
+		for (int i = 0; i < runLimit; ++i) {	//currently we only test each child once
 			qwop.startGame();
 			RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
 			LOG.log(info.toString());
@@ -228,7 +228,7 @@ public class Genetic {
 			currentRunnerCrashed = info.crashed;			
 		}
 		
-		return fitness/count;
+		return fitness/runLimit;
   }
 
   private static void saveRunInfo(String filename, RunInfo info) {
@@ -256,7 +256,7 @@ public class Genetic {
   }
   
   //finds the fittest of the neighbors of the individual located at curPop[curRow][curCol]
-  public Individual fittestNeighbor(int curRow, int curCol, WrapGrid<Individual> curPop)
+  private Individual fittestNeighbor(int curRow, int curCol, WrapGrid<Individual> curPop)
   {
 	  Individual up, 
 	  			 right, 
@@ -280,7 +280,7 @@ public class Genetic {
   }
   
   //perform crossover using a 2D wrap-around array of Individuals
-  public WrapGrid<Individual> crossoverSteadyStateGrid(WrapGrid<Individual> curPop)
+  private WrapGrid<Individual> crossoverSteadyStateGrid(WrapGrid<Individual> curPop)
   {
 	  WrapGrid<Individual> newPop = new WrapGrid<Individual>(curPop.rows, curPop.cols, curPop.conNum);
 	  Random random = new Random(System.currentTimeMillis());	  
@@ -496,7 +496,7 @@ public class Genetic {
 	  
   }*/  
   
-  public String mutate(String runner){
+  private String mutate(String runner){
 	  Random random = new Random(System.currentTimeMillis());
 	  int mutateLocation = random.nextInt(runner.length());
 	  int mutationIndex = random.nextInt(NOTES.length());
@@ -505,7 +505,7 @@ public class Genetic {
       return runner.substring(0, mutateLocation) + theMutation + runner.substring(mutateLocation + 1);
   }  
 
-  public void readPopulation(String filename) {
+  private void readPopulation(String filename) {
     try {
       BufferedReader input = new BufferedReader(new FileReader(filename));
       try {
