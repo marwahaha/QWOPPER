@@ -1,5 +1,5 @@
 QWOPPER: helping QWOP win the 100 meters with genetic programming
-=================================================================
+===============================================================================
 
 The intended goal of the project is to write a bot able to play 
 QWOP (http://www.foddy.net/Athletics.html), training it with 
@@ -9,7 +9,7 @@ Explanation of the origin of this project can be found in Laurent
 Vaucher's blog post at 
 http://slowfrog.blogspot.com/2011/03/genetically-engineered-qwop-part-1.html
 
-=================================================================
+===============================================================================
 
 This project was extended into Steven Ray's Computer Science 
 master project at CSU Sacramento in 2013, and later published at:
@@ -19,9 +19,7 @@ evolutionary computation, ACM, Vancouver, pp. 823-830
 Abstract:  http://research.google.com/pubs/pub42902.html
 Project URL (pdf):  http://athena.ecs.csus.edu/~gordonvs/papers/QWOPgecco14.pdf
 
-==================================================================
-
-
+===============================================================================
 
 Instructions for importing and running the bot with the genetic 
 algorithm learning component:
@@ -44,3 +42,11 @@ Here's a video of me using the GUI app by first generating 3 random
 "runners", and then pasting in a string that was actually evolved by 
 the algorithm over 30 or so generations: 
 https://www.youtube.com/watch?v=eWxFI3NHtT8 
+
+===============================================================================
+
+A Note on all the txt files included in the project:
+These are here to show some history of the GA's performance throughout the 
+implementation's evolution toward a Cellular GA, as well as to provide the 
+initial lists of runners used to populate Generation 0 for each of the genetic 
+encodings explored.
