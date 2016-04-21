@@ -72,7 +72,7 @@ public class Genetic {
     }
     else
     {
-    	this.readPopulation("runs2.txt"); //contains the filtered list of decent random runners
+    	this.readPopulation("runs2.txt"); //contains an unfiltered list of random runners
     }    
     System.out.println("Population: " + this.population.size() + " individuals");
     int totalRuns = 0;
@@ -83,28 +83,28 @@ public class Genetic {
     }
     System.out.println("Total runs: " + totalRuns);
 
-    if(!randomGen0) //execute this block for an alternate Gen0
+    if(!randomGen0) //alternate Gen0 is filtered from the randomly generated runner list
     {
     	IFilter<RunInfo> twoMetersNotCrashed = new AndFilter<RunInfo>(
     	        new MinDistFilter(2), new NotFilter<RunInfo>(new CrashedFilter()));
-    	    IFilter<Individual> individualFilter = new MinRatioFilter(
-    	        twoMetersNotCrashed);
-    	    goodRunnerList = this.filter(individualFilter);  
-    	    System.out.println("Good Runners: ");
-    	    for(int i=0; i<goodRunnerList.size(); i++)
-    	    {
-    	    	System.out.println(goodRunnerList.get(i).toString());
-    	    	System.out.println(goodRunnerList.get(i).str);
-    	    	System.out.println(goodRunnerList.get(i).runs.get(0).distance);
-    	    }
+	    IFilter<Individual> individualFilter = new MinRatioFilter(
+	        twoMetersNotCrashed);
+	    goodRunnerList = this.filter(individualFilter);  
+	    System.out.println("Good Runners: ");
+	    for(int i=0; i<goodRunnerList.size(); i++)
+	    {
+	    	System.out.println(goodRunnerList.get(i).toString());
+	    	System.out.println(goodRunnerList.get(i).str);
+	    	System.out.println(goodRunnerList.get(i).runs.get(0).distance);
+	    }
     }
     else
     {
     	goodRunnerList = new ArrayList<Individual>();
-    	//runs3 contains 30 random runners. if the flag is set, use this as gen0
+    	//runs3 currently contains 30 random runners. if the flag is set, use this as gen0
     	for (Individual iRunner : this.population.values()) 
     	{    	      
-    	        goodRunnerList.add(iRunner);
+    		goodRunnerList.add(iRunner);
     	}
     }    
     
@@ -192,10 +192,10 @@ public class Genetic {
   //copied from MAIN
   private void testString(Qwopper qwop, String str, 
 		  					int count, String filename) {
-	  	fitnessSum = 0;
+	  fitnessSum = 0;
 	  	
-	    for (int i = 0; i < count; ++i) {
-	      //LOG.logf("Run #%d\n", i);
+	  for (int i = 0; i < count; ++i) {
+		  //LOG.logf("Run #%d\n", i);
 	      qwop.startGame();
 	      RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
 	      LOG.log(info.toString());
@@ -207,7 +207,7 @@ public class Genetic {
 	      fitnessSum += info.distance;	    
 	      currentRunnerCrashed = info.crashed;
 	      
-	    }
+	  }
   }
   
   //tests a child runner a specified number of times and returns the average fitness
@@ -231,20 +231,6 @@ public class Genetic {
 		return fitness/runLimit;
   }
 
-  private static void saveRunInfo(String filename, RunInfo info) {
-    try {
-      PrintStream out = new PrintStream(new FileOutputStream(filename, true));
-      try {
-        out.println(info.marshal());
-      } finally {
-        out.flush();
-        out.close();
-      }
-    } catch (IOException ioe) {
-      LOG.log("Error marshalling", ioe);
-    }
-  }
-  
   public List<Individual> filter(IFilter<Individual> filter) {
     List<Individual> ret = new ArrayList<Individual>();
     for (Individual individual : this.population.values()) {
