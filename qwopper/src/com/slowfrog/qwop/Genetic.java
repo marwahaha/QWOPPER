@@ -114,15 +114,15 @@ public class Genetic {
 	//store each individual's string and average distance traveled for manipulation
 	for(int i = 0; i < goodRunnerList.size(); i++){
 		  
-		  float sumFits = 0;
-		  for(int j = 0; j < goodRunnerList.get(i).runs.size(); j++){
-			  sumFits += goodRunnerList.get(i).runs.get(j).distance;
-		  }
-		  numRuns = goodRunnerList.get(i).runs.size();	
-		  goodRunnerList.get(i).fitness = sumFits/numRuns;
+		float sumFits = 0;
+		for(int j = 0; j < goodRunnerList.get(i).runs.size(); j++){
+			sumFits += goodRunnerList.get(i).runs.get(j).distance;
+		}
+		numRuns = goodRunnerList.get(i).runs.size();	
+		goodRunnerList.get(i).fitness = sumFits/numRuns;
 		  
-		  //add individual with calculated fitness to the grid
-		  curGen.add(goodRunnerList.get(i));
+		//add individual with calculated fitness to the grid
+		curGen.add(goodRunnerList.get(i));
 	}
 	
 	try {
