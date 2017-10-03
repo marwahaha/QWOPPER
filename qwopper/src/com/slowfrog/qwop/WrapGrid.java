@@ -8,11 +8,11 @@ import java.util.*;
 
 public class WrapGrid<T> {
 
-	ArrayList<T> array; // holds objects in grid
-	int rows;  // number of rows in grid
-	int cols;  // number of cols in grid
-	int length; // total number of objects in grid - maybe just get this from ArrayList
-	int conNum; // number of connections for each point on grid (either 4 or 8) 	
+	final ArrayList<T> array; // holds objects in grid
+	final int rows;  // number of rows in grid
+	final int cols;  // number of cols in grid
+	final int length; // total number of objects in grid - maybe just get this from ArrayList
+	final int conNum; // number of connections for each point on grid (either 4 or 8)
 	
 	// constructor
 	WrapGrid(int row, int col, int numCon) 

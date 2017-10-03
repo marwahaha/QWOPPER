@@ -4,12 +4,12 @@ public class RunInfo {
 
   private static final long serialVersionUID = 1L;
 
-  public String string;
-  public int delay;
-  public boolean crashed;
-  public boolean stopped;
-  public long duration;
-  public float distance;
+  public final String string;
+  public final int delay;
+  public final boolean crashed;
+  public final boolean stopped;
+  public final long duration;
+  public final float distance;
 
   public RunInfo(String pstring, int pdelay, boolean pcrashed,
       boolean pstopped, long pduration, float pdistance) {

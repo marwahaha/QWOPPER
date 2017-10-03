@@ -147,10 +147,10 @@ public class ImageReader {
   }
 
   public static String readDigits(BufferedImage input, List<Rectangle> parts) {
-    String str = "";
+    StringBuilder str = new StringBuilder();
     for (Rectangle rect : parts) {
-      str += compareDigit(input, rect);
+      str.append(compareDigit(input, rect));
     }
-    return str;
+    return str.toString();
   }
 }

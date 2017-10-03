@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Individual {
 
-  public String str;
+  public final String str;
   public List<RunInfo> runs;
   public float fitness;
 

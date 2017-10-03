@@ -2,7 +2,7 @@ package com.slowfrog.qwop;
 
 public class MinDistFilter implements IFilter<RunInfo> {
 
-  private int minDist;
+  private final int minDist;
 
   public MinDistFilter(int minDist) {
     this.minDist = minDist;

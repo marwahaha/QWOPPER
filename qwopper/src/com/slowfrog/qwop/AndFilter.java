@@ -2,8 +2,8 @@ package com.slowfrog.qwop;
 
 public class AndFilter<T> implements IFilter<T> {
 
-  private IFilter<T> filter1;
-  private IFilter<T> filter2;
+  private final IFilter<T> filter1;
+  private final IFilter<T> filter2;
 
   public AndFilter(IFilter<T> filter1, IFilter<T> filter2) {
     this.filter1 = filter1;

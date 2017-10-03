@@ -46,23 +46,23 @@ public class Genetic {
 
   /**
    * main method
-   * @param args
+   * @param args the arguments
    */
   public static void main(String[] args) {
     Genetic g = new Genetic();
   }
 
-  private Map<String, Individual> population;
+  private final Map<String, Individual> population;
   private WrapGrid<Individual> curGen, nextGen; 
   
-  private List<Individual> goodRunnerList;
+  private final List<Individual> goodRunnerList;
   private float fitnessSum = 0;
   private Robot rob;
   private Qwopper qwopper;
   private PrintStream evoOut, genOut; //evolution log and generation log streams
   private float genAvgFitness;
   private boolean currentRunnerCrashed;
-  private boolean randomGen0 = true; //set to true is using a random gen stored in runs3.txt
+  private final boolean randomGen0 = true; //set to true is using a random gen stored in runs3.txt
 
   public Genetic() {
     this.population = new HashMap<String, Individual>();
@@ -76,7 +76,7 @@ public class Genetic {
     }    
     System.out.println("Population: " + this.population.size() + " individuals");
     int totalRuns = 0;
-    float numRuns = 0;    
+    float numRuns;
     
     for (Individual iRunner : this.population.values()) {
       totalRuns += iRunner.runs.size();
@@ -91,39 +91,35 @@ public class Genetic {
 	        twoMetersNotCrashed);
 	    goodRunnerList = this.filter(individualFilter);  
 	    System.out.println("Good Runners: ");
-	    for(int i=0; i<goodRunnerList.size(); i++)
-	    {
-	    	System.out.println(goodRunnerList.get(i).toString());
-	    	System.out.println(goodRunnerList.get(i).str);
-	    	System.out.println(goodRunnerList.get(i).runs.get(0).distance);
-	    }
+		for (Individual aGoodRunnerList : goodRunnerList) {
+			System.out.println(aGoodRunnerList.toString());
+			System.out.println(aGoodRunnerList.str);
+			System.out.println(aGoodRunnerList.runs.get(0).distance);
+		}
     }
     else
     {
     	goodRunnerList = new ArrayList<Individual>();
     	//runs3 currently contains 30 random runners. if the flag is set, use this as gen0
-    	for (Individual iRunner : this.population.values()) 
-    	{    	      
-    		goodRunnerList.add(iRunner);
-    	}
+		goodRunnerList.addAll(this.population.values());
     }    
     
     //init grid for a population of 30 individuals and 4 connections each
     curGen = new WrapGrid<Individual>(POPULATION_MAX_ROWS, POPULATION_MAX_COLS, POPULATION_MAX_CONNECTIONS);	
     
 	//store each individual's string and average distance traveled for manipulation
-	for(int i = 0; i < goodRunnerList.size(); i++){
-		  
-		float sumFits = 0;
-		for(int j = 0; j < goodRunnerList.get(i).runs.size(); j++){
-			sumFits += goodRunnerList.get(i).runs.get(j).distance;
-		}
-		numRuns = goodRunnerList.get(i).runs.size();	
-		goodRunnerList.get(i).fitness = sumFits/numRuns;
-		  
-		//add individual with calculated fitness to the grid
-		curGen.add(goodRunnerList.get(i));
-	}
+	  for (Individual aGoodRunnerList : goodRunnerList) {
+
+		  float sumFits = 0;
+		  for (int j = 0; j < aGoodRunnerList.runs.size(); j++) {
+			  sumFits += aGoodRunnerList.runs.get(j).distance;
+		  }
+		  numRuns = aGoodRunnerList.runs.size();
+		  aGoodRunnerList.fitness = sumFits / numRuns;
+
+		  //add individual with calculated fitness to the grid
+		  curGen.add(aGoodRunnerList);
+	  }
 	
 	try {
         rob = new Robot();
