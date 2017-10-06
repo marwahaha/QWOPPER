@@ -404,6 +404,7 @@ public class Qwopper {
     if (dur == 0) {
       dur = 1;
     }
+    // not used
     float speed = (dist * 1000) / dur;
     //log.logf("%.1fm in %ds: speed=%.3f\n", dist, (dur / 1000), speed);
   }
@@ -459,18 +460,18 @@ public class Qwopper {
   public static String makeRealisticRandomString2(int duration)
   {
 	  Random random = new Random(System.currentTimeMillis());
-	  String str = "";
+	  StringBuilder str = new StringBuilder();
 	  int cur = 0;
 	  while (cur < duration)
 	  {
 		  int rnd = random.nextInt(NOTES2.length());
 		  String k = NOTES2.substring(rnd, rnd + 1);
 	      char kc = k.charAt(0);
-	      str += kc;
+	      str.append(kc);
 	      ++cur;
 	  }
 	  
-	  return str;
+	  return str.toString();
 	    	
   }
   
@@ -488,7 +489,7 @@ public class Qwopper {
    */
   public static String makeRealisticRandomString(int duration) {
     Random random = new Random(System.currentTimeMillis());
-    String str = "";
+    StringBuilder str = new StringBuilder();
     boolean[] down = { false, false, false, false };
     boolean[] justDown = { false, false, false, false };
     boolean[] justUp = { false, false, false, false };
@@ -522,25 +523,25 @@ public class Qwopper {
         }
       }
 
-      str += kc;
+      str.append(kc);
     }
 
     // Make sure all keys are released at the end (maybe without a delay)
     for (int i = 0; i < down.length; ++i) {
       if (down[i]) {
-        str += indexKey(i);
+        str.append(indexKey(i));
       }
     }
-    return str;
+    return str.toString();
   }
 
-  private Robot rob;
+  private final Robot rob;
 
   private int[] origin;
 
   private boolean finished;
 
-  private Log log;
+  private final Log log;
 
   private long start;
 
@@ -552,7 +553,7 @@ public class Qwopper {
 
   private String string;
 
-  private int delay = DELAY;
+  private final int delay = DELAY;
 
   private int nbRuns;
 

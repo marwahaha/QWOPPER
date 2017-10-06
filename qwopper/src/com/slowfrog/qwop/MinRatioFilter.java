@@ -2,9 +2,9 @@ package com.slowfrog.qwop;
 
 public class MinRatioFilter implements IFilter<Individual> {
 
-  private float minRatio;
+  private final float minRatio;
 
-  private IFilter<RunInfo> filter;
+  private final IFilter<RunInfo> filter;
 
   public MinRatioFilter(IFilter<RunInfo> filter) {
     this(filter, 0.5f);
