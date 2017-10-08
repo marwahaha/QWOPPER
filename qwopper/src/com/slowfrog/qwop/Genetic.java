@@ -32,7 +32,7 @@ import java.util.Random;
 
 public class Genetic {
   //private static final String NOTES = "QWOPqwop++";  //Encoding 1  
-  private static final String NOTES = "ABCDEFGHIJKLMNOP"; //Encoding 2
+//  private static final String NOTES = "ABCDEFGHIJKLMNOP"; //Encoding 2
   private static final int RUN_TIME_LIMIT_MILLIS = 60000;
   private static final String EVO_LOG_FILENAME = "evo_log_2013_26_1min_RND.txt";
   private static final String GEN_LOG_FILENAME = "gen_log_2013_26_1min_RND.txt";
@@ -290,9 +290,9 @@ public class Genetic {
 			  String child1 = current.str.substring(0, p1) + mate.str.substring(p1, p2) + current.str.substring(p2);
 			  String child2 = mate.str.substring(0, p1) + current.str.substring(p1, p2) + mate.str.substring(p2);			  
 			  
-			  //mutate children here, before testing them for fitness		  
-			  mutate(child1);
-			  mutate(child2);
+			  //mutate children here, before testing them for fitness
+//			  mutate(child1);
+//			  mutate(child2);
 			  
 			  //test each child
 			  float child1Fitness = testChild(qwopper, child1, MAX_RUNS);
@@ -331,7 +331,7 @@ public class Genetic {
 	  return newPop;	  
 	  
   }
-  
+  /*  
   /** Randomly choose three individuals from the pop, select the best two for crossover,
    *  repeat until a new population of the same size has been generated 
    *  
@@ -478,14 +478,14 @@ public class Genetic {
 	  
   }*/  
   
-  private String mutate(String runner){
-	  Random random = new Random(System.currentTimeMillis());
-	  int mutateLocation = random.nextInt(runner.length());
-	  int mutationIndex = random.nextInt(NOTES.length());
-      String theMutation = NOTES.substring(mutationIndex, mutationIndex + 1);
-      
-      return runner.substring(0, mutateLocation) + theMutation + runner.substring(mutateLocation + 1);
-  }  
+//  private String mutate(String runner){
+//	  Random random = new Random(System.currentTimeMillis());
+//	  int mutateLocation = random.nextInt(runner.length());
+//	  int mutationIndex = random.nextInt(NOTES.length());
+//      String theMutation = NOTES.substring(mutationIndex, mutationIndex + 1);
+//      
+//      return runner.substring(0, mutateLocation) + theMutation + runner.substring(mutateLocation + 1);
+//  }  
 
   private void readPopulation(String filename) {
     try {
