@@ -4,12 +4,12 @@ public class RunInfo {
 
   private static final long serialVersionUID = 1L;
 
-  public final String string;
-  public final int delay;
-  public final boolean crashed;
-  public final boolean stopped;
-  public final long duration;
-  public final float distance;
+  protected final String string;
+  protected final int delay;
+  protected final boolean crashed;
+  protected final boolean stopped;
+  protected final long duration;
+  protected final float distance;
 
   public RunInfo(String pstring, int pdelay, boolean pcrashed,
       boolean pstopped, long pduration, float pdistance) {
@@ -32,6 +32,13 @@ public class RunInfo {
            this.getResultCode();
   }
   
+  public String toString() {
+    return ("Ran " + distance + "m during " + duration + "ms") +
+           (this.crashed ? " and crashed"
+                        : this.stopped ? " and was stopped"
+                                      : this.distance > 100 ? " and won" : "");
+  }
+  
   public static RunInfo unmarshal(String line) {
     String[] parts = line.split("\\|");
     if (parts[0].equals("RunInfo#1")) {
@@ -49,10 +56,5 @@ public class RunInfo {
     }
   }
 
-  public String toString() {
-    return ("Ran " + distance + "m during " + duration + "ms") +
-           (this.crashed ? " and crashed"
-                        : this.stopped ? " and was stopped"
-                                      : this.distance > 100 ? " and won" : "");
-  }
+
 }

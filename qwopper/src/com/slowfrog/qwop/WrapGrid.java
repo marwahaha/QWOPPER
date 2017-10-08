@@ -1,17 +1,18 @@
 package com.slowfrog.qwop;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 /*
  * This class describing a borderless "wrap-around" 2D array was modified from 
  * 		http://stackoverflow.com/questions/9058217/2d-array-class-in-java-with-wrap-around-edges
  */
-
 public class WrapGrid<T> {
 
-	final ArrayList<T> array; // holds objects in grid
+	final List<T> array; // holds objects in grid
 	final int rows;  // number of rows in grid
 	final int cols;  // number of cols in grid
-	final int length; // total number of objects in grid - maybe just get this from ArrayList
+	private final int length; // total number of objects in grid - maybe just get this from ArrayList
 	final int conNum; // number of connections for each point on grid (either 4 or 8)
 	
 	// constructor

@@ -38,10 +38,10 @@ public class Genetic {
   private static final String GEN_LOG_FILENAME = "gen_log_2013_26_1min_RND.txt";
   private static final int MAX_RUNS = 1;
   private static final int MAX_GENERATIONS = 100;
-  private static final int POPULATION_MAX_ROWS = 5;
-  private static final int POPULATION_MAX_COLS = 6;
-  private static final int POPULATION_MAX_SIZE = POPULATION_MAX_ROWS + POPULATION_MAX_COLS;
-  private static final int POPULATION_MAX_CONNECTIONS = 4;
+  public static final int POPULATION_MAX_ROWS = 5;
+  public static final int POPULATION_MAX_COLS = 6;
+  public static final int POPULATION_MAX_SIZE = POPULATION_MAX_ROWS + POPULATION_MAX_COLS;
+  public static final int POPULATION_MAX_CONNECTIONS = 4;
   private static final Log LOG = new ConsoleLog();
 
   /**
