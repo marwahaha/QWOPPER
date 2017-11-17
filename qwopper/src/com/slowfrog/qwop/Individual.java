@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Individual {
 
-  public final String str;
-  public List<RunInfo> runs;
-  public float fitness;
+  protected final String str;
+  protected List<RunInfo> runs;
+  protected float fitness;
 
   public Individual(String pstr, List<RunInfo> pruns) 
   {
@@ -23,6 +23,7 @@ public class Individual {
   {
 	  this.str = pstr;
 	  this.fitness = fit;
+	  this.runs = new ArrayList<RunInfo>();
   }
   
 }
