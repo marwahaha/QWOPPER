@@ -21,13 +21,13 @@ import java.util.Random;
 /**
  * This class will try to play QWOP and evolve some way to play well...
  * hopefully. Game at {@link http://foddy.net/Athletics.html}
- * 
+ *
  * @author SlowFrog
  */
 public class Qwopper {
 
   /** Tolerance for color comparison. */
-  private static final int RGB_TOLERANCE = 3;
+  private static final int RGB_TOLERANCE = 30;
 
   /** Unit delay in milliseconds when playing a 'string' */
   private static final int DELAY = 150;
