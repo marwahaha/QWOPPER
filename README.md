@@ -1,4 +1,4 @@
-# QWOPPER: programmatic interface for [QWOP](http://www.foddy.net/Athletics.html)
+# QWOPPER: a programmatic interface for [QWOP](http://www.foddy.net/Athletics.html)
 
 The intended goal of the project is to write a bot able to play [QWOP](http://www.foddy.net/Athletics.html).
 
@@ -25,7 +25,7 @@ See the [Youtube video here](https://www.youtube.com/watch?v=eWxFI3NHtT8) or [do
 ### 2019, [Kunal Marwaha](http://kunalmarwaha.com/)
 So far, I'm just trying to make it work :-)
 
-[Code is here](https://github.com/marwahaha/qwopper-1).
+[Code is here](https://github.com/marwahaha/QWOPPER).
 
 ## Usage
 1. Install Apache Ant.
@@ -35,8 +35,8 @@ So far, I'm just trying to make it work :-)
 
 2. Clone project.
 ```
-git clone https://github.com/marwahaha/Qwopper-1.git qwopper-pizza
-cd qwopper-pizza
+git clone https://github.com/marwahaha/QWOPPER.git
+cd QWOPPER
 ```
 
 3. Make the JAR file by running `ant package` (or simply `ant`).
@@ -48,7 +48,7 @@ java -jar dist/qwopper.jar
 
 5. Resize the graphical interface to half-screen, and open [QWOP](http://www.foddy.net/Athletics.html) in the other half screen.
 
-### Hints
+## Hints
 * See all ant tasks with `ant -p`
 
 More details coming soon!
