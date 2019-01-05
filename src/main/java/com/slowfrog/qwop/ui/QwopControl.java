@@ -127,7 +127,7 @@ public class QwopControl extends JFrame {
     }
 
     private void eventHandlerGoRandom(ActionEvent _ev) {
-        String dna = Qwopper.makeRealisticRandomString2(10 + random.nextInt(21));
+        String dna = Qwopper.makeRealisticRandomString2(4 + random.nextInt(8));
         sequence.setText(dna);
     }
 
