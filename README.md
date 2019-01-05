@@ -30,12 +30,12 @@ I'm trying to make this application work with modern tooling. I'm also trying to
 ## Using
 1. Clone project: `git clone https://github.com/marwahaha/QWOPPER.git` (or [download the ZIP](https://github.com/marwahaha/QWOPPER/archive/master.zip))
 2. Navigate into the directory: `cd QWOPPER`
-3. Make the JAR file: `./gradlew build` (`gradlew.bat build` on Windows).
-4. Run the JAR, opening a graphical interface: `java -jar build/libs/QWOPPER.jar `
-5. Resize the graphical interface to half-screen, and open [QWOP](http://www.foddy.net/Athletics.html) in the other half screen.
+3. Launch the graphical interface: `./gradlew run` (`gradlew.bat run` on Windows).
+4. Resize the graphical interface to half-screen, and open [QWOP](http://www.foddy.net/Athletics.html) in the other half screen.
 
 ## Contributing tips
 * You'll need to [install Gradle](https://gradle.org/install/).
+* You can run the JAR directly with `java -jar build/libs/QWOPPER.jar`.
 * Lots of [Gradle tips here](https://github.com/shekhargulati/gradle-tips).
 
 More details coming soon!

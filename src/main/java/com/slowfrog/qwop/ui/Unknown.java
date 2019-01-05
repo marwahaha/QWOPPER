@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 
-public class Main {
+public class Unknown {
 
     private static final Log LOG = new ConsoleLog();
 
