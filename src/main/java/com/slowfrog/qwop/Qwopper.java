@@ -1,8 +1,3 @@
-/*
- * Copyright SlowFrog 2011
- *
- * License granted to anyone for any kind of purpose as long as you don't sue me.
- */
 package com.slowfrog.qwop;
 
 import com.slowfrog.qwop.ui.QwopControl;
