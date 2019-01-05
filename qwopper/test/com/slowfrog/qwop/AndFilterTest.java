@@ -9,31 +9,21 @@ public class AndFilterTest {
 
     @Test
     public void test() {
-        IFilter<String> trueFilter = new IFilter<String>() {
-            @Override
-            public boolean matches(String t) {
-                return true;
-            }
-        };
+        IFilter<String> trueFilter = t -> true;
 
-        IFilter<String> falseFilter = new IFilter<String>() {
-            @Override
-            public boolean matches(String t) {
-                return false;
-            }
-        };
+        IFilter<String> falseFilter = t -> false;
 
-        AndFilter<String> trueAndFalse = new AndFilter<String>(trueFilter, falseFilter);
+        AndFilter<String> trueAndFalse = new AndFilter<>(trueFilter, falseFilter);
         assertFalse(trueAndFalse.matches(null));
 
-        AndFilter<String> falseAndTrue = new AndFilter<String>(trueFilter, falseFilter);
+        AndFilter<String> falseAndTrue = new AndFilter<>(trueFilter, falseFilter);
         assertFalse(falseAndTrue.matches(null));
 
 
-        AndFilter<String> falseAndFalse = new AndFilter<String>(falseFilter, falseFilter);
+        AndFilter<String> falseAndFalse = new AndFilter<>(falseFilter, falseFilter);
         assertFalse(falseAndFalse.matches(null));
 
-        AndFilter<String> trueAndTrue = new AndFilter<String>(trueFilter, trueFilter);
+        AndFilter<String> trueAndTrue = new AndFilter<>(trueFilter, trueFilter);
         assertTrue(trueAndTrue.matches(null));
     }
 

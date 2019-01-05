@@ -22,7 +22,7 @@ public class MinRatioFilterTest {
 
         RunInfo notCrashedInfo = new RunInfo(null, 0, false, true, 0, 0);
 
-        List<RunInfo> runs = new ArrayList<RunInfo>();
+        List<RunInfo> runs = new ArrayList<>();
         runs.add(notCrashedInfo);
         runs.add(crashedInfo);
 
@@ -30,14 +30,14 @@ public class MinRatioFilterTest {
         individual = new Individual(null, runs);
         assertTrue("equal ratios", fixture.matches(individual));
 
-        runs = new ArrayList<RunInfo>();
+        runs = new ArrayList<>();
         runs.add(notCrashedInfo);
 
         individual = new Individual(null, runs);
         assertFalse("all pass", fixture.matches(individual));
 
 
-        runs = new ArrayList<RunInfo>();
+        runs = new ArrayList<>();
         runs.add(crashedInfo);
 
         individual = new Individual(null, runs);

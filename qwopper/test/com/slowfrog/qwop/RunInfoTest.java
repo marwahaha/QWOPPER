@@ -3,6 +3,8 @@ package com.slowfrog.qwop;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class RunInfoTest {
 
@@ -12,8 +14,8 @@ public class RunInfoTest {
 
         assertEquals("initTest", info.string);
         assertEquals(3, info.delay);
-        assertEquals(true, info.crashed);
-        assertEquals(false, info.stopped);
+        assertTrue(info.crashed);
+        assertFalse(info.stopped);
         assertEquals(14, info.duration);
         assertEquals(2.5f, info.distance, 0.0f);
     }
@@ -29,8 +31,8 @@ public class RunInfoTest {
         RunInfo infoOut = RunInfo.unmarshal(marshal);
         assertEquals("initTest", infoOut.string);
         assertEquals(3, infoOut.delay);
-        assertEquals(true, infoOut.crashed);
-        assertEquals(false, infoOut.stopped);
+        assertTrue(infoOut.crashed);
+        assertFalse(infoOut.stopped);
         assertEquals(14, infoOut.duration);
         assertEquals(2.5f, infoOut.distance, 0.0f);
     }
@@ -46,8 +48,8 @@ public class RunInfoTest {
         RunInfo infoOut = RunInfo.unmarshal(marshal);
         assertEquals("initTest", infoOut.string);
         assertEquals(3, infoOut.delay);
-        assertEquals(false, infoOut.crashed);
-        assertEquals(true, infoOut.stopped);
+        assertFalse(infoOut.crashed);
+        assertTrue(infoOut.stopped);
         assertEquals(14, infoOut.duration);
         assertEquals(2.5f, infoOut.distance, 0.0f);
     }
