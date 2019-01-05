@@ -52,7 +52,7 @@ public class Unknown {
         for (int i = 0; i < count; ++i) {
             LOGGER.info("Run #{}.{}", round, i);
             qwop.startGame();
-            RunInfo info = qwop.playOneGame(str, 30000);
+            RunInfo info = qwop.playOneGame(str, 30000, 20);
             LOGGER.info(info.toString());
             LOGGER.info(info.marshal());
             saveRunInfo("runs2.txt", info);

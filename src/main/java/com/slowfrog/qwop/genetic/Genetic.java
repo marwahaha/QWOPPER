@@ -194,7 +194,7 @@ public class Genetic {
 
     private RunInfo playGame(Qwopper qwop, String str) {
         qwop.startGame();
-        RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
+        RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS, 16);
         LOGGER.info(info.toString());
         LOGGER.info(info.marshal());
         evoOut.println(info.toString());

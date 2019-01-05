@@ -463,11 +463,10 @@ public class Qwopper {
         throw new RuntimeException("Could not find origin after browser reload");
     }
 
-    private String captureDistance() {
-        // TODO document that you might need to tune this box to pick up on digits
+    private String captureDistance(int yOffset) {
         Rectangle distRect = new Rectangle();
         distRect.x = origin[0] + 200;
-        distRect.y = origin[1] + 16;
+        distRect.y = origin[1] + yOffset;
         distRect.width = 200;
         distRect.height = 30;
         this.capture = rob.createScreenCapture(distRect);
@@ -481,9 +480,9 @@ public class Qwopper {
         return digits;
     }
 
-    public float captureDistanceAsFloat() {
+    public float captureDistanceAsFloat(int yOffset) {
         try {
-            return Float.parseFloat(captureDistance());
+            return Float.parseFloat(captureDistance(yOffset));
         } catch (NumberFormatException e) {
             if (qwopControl != null) {
                 qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
@@ -492,7 +491,7 @@ public class Qwopper {
         }
     }
 
-    public RunInfo playOneGame(String str, long maxDuration) {
+    public RunInfo playOneGame(String str, long maxDuration, int yOffsetDistanceCapture) {
         if (qwopControl != null) {
             qwopControl.log("Playing " + str);
         }
@@ -510,7 +509,7 @@ public class Qwopper {
 
         long end = System.currentTimeMillis();
         doWait(1000);
-        float distance = captureDistanceAsFloat();
+        float distance = captureDistanceAsFloat(yOffsetDistanceCapture);
 
         RunInfo info = new RunInfo(str, DELAY, !stop && distance < 100, stop, end - start, distance);
 

@@ -37,6 +37,8 @@ public class QwopControl extends JFrame {
     private JButton goMultiple;
     private JButton stop;
 
+    private JSpinner yOffsetSpinner;
+
     public QwopControl() throws AWTException {
         super("QWOP control");
         LOGGER.info("Hello world!");
@@ -68,7 +70,15 @@ public class QwopControl extends JFrame {
 
         JPanel top = new JPanel();
         top.setLayout(new BorderLayout());
-        top.add(new JLabel("Current: "), BorderLayout.WEST);
+
+        JPanel topWest = new JPanel();
+        SpinnerModel model = new SpinnerNumberModel(16, 6, 26, 1);
+        yOffsetSpinner = new JSpinner(model);
+        topWest.add(new JLabel("yOffset: "));
+        topWest.add(yOffsetSpinner);
+        topWest.add(new JLabel("Current: "));
+        top.add(topWest, BorderLayout.WEST);
+
         sequence = new JTextField();
         top.add(sequence, BorderLayout.CENTER);
         JPanel bottom = new JPanel();
@@ -158,7 +168,7 @@ public class QwopControl extends JFrame {
         String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
         LOGGER.debug("QwopControl Timer! duration {}", duration);
 
-        float runDistance = qwopper.captureDistanceAsFloat();
+        float runDistance = qwopper.captureDistanceAsFloat((int) yOffsetSpinner.getValue());
         updateDistanceDisplay();
         LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);
 
@@ -194,7 +204,7 @@ public class QwopControl extends JFrame {
             rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
             timer.start();
 
-            RunInfo runInfo = qwopper.playOneGame(dna, maxTimePerGame);
+            RunInfo runInfo = qwopper.playOneGame(dna, maxTimePerGame, (int) yOffsetSpinner.getValue());
             log(runInfo.toString());
 
             if (!qwopper.isRunning()) {

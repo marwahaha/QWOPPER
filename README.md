@@ -34,6 +34,8 @@ I may or may not use genetic algorithms, as I have some idea of what "walking" l
 2. Navigate into the directory: `cd QWOPPER`
 3. Launch the graphical interface: `./gradlew run` (`gradlew.bat run` on Windows).
 4. Resize the graphical interface to half-screen, and open [QWOP](http://www.foddy.net/Athletics.html) in the other half screen.
+5. Click *Find game area*. Enter a Gait "DNA" or press *Random*. Press *Run* and watch!
+6. Getting `*****  captureDistance() returned empty string`? Adjust the yOffset value.
 
 ## Gait "DNA"
 The gait "DNA" is a string of letters A-P. Each letter encodes which of `[Q, W, O, P]` are pressed, each held for 150ms. Each of 2\*2\*2\*2=16 options are listed below.
