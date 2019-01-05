@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Random;
@@ -33,7 +34,7 @@ public class QwopControl extends JFrame {
     private JButton init;
     private JButton goRandom;
     private JButton go;
-    private JButton go10;
+    private JButton goMultiple;
     private JButton stop;
 
     public QwopControl() throws AWTException {
@@ -57,12 +58,12 @@ public class QwopControl extends JFrame {
         init = new JButton("Find game area");
         goRandom = new JButton("Random...");
         go = new JButton("Run, Qwop, run!");
-        go10 = new JButton("Run 3 times, 5s/run max");
+        goMultiple = new JButton("Run 3 times, 5s/run max");
         stop = new JButton("Stop");
         bar.add(init);
         bar.add(goRandom);
         bar.add(go);
-        bar.add(go10);
+        bar.add(goMultiple);
         bar.add(stop);
 
         JPanel top = new JPanel();
@@ -92,66 +93,15 @@ public class QwopControl extends JFrame {
         c.add(logScroll, BorderLayout.CENTER);
 
         // Add event handlers
-        init.addActionListener(ev -> {
-            try {
-                int[] origin = qwopper.findRealOrigin();
-                LOGGER.info("Origin at ({},{})", origin[0], origin[1]);
-                log("Origin at (" + origin[0] + "," + origin[1] + ")");
+        init.addActionListener(this::eventHandlerInit);
+        goRandom.addActionListener(this::eventHandlerGoRandom);
+        go.addActionListener(this::eventHandlerGo);
+        goMultiple.addActionListener(this::eventHandlerGoMultiple);
+        stop.addActionListener(this::eventHandlerStop);
 
-            } catch (Exception e) {
-                LOGGER.error("Error finding origin", e);
-                log("Error finding origin: " + e.getMessage());
-            }
-        });
-
-        goRandom.addActionListener(ev -> {
-            String dna = Qwopper.makeRealisticRandomString2(10 + random.nextInt(21));
-            sequence.setText(dna);
-        });
-
-        go.addActionListener(ev -> {
-            launchGames(sequence.getText(), 1, 0);
-            go.setEnabled(false);
-            go10.setEnabled(false);
-        });
-
-        go10.addActionListener(ev -> {
-            launchGames(sequence.getText(), 3, 5000);
-            go.setEnabled(false);
-            go10.setEnabled(false);
-        });
-
-        stop.addActionListener(ev -> {
-            qwopper.stop();
-            go.setEnabled(true);
-            go10.setEnabled(true);
-            timer.stop();
-        });
-
-        timer = new Timer(500, ev -> {
-            LOGGER.debug("QwopControl Timer!");
-            long now = System.currentTimeMillis();
-            long duration = (long) Math.max(((double) (now - startTime)) / ((double) 1000), 0.1);
-            LOGGER.debug("QwopControl Timer! duration {}", duration);
-
-            String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
-
-            float runDistance = qwopper.captureDistanceAsFloat();
-            updateDistanceDisplay();
-            LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);
-
-            float speed = (runDistance / duration);
-            DecimalFormatSymbols symbols = new DecimalFormat()
-                    .getDecimalFormatSymbols();
-            symbols.setDecimalSeparator('.');
-            DecimalFormat df = new DecimalFormat("0.000", symbols);
-            String speedStr = df.format(speed);
-            LOGGER.debug("QwopControl Timer! speedStr {}", speedStr);
-
-            distance3.setText(runDistance + "m, " + time + ", " + speedStr + "m/s");
-        });
-        timer.setDelay(250);
+        timer = new Timer(500, this::createTimer);
     }
+
 
     public static void main(String[] args) {
         try {
@@ -162,6 +112,64 @@ public class QwopControl extends JFrame {
         } catch (Exception e) {
             LOGGER.error("Error", e);
         }
+    }
+
+    private void eventHandlerInit(ActionEvent _ev) {
+        try {
+            int[] origin = qwopper.findRealOrigin();
+            LOGGER.info("Origin at ({},{})", origin[0], origin[1]);
+            log("Origin at (" + origin[0] + "," + origin[1] + ")");
+
+        } catch (Exception e) {
+            LOGGER.error("Error finding origin", e);
+            log("Error finding origin: " + e.getMessage());
+        }
+    }
+
+    private void eventHandlerGoRandom(ActionEvent _ev) {
+        String dna = Qwopper.makeRealisticRandomString2(10 + random.nextInt(21));
+        sequence.setText(dna);
+    }
+
+    private void eventHandlerGo(ActionEvent _ev) {
+        launchGames(sequence.getText(), 1, 0);
+        go.setEnabled(false);
+        goMultiple.setEnabled(false);
+    }
+
+    private void eventHandlerGoMultiple(ActionEvent _ev) {
+        launchGames(sequence.getText(), 3, 5000);
+        go.setEnabled(false);
+        goMultiple.setEnabled(false);
+    }
+
+    private void eventHandlerStop(ActionEvent _ev) {
+        qwopper.stop();
+        go.setEnabled(true);
+        goMultiple.setEnabled(true);
+        timer.stop();
+    }
+
+    private void createTimer(ActionEvent _ev) {
+        LOGGER.debug("QwopControl Timer!");
+        long now = System.currentTimeMillis();
+
+        long duration = (long) Math.max(((double) (now - startTime)) / ((double) 1000), 0.1);
+        String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
+        LOGGER.debug("QwopControl Timer! duration {}", duration);
+
+        float runDistance = qwopper.captureDistanceAsFloat();
+        updateDistanceDisplay();
+        LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);
+
+        float speed = (runDistance / duration);
+        DecimalFormatSymbols symbols = new DecimalFormat().getDecimalFormatSymbols();
+        symbols.setDecimalSeparator('.');
+        DecimalFormat df = new DecimalFormat("0.000", symbols);
+        String speedStr = df.format(speed);
+        LOGGER.debug("QwopControl Timer! speedStr {}", speedStr);
+
+        distance3.setText(runDistance + "m, " + time + ", " + speedStr + "m/s");
     }
 
     private void updateDistanceDisplay() {
@@ -193,7 +201,7 @@ public class QwopControl extends JFrame {
                 timer.stop();
                 if (--gamesLeft == 0) {
                     go.setEnabled(true);
-                    go10.setEnabled(true);
+                    goMultiple.setEnabled(true);
                 } else {
                     nextGame(sequence.getText(), maxTimePerGame);
                 }
