@@ -1,6 +1,6 @@
 <project name="qwopper" default="package">
 
-  <target name="init" 
+  <target name="init"
           description="Common initialization (properties, directories..)">
     <property name="srcdir" value="src" />
     <property name="testsrcdir" value="test" />
@@ -21,10 +21,37 @@
 
   <target name="compile" description="Compile main sources" depends="init">
     <mkdir dir="${classesdir}" />
-    <javac srcdir="${srcdir}" destdir="${classesdir}" includes="**/*.java" 
+    <javac srcdir="${srcdir}" destdir="${classesdir}" includes="**/*.java"
            debug="on" debuglevel="lines,source"/>
   </target>
-  
+
+  <target name="compileTest" depends="compile" description="compile jUnit Test cases ">
+    <javac srcdir="${testsrcdir}" destdir="${distdir}" includeantruntime="true" nowarn="yes" debug="true">
+      <classpath>
+        <pathelement location="${classesdir}" />
+        <pathelement location="lib/junit-4.13-beta-1.jar"/>
+        <pathelement location="lib/hamcrest-all-1.3.jar"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="test" depends="compileTest">
+    <junit haltonerror="yes" haltonfailure="yes">
+      <classpath>
+        <pathelement location="${classesdir}" />
+        <pathelement location="${distdir}" />
+        <pathelement location="lib/junit-4.13-beta-1.jar"/>
+        <pathelement location="lib/hamcrest-all-1.3.jar"/>
+      </classpath>
+      <batchtest>
+        <fileset dir="${testsrcdir}">
+          <include name="**/*Test*" />
+        </fileset>
+      </batchtest>
+      <formatter type="brief" usefile="false"/>
+    </junit>
+  </target>
+
   <target name="package"
           description="Compile and make a runnable jar"
           depends="compile">
@@ -34,7 +61,7 @@
     <tstamp>
       <format property="build_date" pattern="yyyy-MM-dd HH:mm:ss" />
     </tstamp>
-      
+
     <copy todir="${classesdir}" file="${srcdir}/META-INF/MANIFEST.MF">
       <filterset>
         <filter token="BUILD_DATE" value="${build_date}" />

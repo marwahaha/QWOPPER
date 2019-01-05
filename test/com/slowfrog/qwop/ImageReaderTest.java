@@ -10,7 +10,7 @@ import java.io.IOException;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 
-public class TestImageReader {
+public class ImageReaderTest {
 
     @Test
     public void readImages() throws IOException {
