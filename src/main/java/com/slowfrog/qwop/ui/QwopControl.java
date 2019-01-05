@@ -126,7 +126,7 @@ public class QwopControl extends JFrame {
             timer.stop();
         });
 
-        timer = new Timer(1000, ev -> {
+        timer = new Timer(500, ev -> {
             LOGGER.debug("QwopControl Timer!");
             long now = System.currentTimeMillis();
             long duration = (long) Math.max(((double) (now - startTime)) / ((double) 1000), 0.1);

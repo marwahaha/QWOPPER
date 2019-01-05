@@ -15,13 +15,12 @@ import java.util.Random;
  * This class will try to play QWOP and evolve some way to play well...
  * hopefully. Game at {@link http://foddy.net/Athletics.html}
  *
- * @author SlowFrog
  */
 public class Qwopper {
 
     /**
      * Tolerance for color comparison.
-     *         // TODO document that you might need to tune this to pick up game
+     * // TODO document that you might need to tune this to pick up game
      */
     private static final int RGB_TOLERANCE = 30;
 
@@ -29,11 +28,6 @@ public class Qwopper {
      * Unit delay in milliseconds when playing a 'string'
      */
     private static final int DELAY = 150;
-
-    /**
-     * Interval between two speed checks.
-     */
-    private static final int CHECK_INTERVAL = 1000;
 
     /**
      * Note    	Input
@@ -59,17 +53,13 @@ public class Qwopper {
     /**
      * Number of consecutive runs before we trigger a reload of the browser to
      * keep CPU and memory usage reasonable.
-     *
-     * TODO tune this parameter
      */
-    private static final int MAX_RUNS_BETWEEN_RELOAD = 100;
+    private static final int MAX_RUNS_BETWEEN_RELOAD = 40;
     private static final Logger LOGGER = LoggerFactory.getLogger(Qwopper.class);
     private final Robot rob;
     private QwopControl qwopControl;
     private int[] origin;
     private boolean finished;
-    private long start;
-    private long nextCheck;
     private long timeLimit;
     private boolean stop;
     private String string;
@@ -345,11 +335,6 @@ public class Qwopper {
                     LOGGER.warn("Unknown 'note': {}", c);
             }
 
-            //pause after each input
-            if (System.currentTimeMillis() > this.nextCheck) {
-                checkSpeed();
-            }
-
             int waitTime = (int) ((lastTick + DELAY) - System.currentTimeMillis());
             if (waitTime > 0) {
                 doWait(waitTime);
@@ -366,29 +351,6 @@ public class Qwopper {
                 return;
             }
         }
-    }
-
-    private void checkSpeed() {
-        this.nextCheck += CHECK_INTERVAL;
-        String distStr = captureDistance();
-        float dist;
-        try {
-            dist = Float.parseFloat(distStr);    //parsing an empty string throws exception
-        } catch (NumberFormatException e) {
-            if (qwopControl != null) {
-                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0");
-            }
-            dist = 0;
-        }
-
-
-        long dur = System.currentTimeMillis() - this.start;
-        if (dur == 0) {
-            dur = 1;
-        }
-        // not used
-        float speed = (dist * 1000) / dur;
-        //qwopControl.logf("%.1fm in %ds: speed=%.3f\n", dist, (dur / 1000), speed);
     }
 
     public int[] getOrigin() {
@@ -446,7 +408,7 @@ public class Qwopper {
 
     /**
      * Start a game.
-     *
+     * <p>
      * Changes stop=false.
      * Clicks into the game and restarts it.
      */
@@ -492,10 +454,17 @@ public class Qwopper {
         // Click out of the flash rectangle to give focus to the browser
         clickAt(rob, origin[0] - 5, origin[1] - 5);
 
-        // Reload (F5)
+        // Reload (Windows: F5)
         rob.keyPress(KeyEvent.VK_F5);
         doWait(20);
         rob.keyRelease(KeyEvent.VK_F5);
+
+        // Reload (Mac: CMD-R)
+        rob.keyPress(KeyEvent.VK_META);
+        rob.keyPress(KeyEvent.VK_R);
+        doWait(20);
+        rob.keyRelease(KeyEvent.VK_META);
+        rob.keyRelease(KeyEvent.VK_R);
 
         // Wait some time and try to find the window again
         for (int i = 0; i < 10; ++i) {
@@ -529,15 +498,13 @@ public class Qwopper {
     }
 
     public RunInfo playOneGame(String str, long maxDuration) {
-
         if (qwopControl != null) {
             qwopControl.log("Playing " + str);
         }
         doWait(500); // 0.5s wait to be sure QWOP is ready to run
-        this.start = System.currentTimeMillis();
-        this.nextCheck = this.start + CHECK_INTERVAL;
+        long start = System.currentTimeMillis();
         if (maxDuration > 0) {
-            this.timeLimit = this.start + maxDuration;
+            this.timeLimit = start + maxDuration;
         } else {
             this.timeLimit = 0;
         }
@@ -545,7 +512,6 @@ public class Qwopper {
             playString2(str);
         }
         stopRunning();
-        checkSpeed();
 
         if (++nbRuns == MAX_RUNS_BETWEEN_RELOAD) {
             nbRuns = 0;
@@ -560,7 +526,7 @@ public class Qwopper {
         String cap = captureDistance();
         float distance;
         try {
-            distance = Float.parseFloat(cap);    //parsing an empty string throws exception
+            distance = Float.parseFloat(cap);
         } catch (NumberFormatException e) {
             if (qwopControl != null) {
                 qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
@@ -570,12 +536,9 @@ public class Qwopper {
 
         RunInfo info;
         if (stop) {
-            info = new RunInfo(str, DELAY, false, true, end - this.start,
-                    distance);
+            info = new RunInfo(str, DELAY, false, true, end - start, distance);
         } else {
-            info = new RunInfo(str, DELAY, distance < 100, false, end -
-                    this.start,
-                    distance);
+            info = new RunInfo(str, DELAY, distance < 100, false, end - start, distance);
         }
         return info;
     }
