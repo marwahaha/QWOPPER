@@ -81,7 +81,7 @@ class ImageReader {
                 }
             }
             int match = (sum * 100) / (w * rect.height);
-             LOGGER.info("comp({})={}: {}\n", d, sum, match);
+             LOGGER.debug("comp({})={}: {}", d, sum, match);
             if ((bestMatch == -1) || (match > bestMatch)) {
                 bestMatch = match;
                 ret = d;

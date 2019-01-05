@@ -183,7 +183,7 @@ public class Genetic {
     private void testString(Qwopper qwop, String str, int count, String filename) {
         fitnessSum = 0;
         for (int i = 0; i < count; ++i) {
-            LOGGER.info("Run #{}\n", i);
+            LOGGER.info("Run #{}", i);
             RunInfo info = playGame(qwop, str);
             fitnessSum += info.distance;
             currentRunnerCrashed = info.crashed;
@@ -395,7 +395,7 @@ public class Genetic {
 			      }
 			    }
 
-		  LOGGER.info("Crossover: Parents selected\n");
+		  LOGGER.info("Crossover: Parents selected");
 		  LOGGER.info("1: " + sel[0]);
 		  LOGGER.info("2: " + sel[1]);
 

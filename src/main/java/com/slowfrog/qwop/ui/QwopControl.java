@@ -86,15 +86,14 @@ public class QwopControl extends JFrame {
         logOutput = new JTextArea(20, 60);
         logOutput.setEditable(false);
         JScrollPane logScroll = new JScrollPane(logOutput);
-        logScroll
-                .setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        logScroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         c.add(logScroll, BorderLayout.CENTER);
 
         // Add event handlers
         init.addActionListener(ev -> {
             try {
                 int[] origin = qwopper.findRealOrigin();
-                LOGGER.info("Origin at {},{}", origin[0], origin[1]);
+                LOGGER.info("Origin at ({},{})", origin[0], origin[1]);
                 log("Origin at (" + origin[0] + "," + origin[1] + ")");
 
             } catch (Exception e) {

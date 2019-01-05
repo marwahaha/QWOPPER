@@ -50,7 +50,7 @@ public class Unknown {
 
     private static void testString(Qwopper qwop, String str, int count, int round) {
         for (int i = 0; i < count; ++i) {
-            LOGGER.info("Run #{}.{}\n", round, i);
+            LOGGER.info("Run #{}.{}", round, i);
             qwop.startGame();
             RunInfo info = qwop.playOneGame(str, 30000);
             LOGGER.info(info.toString());

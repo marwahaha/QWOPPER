@@ -64,7 +64,7 @@ public class Qwopper {
      * Number of consecutive runs before we trigger a reload of the browser to
      * keep CPU and memory usage reasonable.
      */
-    private static final int MAX_RUNS_BETWEEN_RELOAD = 40;
+    private static final int MAX_RUNS_BETWEEN_RELOAD = 1;
     private static final Logger LOGGER = LoggerFactory.getLogger(Qwopper.class);
     private final Robot rob;
     private QwopControl qwopControl;
@@ -206,6 +206,7 @@ public class Qwopper {
         for (int x = 0; x < dim.width; x += 4) {
             for (int y = 0; y < dim.height; y += 4) {
                 if (matchesBlueBorder(shot, x, y)) {
+                    LOGGER.info("found blue border: ({}, {})", x, y);
                     int[] corner = slideTopLeft(shot, x, y);
                     return new int[]{corner[0] - 124, corner[1] - 103};
                 }
@@ -343,7 +344,7 @@ public class Qwopper {
                     break;
 
                 default:
-                    LOGGER.info("Unknown 'note': {}", c);
+                    LOGGER.warn("Unknown 'note': {}", c);
             }
 
             //pause after each input
@@ -356,7 +357,7 @@ public class Qwopper {
                 doWait(waitTime);
             }
             long newTick = System.currentTimeMillis();
-            LOGGER.info("wait={}ms diff={}ms", waitTime, newTick - lastTick);
+            LOGGER.debug("wait={}ms diff={}ms", waitTime, newTick - lastTick);
             lastTick = newTick;
             if ((this.timeLimit != 0) && (newTick > this.timeLimit)) {
                 this.stop = true;
