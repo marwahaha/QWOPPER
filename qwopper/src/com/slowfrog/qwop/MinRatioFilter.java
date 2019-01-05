@@ -2,34 +2,36 @@ package com.slowfrog.qwop;
 
 public class MinRatioFilter implements IFilter<Individual> {
 
-  private final float minRatio;
+    private final float minRatio;
 
-  private final IFilter<RunInfo> filter;
-  /**
-   * defaults to minRatio of 0.5
-   * @param filter
-   */
-  public MinRatioFilter(IFilter<RunInfo> filter) {
-    this(filter, 0.5f);
-  }
-  
-  public MinRatioFilter(IFilter<RunInfo> filter, float minRatio) {
-    this.filter = filter;
-    this.minRatio = minRatio;
-  }
+    private final IFilter<RunInfo> filter;
 
-  @Override
-  public boolean matches(Individual individual) {
-    if ((individual.runs.isEmpty()) && (minRatio > 0)) {
-      return false;
+    /**
+     * defaults to minRatio of 0.5
+     *
+     * @param filter
+     */
+    public MinRatioFilter(IFilter<RunInfo> filter) {
+        this(filter, 0.5f);
     }
-    int matchingRuns = 0;
-    for (RunInfo run : individual.runs) {
-      if (filter.matches(run)) {
-        ++matchingRuns;
-      }
+
+    public MinRatioFilter(IFilter<RunInfo> filter, float minRatio) {
+        this.filter = filter;
+        this.minRatio = minRatio;
     }
-    return (((float) matchingRuns) / individual.runs.size()) >= this.minRatio;
-  }
+
+    @Override
+    public boolean matches(Individual individual) {
+        if ((individual.runs.isEmpty()) && (minRatio > 0)) {
+            return false;
+        }
+        int matchingRuns = 0;
+        for (RunInfo run : individual.runs) {
+            if (filter.matches(run)) {
+                ++matchingRuns;
+            }
+        }
+        return (((float) matchingRuns) / individual.runs.size()) >= this.minRatio;
+    }
 
 }
