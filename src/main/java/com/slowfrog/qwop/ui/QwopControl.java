@@ -127,20 +127,29 @@ public class QwopControl extends JFrame {
         });
 
         timer = new Timer(1000, ev -> {
+            LOGGER.debug("QwopControl Timer!");
             long now = System.currentTimeMillis();
-            long duration = (now - startTime) / 1000;
-            if (duration == 0) {
-                duration = 1; // To avoid division by zero
+            long duration = (long) Math.max((now - startTime) / ((double) 1000), 0.1);
+            LOGGER.debug("QwopControl Timer! duration " + duration);
+
+            String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
+
+            float runDistance = 0F;
+            try {
+                runDistance = Float.parseFloat(captureAndDisplayDistance());
+            } catch (NumberFormatException e) {
+                // pass
             }
-            String time = (duration / 60) + ":" +
-                    new DecimalFormat("00").format(duration % 60);
-            float runDistance = Float.parseFloat(captureDistance());
+            LOGGER.debug("QwopControl Timer! runDistance " + runDistance);
+
             float speed = (runDistance / duration);
             DecimalFormatSymbols symbols = new DecimalFormat()
                     .getDecimalFormatSymbols();
             symbols.setDecimalSeparator('.');
             DecimalFormat df = new DecimalFormat("0.000", symbols);
             String speedStr = df.format(speed);
+            LOGGER.debug("QwopControl Timer! speedStr " + speedStr);
+
             distance3.setText(runDistance + " in " + time + ", v=" + speedStr);
 
             if ((timeLimit != 0) && (now > timeLimit)) {
@@ -157,6 +166,7 @@ public class QwopControl extends JFrame {
                 }
             }
         });
+        timer.setDelay(250);
     }
 
     public static void main(String[] args) {
@@ -170,7 +180,7 @@ public class QwopControl extends JFrame {
         }
     }
 
-    private String captureDistance() {
+    private String captureAndDisplayDistance() {
         String ret = qwopper.captureDistance();
 
         ImageIcon icon = new ImageIcon();
@@ -198,7 +208,6 @@ public class QwopControl extends JFrame {
             timeLimit = (maxTime > 0) ? startTime + maxTime : 0;
             qwopper.startGame();
             rob.mouseMove(screenPoint.x, screenPoint.y);
-            timer.setDelay(250);
             timer.start();
 
             qwopper.playOneGame(dna, 0);

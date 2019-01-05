@@ -87,7 +87,7 @@ class ImageReader {
                 ret = d;
             }
         }
-        LOGGER.info("==>{}   {}", ret, bestMatch);
+        LOGGER.debug("==>{}   {}", ret, bestMatch);
         if (bestMatch < 90) {
             ret = "";
         }
@@ -148,8 +148,9 @@ class ImageReader {
 
     static String readDigits(BufferedImage input, List<Rectangle> parts) {
         StringBuilder str = new StringBuilder();
-        for (Rectangle rect : parts) {
-            str.append(compareDigit(input, rect));
+        for (int idx = 0; idx < parts.size(); idx++) {
+            LOGGER.debug("******rectangle number {}*******", idx);
+            str.append(compareDigit(input, parts.get(idx)));
         }
         return str.toString();
     }

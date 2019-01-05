@@ -26,6 +26,7 @@ public class Qwopper {
 
     /**
      * Tolerance for color comparison.
+     *         // TODO document that you might need to tune this to pick up game
      */
     private static final int RGB_TOLERANCE = 30;
 
@@ -63,8 +64,10 @@ public class Qwopper {
     /**
      * Number of consecutive runs before we trigger a reload of the browser to
      * keep CPU and memory usage reasonable.
+     *
+     * TODO tune this parameter
      */
-    private static final int MAX_RUNS_BETWEEN_RELOAD = 1;
+    private static final int MAX_RUNS_BETWEEN_RELOAD = 100;
     private static final Logger LOGGER = LoggerFactory.getLogger(Qwopper.class);
     private final Robot rob;
     private QwopControl qwopControl;
@@ -510,17 +513,21 @@ public class Qwopper {
     }
 
     public String captureDistance() {
+        // TODO document that you might need to tune this box to pick up on digits
         Rectangle distRect = new Rectangle();
         distRect.x = origin[0] + 200;
-        distRect.y = origin[1] + 20;
+        distRect.y = origin[1] + 16;
         distRect.width = 200;
         distRect.height = 30;
         this.capture = rob.createScreenCapture(distRect);
 
         BufferedImage thresholded = ImageReader.threshold(this.capture);
         List<Rectangle> parts = ImageReader.segment(thresholded);
+        LOGGER.debug("number of segments: {}", parts.size());
         this.transformed = ImageReader.drawParts(thresholded, parts);
-        return ImageReader.readDigits(thresholded, parts);
+        String digits = ImageReader.readDigits(thresholded, parts);
+        LOGGER.debug("digits: {}", digits);
+        return digits;
     }
 
     public RunInfo playOneGame(String str, long maxDuration) {
