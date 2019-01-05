@@ -14,7 +14,6 @@ import java.util.Random;
 /**
  * This class will try to play QWOP and evolve some way to play well...
  * hopefully. Game at {@link http://foddy.net/Athletics.html}
- *
  */
 public class Qwopper {
 
@@ -501,6 +500,17 @@ public class Qwopper {
         return digits;
     }
 
+    public float captureDistanceAsFloat() {
+        try {
+            return Float.parseFloat(captureDistance());
+        } catch (NumberFormatException e) {
+            if (qwopControl != null) {
+                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
+            }
+            return 0F;
+        }
+    }
+
     public RunInfo playOneGame(String str, long maxDuration) {
         if (qwopControl != null) {
             qwopControl.log("Playing " + str);
@@ -512,40 +522,24 @@ public class Qwopper {
         } else {
             this.timeLimit = 0;
         }
-        while (!(isFinished() || stop)) {
+        while (!isFinished() && !stop) {
             playString2(str);
         }
         stopRunning();
-
-        if (++nbRuns == MAX_RUNS_BETWEEN_RELOAD) {
-            nbRuns = 0;
-            refreshBrowser();
-            if (qwopControl != null) {
-                qwopControl.log("Refreshing browser");
-            }
-        }
 
         long end = System.currentTimeMillis();
         doWait(1000);
         float distance = captureDistanceAsFloat();
 
-        RunInfo info;
-        if (stop) {
-            info = new RunInfo(str, DELAY, false, true, end - start, distance);
-        } else {
-            info = new RunInfo(str, DELAY, distance < 100, false, end - start, distance);
+        RunInfo info = new RunInfo(str, DELAY, !stop && distance < 100, stop, end - start, distance);
+
+        if (++nbRuns == MAX_RUNS_BETWEEN_RELOAD) {
+            nbRuns = 0;
+            refreshBrowser();
+            if (qwopControl != null) {
+                qwopControl.log("Refreshed browser");
+            }
         }
         return info;
-    }
-
-    public float captureDistanceAsFloat() {
-        try {
-            return Float.parseFloat(captureDistance());
-        } catch (NumberFormatException e) {
-            if (qwopControl != null) {
-                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
-            }
-            return 0F;
-        }
     }
 }
