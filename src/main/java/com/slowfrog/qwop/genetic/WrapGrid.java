@@ -1,4 +1,4 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.genetic;
 
 import java.util.ArrayList;
 import java.util.List;

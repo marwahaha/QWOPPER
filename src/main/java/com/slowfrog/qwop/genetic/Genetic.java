@@ -1,5 +1,7 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.genetic;
 
+import com.slowfrog.qwop.Qwopper;
+import com.slowfrog.qwop.RunInfo;
 import com.slowfrog.qwop.filter.AndFilter;
 import com.slowfrog.qwop.filter.CrashedFilter;
 import com.slowfrog.qwop.filter.IFilter;
@@ -85,7 +87,7 @@ public class Genetic {
             for (Individual aGoodRunnerList : goodRunnerList) {
                 LOGGER.info(aGoodRunnerList.toString());
                 LOGGER.info(aGoodRunnerList.str);
-                LOGGER.info(String.valueOf(aGoodRunnerList.runs.get(0).distance));
+                LOGGER.info(String.valueOf(aGoodRunnerList.runs.get(0).getDistance()));
             }
         } else {
             goodRunnerList = new ArrayList<>();
@@ -101,7 +103,7 @@ public class Genetic {
 
             float sumFits = 0;
             for (int j = 0; j < aGoodRunnerList.runs.size(); j++) {
-                sumFits += aGoodRunnerList.runs.get(j).distance;
+                sumFits += aGoodRunnerList.runs.get(j).getDistance();
             }
             numRuns = aGoodRunnerList.runs.size();
             aGoodRunnerList.fitness = sumFits / numRuns;
@@ -185,8 +187,8 @@ public class Genetic {
         for (int i = 0; i < count; ++i) {
             LOGGER.info("Run #{}", i);
             RunInfo info = playGame(qwop, str);
-            fitnessSum += info.distance;
-            currentRunnerCrashed = info.crashed;
+            fitnessSum += info.getDistance();
+            currentRunnerCrashed = info.isCrashed();
         }
     }
 
@@ -207,8 +209,8 @@ public class Genetic {
         LOGGER.info("Testing child: {}", str);
         for (int i = 0; i < runLimit; ++i) {    //currently we only test each child once
             RunInfo info = playGame(qwop, str);
-            fitness += info.distance;
-            currentRunnerCrashed = info.crashed;
+            fitness += info.getDistance();
+            currentRunnerCrashed = info.isCrashed();
         }
 
         return fitness / runLimit;
@@ -478,10 +480,10 @@ public class Genetic {
                     if (line.length() > 0) {
                         try {
                             RunInfo info = RunInfo.unmarshal(line);
-                            Individual indiv = this.population.get(info.string);    //gets a string from pop
+                            Individual indiv = this.population.get(info.getString());    //gets a string from pop
                             if (indiv == null) {
-                                indiv = new Individual(info.string, null);
-                                this.population.put(info.string, indiv);
+                                indiv = new Individual(info.getString(), null);
+                                this.population.put(info.getString(), indiv);
                             }
                             indiv.runs.add(info);
                         } catch (RuntimeException e) {

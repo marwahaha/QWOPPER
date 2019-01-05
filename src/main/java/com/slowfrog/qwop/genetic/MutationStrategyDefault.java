@@ -1,4 +1,6 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.genetic;
+
+import com.slowfrog.qwop.genetic.MutationStrategy;
 
 import java.util.Random;
 

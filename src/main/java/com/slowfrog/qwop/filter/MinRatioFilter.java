@@ -1,7 +1,7 @@
 package com.slowfrog.qwop.filter;
 
-import com.slowfrog.qwop.Individual;
 import com.slowfrog.qwop.RunInfo;
+import com.slowfrog.qwop.genetic.Individual;
 
 public class MinRatioFilter implements IFilter<Individual> {
 

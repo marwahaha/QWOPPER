@@ -1,4 +1,6 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.genetic;
+
+import com.slowfrog.qwop.RunInfo;
 
 import java.util.ArrayList;
 import java.util.List;

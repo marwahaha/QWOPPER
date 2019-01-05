@@ -1,7 +1,7 @@
 package com.slowfrog.qwop.filter;
 
-import com.slowfrog.qwop.Individual;
 import com.slowfrog.qwop.RunInfo;
+import com.slowfrog.qwop.genetic.Individual;
 import org.junit.Test;
 
 import java.util.Arrays;

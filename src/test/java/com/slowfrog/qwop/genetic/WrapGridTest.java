@@ -1,11 +1,11 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.genetic;
 
 import org.junit.Test;
 
-import static com.slowfrog.qwop.Genetic.POPULATION_MAX_COLS;
-import static com.slowfrog.qwop.Genetic.POPULATION_MAX_CONNECTIONS;
-import static com.slowfrog.qwop.Genetic.POPULATION_MAX_ROWS;
-import static com.slowfrog.qwop.Genetic.POPULATION_MAX_SIZE;
+import static com.slowfrog.qwop.genetic.Genetic.POPULATION_MAX_COLS;
+import static com.slowfrog.qwop.genetic.Genetic.POPULATION_MAX_CONNECTIONS;
+import static com.slowfrog.qwop.genetic.Genetic.POPULATION_MAX_ROWS;
+import static com.slowfrog.qwop.genetic.Genetic.POPULATION_MAX_SIZE;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
