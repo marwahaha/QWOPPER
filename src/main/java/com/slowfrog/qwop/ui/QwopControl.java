@@ -6,10 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Random;
@@ -21,10 +17,9 @@ public class QwopControl extends JFrame {
     private static final Logger LOGGER = LoggerFactory.getLogger(QwopControl.class);
     private static final Font FONT = new Font("Lucida Sans", Font.BOLD, 24);
 
-    protected Qwopper qwopper;
+    private Qwopper qwopper;
     private Robot rob;
     private JTextArea logOutput;
-    private JScrollPane logScroll;
     private JTextField sequence;
     private JLabel distance;
     private JLabel distance2;
@@ -90,86 +85,76 @@ public class QwopControl extends JFrame {
 
         logOutput = new JTextArea(20, 60);
         logOutput.setEditable(false);
-        logScroll = new JScrollPane(logOutput);
+        JScrollPane logScroll = new JScrollPane(logOutput);
         logScroll
                 .setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         c.add(logScroll, BorderLayout.CENTER);
 
         // Add event handlers
-        init.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
-                try {
-                    int[] origin = qwopper.findRealOrigin();
-                    logf("Origin at %d,%d", origin[0], origin[1]);
+        init.addActionListener(ev -> {
+            try {
+                int[] origin = qwopper.findRealOrigin();
+                LOGGER.info("Origin at {},{}", origin[0], origin[1]);
+                log("Origin at (" + origin[0] + "," + origin[1] + ")");
 
-                } catch (Throwable e) {
-                    log("Error finding origin: " + e.getMessage());
-                }
+            } catch (Exception e) {
+                LOGGER.error("Error finding origin", e);
+                log("Error finding origin: " + e.getMessage());
             }
         });
 
-        goRandom.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
-                String dna = Qwopper.makeRealisticRandomString2(10 + random.nextInt(21));
-                sequence.setText(dna);
-            }
+        goRandom.addActionListener(ev -> {
+            String dna = Qwopper.makeRealisticRandomString2(10 + random.nextInt(21));
+            sequence.setText(dna);
         });
 
-        go.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
-                runGame(sequence.getText(), 1, 0);
-                go.setEnabled(false);
-                go10.setEnabled(false);
-            }
+        go.addActionListener(ev -> {
+            runGame(sequence.getText(), 1, 0);
+            go.setEnabled(false);
+            go10.setEnabled(false);
         });
 
-        go10.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
-                runGame(sequence.getText(), 10, 60000);
-                go.setEnabled(false);
-                go10.setEnabled(false);
-            }
+        go10.addActionListener(ev -> {
+            runGame(sequence.getText(), 10, 60000);
+            go.setEnabled(false);
+            go10.setEnabled(false);
         });
 
-        stop.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
+        stop.addActionListener(ev -> {
+            qwopper.stop();
+            go.setEnabled(true);
+            go10.setEnabled(true);
+            timer.stop();
+        });
+
+        timer = new Timer(1000, ev -> {
+            long now = System.currentTimeMillis();
+            long duration = (now - startTime) / 1000;
+            if (duration == 0) {
+                duration = 1; // To avoid division by zero
+            }
+            String time = (duration / 60) + ":" +
+                    new DecimalFormat("00").format(duration % 60);
+            float runDistance = Float.parseFloat(captureDistance());
+            float speed = (runDistance / duration);
+            DecimalFormatSymbols symbols = new DecimalFormat()
+                    .getDecimalFormatSymbols();
+            symbols.setDecimalSeparator('.');
+            DecimalFormat df = new DecimalFormat("0.000", symbols);
+            String speedStr = df.format(speed);
+            distance3.setText(runDistance + " in " + time + ", v=" + speedStr);
+
+            if ((timeLimit != 0) && (now > timeLimit)) {
                 qwopper.stop();
-                go.setEnabled(true);
-                go10.setEnabled(true);
-                timer.stop();
             }
-        });
 
-        timer = new Timer(1000, new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
-                long now = System.currentTimeMillis();
-                long duration = (now - startTime) / 1000;
-                if (duration == 0) {
-                    duration = 1; // To avoid division by zero
-                }
-                String time = (duration / 60) + ":" +
-                        new DecimalFormat("00").format(duration % 60);
-                float runDistance = Float.parseFloat(captureDistance());
-                float speed = (runDistance / duration);
-                DecimalFormatSymbols symbols = new DecimalFormat()
-                        .getDecimalFormatSymbols();
-                symbols.setDecimalSeparator('.');
-                DecimalFormat df = new DecimalFormat("0.000", symbols);
-                String speedStr = df.format(speed);
-                distance3.setText(runDistance + " in " + time + ", v=" + speedStr);
-
-                if ((timeLimit != 0) && (now > timeLimit)) {
-                    qwopper.stop();
-                }
-
-                if (!qwopper.isRunning()) {
-                    timer.stop();
-                    if (--runsLeft == 0) {
-                        go.setEnabled(true);
-                        go10.setEnabled(true);
-                    } else {
-                        nextGame(sequence.getText(), 60000);
-                    }
+            if (!qwopper.isRunning()) {
+                timer.stop();
+                if (--runsLeft == 0) {
+                    go.setEnabled(true);
+                    go10.setEnabled(true);
+                } else {
+                    nextGame(sequence.getText(), 60000);
                 }
             }
         });
@@ -181,8 +166,8 @@ public class QwopControl extends JFrame {
             f.pack();
             f.setVisible(true);
 
-        } catch (Throwable t) {
-            t.printStackTrace();
+        } catch (Exception e) {
+            LOGGER.error("Error", e);
         }
     }
 
@@ -208,18 +193,16 @@ public class QwopControl extends JFrame {
     }
 
     private void nextGame(final String dna, final int maxTime) {
-        execOutOfAWT(new Runnable() {
-            public void run() {
-                Point screenPoint = MouseInfo.getPointerInfo().getLocation();
-                startTime = System.currentTimeMillis();
-                timeLimit = (maxTime > 0) ? startTime + maxTime : 0;
-                qwopper.startGame();
-                rob.mouseMove(screenPoint.x, screenPoint.y);
-                timer.setDelay(250);
-                timer.start();
+        execOutOfAWT(() -> {
+            Point screenPoint = MouseInfo.getPointerInfo().getLocation();
+            startTime = System.currentTimeMillis();
+            timeLimit = (maxTime > 0) ? startTime + maxTime : 0;
+            qwopper.startGame();
+            rob.mouseMove(screenPoint.x, screenPoint.y);
+            timer.setDelay(250);
+            timer.start();
 
-                qwopper.playOneGame(dna, 0);
-            }
+            qwopper.playOneGame(dna, 0);
         });
     }
 
@@ -229,29 +212,8 @@ public class QwopControl extends JFrame {
     }
 
     public void log(final String message) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                // Using setText() to enable auto-scrolling
-                logOutput.setText(logOutput.getText() + message + "\n");
-            }
-        });
-    }
-
-    public void log(String message, Throwable e) {
-        log(message);
-        StringWriter sout = new StringWriter();
-        PrintWriter out = new PrintWriter(sout);
-        e.printStackTrace(out);
-        out.flush();
-        log(sout.getBuffer().toString());
-    }
-
-    public void logf(String format, Object... args) {
-        StringWriter sout = new StringWriter();
-        PrintWriter out = new PrintWriter(sout);
-        out.printf(format, args);
-        out.flush();
-        log(sout.getBuffer().toString());
+        // Using setText() to enable auto-scrolling
+        SwingUtilities.invokeLater(() -> logOutput.setText(logOutput.getText() + message + "\n"));
     }
 
 }
