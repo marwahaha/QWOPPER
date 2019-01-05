@@ -58,7 +58,7 @@ public class QwopControl extends JFrame {
         init = new JButton("Find game area");
         goRandom = new JButton("Random...");
         go = new JButton("Run, Qwop, run!");
-        goMultiple = new JButton("Run 3 times, 5s/run max");
+        goMultiple = new JButton("Run 3 times, 15s/run max");
         stop = new JButton("Stop");
         bar.add(init);
         bar.add(goRandom);
@@ -138,7 +138,7 @@ public class QwopControl extends JFrame {
     }
 
     private void eventHandlerGoMultiple(ActionEvent _ev) {
-        launchGames(sequence.getText(), 3, 5000);
+        launchGames(sequence.getText(), 3, 15000);
         go.setEnabled(false);
         goMultiple.setEnabled(false);
     }

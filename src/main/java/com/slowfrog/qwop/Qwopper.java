@@ -26,7 +26,7 @@ public class Qwopper {
     /**
      * Unit delay in milliseconds when playing a 'string'
      */
-    private static final int DELAY = 250;
+    private static final int DELAY = 150;
 
     /**
      * Note    	Input
