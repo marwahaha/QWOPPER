@@ -23,7 +23,7 @@ He along with his advisor [V. Scott Gordon](https://athena.ecs.csus.edu/~gordonv
 See the [Youtube video here](https://www.youtube.com/watch?v=eWxFI3NHtT8) or [download the paper here](http://athena.ecs.csus.edu/~gordonvs/papers/QWOPgecco14.pdf). The DOI is [10.1145/2576768.2598248](http://doi.org/10.1145/2576768.2598248).
 
 ### 2019, [Kunal Marwaha](http://kunalmarwaha.com/)
-I'm trying to make this application work with modern tooling. I'm also trying to get a good walking gait in QWOP.
+I've cleaned up and updated this application for modern (circa-2019) tooling. With this program, I'm aiming to get a good walking gait in QWOP.I may or may not use genetic algorithms, as I have some idea of what "walking" looks like. 
 
 [My code is here](https://github.com/marwahaha/QWOPPER).
 

@@ -1,8 +1,0 @@
-from Steven Ray:
-
-A Note on all the txt files included in the project:
-These are here to show some history of the GA's performance throughout the 
-implementation's evolution toward a Cellular GA, as well as to provide the 
-initial lists of runners used to populate Generation 0 for each of the genetic 
-encodings explored.
-
