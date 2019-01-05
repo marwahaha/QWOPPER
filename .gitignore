@@ -1,1 +1,11 @@
+# Builds
+/bin/
+/dist/
+
+# IntelliJ
 .idea/
+*.iml
+out/
+
+# Mac
+.DS_Store
