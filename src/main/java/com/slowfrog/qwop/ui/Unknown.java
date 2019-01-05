@@ -1,6 +1,6 @@
 package com.slowfrog.qwop.ui;
 
-import com.slowfrog.qwop.ConsoleLog;
+import com.slowfrog.qwop.LogConsole;
 import com.slowfrog.qwop.Log;
 import com.slowfrog.qwop.Qwopper;
 import com.slowfrog.qwop.RunInfo;
@@ -12,7 +12,7 @@ import java.io.PrintStream;
 
 public class Unknown {
 
-    private static final Log LOG = new ConsoleLog();
+    private static final Log LOG = new LogConsole();
 
     public static void main(String[] args) {
 

@@ -1,4 +1,6 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.filter;
+
+import com.slowfrog.qwop.RunInfo;
 
 public class MinDistFilter implements IFilter<RunInfo> {
 
@@ -10,7 +12,7 @@ public class MinDistFilter implements IFilter<RunInfo> {
 
     @Override
     public boolean matches(RunInfo run) {
-        return (run.distance >= this.minDist);
+        return (run.getDistance() >= this.minDist);
     }
 
 }

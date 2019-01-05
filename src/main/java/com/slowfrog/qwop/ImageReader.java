@@ -9,10 +9,10 @@ import java.util.List;
 
 /**
  * That class is supposed to contain the code used to read the distance on
- * screen. That's where all the image recognition fun lives. And it's unit
- * tested too!
+ * screen. That's where all the image recognition fun lives.
+ * And it's (partly) unit tested too!
  */
-public class ImageReader {
+class ImageReader {
 
     private static final BufferedImage REF_DIGITS = loadRefDigits();
     private static final String DIGITS = "-.0123456789";
@@ -25,11 +25,11 @@ public class ImageReader {
                     .getResourceAsStream("/digits.png"));
 
         } catch (IOException e) {
-            throw new RuntimeException(" Error reading reference digits", e);
+            throw new RuntimeException("Error reading reference digits", e);
         }
     }
 
-    public static float readDistance(BufferedImage img) {
+    static float readDistance(BufferedImage img) {
         BufferedImage thresholded = threshold(img);
         List<Rectangle> parts = segment(thresholded);
         String str = readDigits(thresholded, parts);
@@ -40,11 +40,10 @@ public class ImageReader {
         int r = (col >> 16) & 0xff;
         int g = (col >> 8) & 0xff;
         int b = col & 0xff;
-        int lum = (g * 8 + r * 5 + b * 3) >> 4;
-        return lum;
+        return (g * 8 + r * 5 + b * 3) >> 4;
     }
 
-    public static BufferedImage threshold(BufferedImage input) {
+    static BufferedImage threshold(BufferedImage input) {
         int width = input.getWidth();
         int height = input.getHeight();
         BufferedImage output = new BufferedImage(width, height,
@@ -79,13 +78,13 @@ public class ImageReader {
                 }
             }
             int match = (sum * 100) / (w * rect.height);
-            // System.out.printf("comp(%s)=%d: %d\n", d, sum, match);
+//             System.out.printf("comp(%s)=%d: %d\n", d, sum, match);
             if ((bestMatch == -1) || (match > bestMatch)) {
                 bestMatch = match;
                 ret = d;
             }
         }
-        // System.out.println("==>" + ret + "   " + bestMatch);
+//         System.out.println("==>" + ret + "   " + bestMatch);
         if (bestMatch < 90) {
             ret = "";
         }
@@ -93,7 +92,7 @@ public class ImageReader {
         return ret;
     }
 
-    public static List<Rectangle> segment(BufferedImage input) {
+    static List<Rectangle> segment(BufferedImage input) {
         int width = input.getWidth();
         int height = input.getHeight();
 
@@ -120,9 +119,8 @@ public class ImageReader {
         return parts;
     }
 
-    public static BufferedImage drawParts(BufferedImage input,
-                                          List<Rectangle> parts) {
-
+    static BufferedImage drawParts(BufferedImage input,
+                                   List<Rectangle> parts) {
         int width = input.getWidth();
         int height = input.getHeight();
         BufferedImage output = new BufferedImage(width, height,
@@ -145,7 +143,7 @@ public class ImageReader {
         return output;
     }
 
-    public static String readDigits(BufferedImage input, List<Rectangle> parts) {
+    static String readDigits(BufferedImage input, List<Rectangle> parts) {
         StringBuilder str = new StringBuilder();
         for (Rectangle rect : parts) {
             str.append(compareDigit(input, rect));

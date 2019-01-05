@@ -1,5 +1,12 @@
 package com.slowfrog.qwop;
 
+import com.slowfrog.qwop.filter.AndFilter;
+import com.slowfrog.qwop.filter.CrashedFilter;
+import com.slowfrog.qwop.filter.IFilter;
+import com.slowfrog.qwop.filter.MinDistFilter;
+import com.slowfrog.qwop.filter.MinRatioFilter;
+import com.slowfrog.qwop.filter.NotFilter;
+
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -29,30 +36,26 @@ import java.util.Random;
  */
 
 public class Genetic {
-    public static final int POPULATION_MAX_ROWS = 5;
-    public static final int POPULATION_MAX_COLS = 6;
-    public static final int POPULATION_MAX_SIZE = POPULATION_MAX_ROWS + POPULATION_MAX_COLS;
-    public static final int POPULATION_MAX_CONNECTIONS = 4;
-    //private static final String NOTES = "QWOPqwop++";  //Encoding 1
-//  private static final String NOTES = "ABCDEFGHIJKLMNOP"; //Encoding 2
+    static final int POPULATION_MAX_ROWS = 5;
+    static final int POPULATION_MAX_COLS = 6;
+    static final int POPULATION_MAX_SIZE = POPULATION_MAX_ROWS + POPULATION_MAX_COLS;
+    static final int POPULATION_MAX_CONNECTIONS = 4;
     private static final int RUN_TIME_LIMIT_MILLIS = 60000;
-    private static final String EVO_LOG_FILENAME = "evo_log_2013_26_1min_RND.txt";
-    private static final String GEN_LOG_FILENAME = "gen_log_2013_26_1min_RND.txt";
+    private static final String EVO_LOG_FILENAME = "evo_log_2019_26_1min_RND.txt";
+    private static final String GEN_LOG_FILENAME = "gen_log_2019_26_1min_RND.txt";
     private static final int MAX_RUNS = 1;
     private static final int MAX_GENERATIONS = 100;
-    private static final Log LOG = new ConsoleLog();
+    private static final Log LOG = new LogConsole();
     private final Map<String, Individual> population;
-    private final List<Individual> goodRunnerList;
-    private final boolean randomGen0 = true; //set to true is using a random gen stored in runs3.txt
-    private WrapGrid<Individual> curGen, nextGen;
     private float fitnessSum = 0;
-    private Robot rob;
     private Qwopper qwopper;
     private PrintStream evoOut, genOut; //evolution log and generation log streams
-    private float genAvgFitness;
     private boolean currentRunnerCrashed;
+
     public Genetic() {
-        this.population = new HashMap<String, Individual>();
+        this.population = new HashMap<>();
+        //set to true is using a random gen stored in runs3.txt
+        boolean randomGen0 = true;
         if (randomGen0) {
             this.readPopulation("runs3.txt"); //file containing the bad generation 0
         } else {
@@ -67,10 +70,11 @@ public class Genetic {
         }
         System.out.println("Total runs: " + totalRuns);
 
+        List<Individual> goodRunnerList;
         if (!randomGen0) //alternate Gen0 is filtered from the randomly generated runner list
         {
-            IFilter<RunInfo> twoMetersNotCrashed = new AndFilter<RunInfo>(
-                    new MinDistFilter(2), new NotFilter<RunInfo>(new CrashedFilter()));
+            IFilter<RunInfo> twoMetersNotCrashed = new AndFilter<>(
+                    new MinDistFilter(2), new NotFilter<>(new CrashedFilter()));
             IFilter<Individual> individualFilter = new MinRatioFilter(
                     twoMetersNotCrashed);
             goodRunnerList = this.filter(individualFilter);
@@ -81,13 +85,13 @@ public class Genetic {
                 System.out.println(aGoodRunnerList.runs.get(0).distance);
             }
         } else {
-            goodRunnerList = new ArrayList<Individual>();
+            goodRunnerList = new ArrayList<>();
             //runs3 currently contains 30 random runners. if the flag is set, use this as gen0
             goodRunnerList.addAll(this.population.values());
         }
 
         //init grid for a population of 30 individuals and 4 connections each
-        curGen = new WrapGrid<Individual>(POPULATION_MAX_ROWS, POPULATION_MAX_COLS, POPULATION_MAX_CONNECTIONS);
+        WrapGrid<Individual> curGen = new WrapGrid<>(POPULATION_MAX_ROWS, POPULATION_MAX_COLS, POPULATION_MAX_CONNECTIONS);
 
         //store each individual's string and average distance traveled for manipulation
         for (Individual aGoodRunnerList : goodRunnerList) {
@@ -104,7 +108,7 @@ public class Genetic {
         }
 
         try {
-            rob = new Robot();
+            Robot rob = new Robot();
             qwopper = new Qwopper(rob, LOG);
             qwopper.findRealOrigin();
             evoOut = new PrintStream(new FileOutputStream(EVO_LOG_FILENAME, true));
@@ -121,7 +125,7 @@ public class Genetic {
                 evoOut.println("##########  " + "Generation " + genCnt + "  ##########");
                 genOut.println("##########  " + "Generation " + genCnt + "  ##########\n");
 
-                genAvgFitness = 0;
+                float genAvgFitness = 0;
 
 
                 for (int i = 0; i < POPULATION_MAX_SIZE; i++) {
@@ -147,9 +151,7 @@ public class Genetic {
                 genOut.println("Generation " + genCnt + " Average Fitness: " + genAvgFitness / POPULATION_MAX_SIZE + "\n");
 
                 //select and mate the parents, mutate the children, and generate the next generation
-                nextGen = crossoverSteadyStateGrid(curGen);
-
-                curGen = nextGen;
+                curGen = crossoverSteadyStateGrid(curGen);
 
             }//end generation loop
 
@@ -159,8 +161,8 @@ public class Genetic {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (Throwable t) {
-            LOG.log("Error: ", t);
+        } catch (Exception e) {
+            LOG.log("Error: ", e);
         }
 
     }
@@ -171,28 +173,28 @@ public class Genetic {
      * @param args the arguments
      */
     public static void main(String[] args) {
-        Genetic g = new Genetic();
+        new Genetic();
     }
 
     //copied from MAIN
-    private void testString(Qwopper qwop, String str,
-                            int count, String filename) {
+    private void testString(Qwopper qwop, String str, int count, String filename) {
         fitnessSum = 0;
-
         for (int i = 0; i < count; ++i) {
-            //LOG.logf("Run #%d\n", i);
-            qwop.startGame();
-            RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
-            LOG.log(info.toString());
-            LOG.log(info.marshal());
-            evoOut.println(info.toString());
-            evoOut.println(info.marshal());
-
-            //info.distance goes into sumfitness
+            LOG.logf("Run #%d\n", i);
+            RunInfo info = playGame(qwop, str);
             fitnessSum += info.distance;
             currentRunnerCrashed = info.crashed;
-
         }
+    }
+
+    private RunInfo playGame(Qwopper qwop, String str) {
+        qwop.startGame();
+        RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
+        LOG.log(info.toString());
+        LOG.log(info.marshal());
+        evoOut.println(info.toString());
+        evoOut.println(info.marshal());
+        return info;
     }
 
     //tests a child runner a specified number of times and returns the average fitness
@@ -201,14 +203,7 @@ public class Genetic {
         evoOut.println("Testing child: " + str);
         LOG.log("Testing child: " + str);
         for (int i = 0; i < runLimit; ++i) {    //currently we only test each child once
-            qwop.startGame();
-            RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
-            LOG.log(info.toString());
-            LOG.log(info.marshal());
-            evoOut.println(info.toString());
-            evoOut.println(info.marshal());
-
-            //info.distance goes into sumfitness
+            RunInfo info = playGame(qwop, str);
             fitness += info.distance;
             currentRunnerCrashed = info.crashed;
         }
@@ -228,11 +223,11 @@ public class Genetic {
 
     //finds the fittest of the neighbors of the individual located at curPop[curRow][curCol]
     private Individual fittestNeighbor(int curRow, int curCol, WrapGrid<Individual> curPop) {
-        Individual up,
-                right,
-                left,
-                down,
-                fittest;
+        Individual up;
+        Individual right;
+        Individual left;
+        Individual down;
+        Individual fittest;
 
         up = curPop.get(curRow - 1, curCol);
         right = curPop.get(curRow, curCol + 1);
@@ -253,7 +248,8 @@ public class Genetic {
     private WrapGrid<Individual> crossoverSteadyStateGrid(WrapGrid<Individual> curPop) {
         WrapGrid<Individual> newPop = new WrapGrid<Individual>(curPop.rows, curPop.cols, curPop.conNum);
         Random random = new Random(System.currentTimeMillis());
-        Individual current, mate;
+        Individual current;
+        Individual mate;
 
         for (int i = 0; i < curPop.rows; i++) {
             for (int j = 0; j < curPop.cols; j++) {

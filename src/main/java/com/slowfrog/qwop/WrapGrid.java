@@ -1,6 +1,5 @@
 package com.slowfrog.qwop;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +15,6 @@ public class WrapGrid<T> {
     final int conNum; // number of connections for each point on grid (either 4 or 8)
     private final int length; // total number of objects in grid - maybe just get this from ArrayList
 
-    // constructor
     WrapGrid(int row, int col, int numCon) {
         rows = row;
         cols = col;
@@ -25,22 +23,19 @@ public class WrapGrid<T> {
         array = new ArrayList<T>(length);
     }
 
-    // returns total size of grid
-    public int len() {
+    int getLen() {
         return length;
     }
 
-    // returns number of rows
-    public int row() {
+    int getNumRows() {
         return rows;
     }
 
-    // returns number of columns
-    public int col() {
+    int getNumCols() {
         return cols;
     }
 
-    public void add(T t) {
+    void add(T t) {
         array.add(t);
     }
 
@@ -56,18 +51,22 @@ public class WrapGrid<T> {
         return array.get(i);
     }
 
-    // returns the row position of i in grid - adjusted for warp around edges
+    // returns the row position of i in grid - adjusted for wrap around edges
     private int modRow(int i) {
-        if (i < 0) return i + rows;
-        else if (i >= rows) return i % rows;
-        else return i;
+        return getPos(i, rows);
     }
 
     // returns the column position of j in grid - adjusted for wrap around edges
     private int modCol(int j) {
-        if (j < 0) return j + cols;
-        else if (j >= cols) return j % cols;
-        else return j;
+        return getPos(j, cols);
+    }
+
+    private int getPos(int idx, int total) {
+        if (idx < 0) {
+            return idx + total;
+        } else if (idx >= total) {
+            return idx % total;
+        } else return idx;
     }
 
     // sets object at (i,j) value from store adjusted for wrap around edges
@@ -76,7 +75,7 @@ public class WrapGrid<T> {
     }
 
     // gets object at (i,j) value from store adjusted for wrap around edges
-    public T get(int i, int j) {
+    T get(int i, int j) {
         return array.get(modRow(i) * cols + modCol(j));
     }
 
@@ -93,13 +92,13 @@ public class WrapGrid<T> {
     }
 
     // returns distance on the grid between the first coordinates y1 & y2 of two objects
-    public int distFirst(int y1, int y2) {
+    private int distFirst(int y1, int y2) {
         int dist = Math.abs(modRow(y2) - modRow(y1));
         return Math.min(dist, rows - dist);
     }
 
     // returns distance on the grid between the second coordinates x1 & x2 of two objects
-    public int distSecond(int x1, int x2) {
+    private int distSecond(int x1, int x2) {
         int dist = Math.abs(modCol(x2) - modCol(x1));
         return Math.min(dist, cols - dist);
     }

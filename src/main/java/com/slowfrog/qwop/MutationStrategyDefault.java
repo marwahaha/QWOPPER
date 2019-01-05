@@ -2,17 +2,17 @@ package com.slowfrog.qwop;
 
 import java.util.Random;
 
-public class DefaultMutationStrategy implements MutationStrategy {
-    private static final String DEFAULT_NOTES = "ABCDEFGHIJKLMNOP"; // Encoding 2
+public class MutationStrategyDefault implements MutationStrategy {
+    private static final String DEFAULT_NOTES = "ABCDEFGHIJKLMNOP";
 
     private final String notes;
     private final int notesLength;
 
-    public DefaultMutationStrategy() {
+    public MutationStrategyDefault() {
         this(DEFAULT_NOTES);
     }
 
-    public DefaultMutationStrategy(String notes) {
+    public MutationStrategyDefault(String notes) {
         this.notes = notes;
         this.notesLength = notes.length();
     }

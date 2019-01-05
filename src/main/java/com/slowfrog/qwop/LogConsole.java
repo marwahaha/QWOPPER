@@ -3,7 +3,7 @@ package com.slowfrog.qwop;
 /**
  * Log implementation that goes to standard out.
  */
-public class ConsoleLog implements Log {
+public class LogConsole implements Log {
 
     public void log(String message) {
         System.out.println(message);

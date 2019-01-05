@@ -51,7 +51,6 @@ public class Qwopper {
     private static final int MAX_RUNS_BETWEEN_RELOAD = 40;
     private final Robot rob;
     private final Log log;
-    private final int delay = DELAY;
     private int[] origin;
     private boolean finished;
     private long start;
@@ -456,7 +455,7 @@ public class Qwopper {
                 checkSpeed();
             }
 
-            int waitTime = (int) ((lastTick + delay) - System.currentTimeMillis());
+            int waitTime = (int) ((lastTick + DELAY) - System.currentTimeMillis());
             if (waitTime > 0) {
                 doWait(waitTime);
             }
@@ -467,7 +466,7 @@ public class Qwopper {
                 this.stop = true;
                 return;
             }
-            // After each delay, check the screen to see if it's finished
+            // After each DELAY, check the screen to see if it's finished
             if (isFinished()) {
                 return;
             }
@@ -479,7 +478,7 @@ public class Qwopper {
      * <ul>
      * <li>QWOP means press the key Q, W, O or P</li>
      * <li>qwop means release the key</li>
-     * <li>+ means wait for a small delay</li>
+     * <li>+ means wait for a small DELAY</li>
      * </ul>
      */
     private void playString(String str) {
@@ -528,7 +527,7 @@ public class Qwopper {
                         checkSpeed();
                     }
 
-                    int waitTime = (int) ((lastTick + delay) - System.currentTimeMillis());
+                    int waitTime = (int) ((lastTick + DELAY) - System.currentTimeMillis());
                     if (waitTime > 0) {
                         doWait(waitTime);
                     }
@@ -539,7 +538,7 @@ public class Qwopper {
                         this.stop = true;
                         return;
                     }
-                    // After each delay, check the screen to see if it's finished
+                    // After each DELAY, check the screen to see if it's finished
                     if (isFinished()) {
                         return;
                     }
@@ -591,7 +590,7 @@ public class Qwopper {
     /**
      * Checks if the game is finished by looking at the two yellow medals.
      */
-    public boolean isFinished() {
+    private boolean isFinished() {
         Color col1 = rob.getPixelColor(origin[0] + 157, origin[1] + 126);
         if (colorMatches(
                 (col1.getRed() << 16) | (col1.getGreen() << 8) | col1.getBlue(),
@@ -665,7 +664,7 @@ public class Qwopper {
         rob.mouseMove(before.x, before.y);
     }
 
-    public void refreshBrowser() {
+    private void refreshBrowser() {
         // Click out of the flash rectangle to give focus to the browser
         clickAt(rob, origin[0] - 5, origin[1] - 5);
 
@@ -738,10 +737,10 @@ public class Qwopper {
 
         RunInfo info;
         if (stop) {
-            info = new RunInfo(str, this.delay, false, true, end - this.start,
+            info = new RunInfo(str, DELAY, false, true, end - this.start,
                     distance);
         } else {
-            info = new RunInfo(str, this.delay, distance < 100, false, end -
+            info = new RunInfo(str, DELAY, distance < 100, false, end -
                     this.start,
                     distance);
         }

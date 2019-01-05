@@ -3,13 +3,12 @@ package com.slowfrog.qwop;
 public class RunInfo {
 
     private static final long serialVersionUID = 1L;
-
-    protected final String string;
-    protected final int delay;
-    protected final boolean crashed;
-    protected final boolean stopped;
-    protected final long duration;
-    protected final float distance;
+    final String string;
+    final int delay;
+    final boolean crashed;
+    final boolean stopped;
+    final long duration;
+    final float distance;
 
     public RunInfo(String pstring, int pdelay, boolean pcrashed,
                    boolean pstopped, long pduration, float pdistance) {
@@ -38,9 +37,35 @@ public class RunInfo {
         }
     }
 
-    public String getResultCode() {
-        return (this.crashed ? "C" : this.stopped ? "S" : this.distance > 100 ? "W"
-                : "?");
+    private String getResultCode() {
+        if (this.distance > 100) {
+            return "W";
+        }
+        if (this.stopped) {
+            return "S";
+        }
+        if (this.crashed) {
+            return "C";
+        }
+        return "?";
+    }
+
+    private String getSuffix() {
+        String statusCode = this.getResultCode();
+        if ("W".equals(statusCode)) {
+            return " and won";
+        }
+        if ("S".equals(statusCode)) {
+            return " and was stopped";
+        }
+        if ("C".equals(statusCode)) {
+            return " and crashed";
+        }
+        return "";
+    }
+
+    public String toString() {
+        return "Ran " + distance + "m during " + duration + "ms" + this.getSuffix();
     }
 
     public String marshal() {
@@ -49,12 +74,27 @@ public class RunInfo {
                 this.getResultCode();
     }
 
-    public String toString() {
-        return ("Ran " + distance + "m during " + duration + "ms") +
-                (this.crashed ? " and crashed"
-                        : this.stopped ? " and was stopped"
-                        : this.distance > 100 ? " and won" : "");
+    public String getString() {
+        return string;
     }
 
+    public int getDelay() {
+        return delay;
+    }
 
+    public boolean isCrashed() {
+        return crashed;
+    }
+
+    public boolean isStopped() {
+        return stopped;
+    }
+
+    public long getDuration() {
+        return duration;
+    }
+
+    public float getDistance() {
+        return distance;
+    }
 }

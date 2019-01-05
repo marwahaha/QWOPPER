@@ -1,5 +1,6 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.filter;
 
+import com.slowfrog.qwop.RunInfo;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

@@ -1,4 +1,4 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.filter;
 
 public class AndFilter<T> implements IFilter<T> {
 

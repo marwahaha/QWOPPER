@@ -5,23 +5,35 @@ import java.util.List;
 
 public class Individual {
 
-    protected final String str;
-    protected List<RunInfo> runs;
-    protected float fitness;
+    final String str;
+    float fitness;
+    List<RunInfo> runs;
 
     public Individual(String pstr, List<RunInfo> pruns) {
         this.str = pstr;
         if (pruns != null) {
-            this.runs = new ArrayList<RunInfo>(pruns);
+            this.runs = new ArrayList<>(pruns);
         } else {
-            this.runs = new ArrayList<RunInfo>();
+            this.runs = new ArrayList<>();
         }
     }
 
     public Individual(String pstr, float fit) {
         this.str = pstr;
         this.fitness = fit;
-        this.runs = new ArrayList<RunInfo>();
+        this.runs = new ArrayList<>();
+    }
+
+    public String getStr() {
+        return str;
+    }
+
+    public float getFitness() {
+        return fitness;
+    }
+
+    public List<RunInfo> getRuns() {
+        return runs;
     }
 
 }

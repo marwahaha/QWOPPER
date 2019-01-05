@@ -1,11 +1,11 @@
-package com.slowfrog.qwop;
+package com.slowfrog.qwop.filter;
 
+import com.slowfrog.qwop.Individual;
+import com.slowfrog.qwop.RunInfo;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -34,7 +34,7 @@ public class MinRatioFilterTest {
 
     @Test
     public void min70PercentSuccessTest() {
-        MinRatioFilter fixture = new MinRatioFilter(new NotFilter<>(new CrashedFilter()),0.7F);
+        MinRatioFilter fixture = new MinRatioFilter(new NotFilter<>(new CrashedFilter()), 0.7F);
 
         Individual individual = new Individual(null, 0);
         assertFalse("empty runs should always return false", fixture.matches(individual));

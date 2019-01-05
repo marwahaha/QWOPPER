@@ -1,9 +1,9 @@
 package com.slowfrog.qwop;
 
 public interface Log {
-    public void log(String message);
+    void log(String message);
 
-    public void log(String message, Throwable e);
+    void log(String message, Throwable e);
 
-    public void logf(String format, Object... args);
+    void logf(String format, Object... args);
 }
