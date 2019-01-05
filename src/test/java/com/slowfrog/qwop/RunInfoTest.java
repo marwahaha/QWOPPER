@@ -21,15 +21,12 @@ public class RunInfoTest {
     }
 
     @Test
-    public void marshalUnMarshelTest() {
-
-
-        RunInfo info = new RunInfo("initTest", 3, true, false, 14, 2.5f);
-
+    public void marshalUnMarshalTest() {
+        RunInfo info = new RunInfo("initTestAgain", 3, true, false, 14, 2.5f);
         String marshal = info.marshal();
-
         RunInfo infoOut = RunInfo.unmarshal(marshal);
-        assertEquals("initTest", infoOut.string);
+
+        assertEquals("initTestAgain", infoOut.string);
         assertEquals(3, infoOut.delay);
         assertTrue(infoOut.crashed);
         assertFalse(infoOut.stopped);
@@ -38,15 +35,12 @@ public class RunInfoTest {
     }
 
     @Test
-    public void marshalUnMarshelTest2() {
-
-
-        RunInfo info = new RunInfo("initTest", 3, false, true, 14, 2.5f);
-
+    public void marshalUnMarshalTest2() {
+        RunInfo info = new RunInfo("initTest2", 3, false, true, 14, 2.5f);
         String marshal = info.marshal();
-
         RunInfo infoOut = RunInfo.unmarshal(marshal);
-        assertEquals("initTest", infoOut.string);
+
+        assertEquals("initTest2", infoOut.string);
         assertEquals(3, infoOut.delay);
         assertFalse(infoOut.crashed);
         assertTrue(infoOut.stopped);

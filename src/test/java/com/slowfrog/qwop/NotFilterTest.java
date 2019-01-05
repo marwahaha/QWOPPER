@@ -10,7 +10,6 @@ public class NotFilterTest {
     @Test
     public void test() {
         IFilter<String> trueFilter = t -> true;
-
         IFilter<String> falseFilter = t -> false;
 
         NotFilter<String> notTrue = new NotFilter<>(trueFilter);

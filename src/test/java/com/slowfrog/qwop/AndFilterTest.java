@@ -10,7 +10,6 @@ public class AndFilterTest {
     @Test
     public void test() {
         IFilter<String> trueFilter = t -> true;
-
         IFilter<String> falseFilter = t -> false;
 
         AndFilter<String> trueAndFalse = new AndFilter<>(trueFilter, falseFilter);
@@ -18,7 +17,6 @@ public class AndFilterTest {
 
         AndFilter<String> falseAndTrue = new AndFilter<>(trueFilter, falseFilter);
         assertFalse(falseAndTrue.matches(null));
-
 
         AndFilter<String> falseAndFalse = new AndFilter<>(falseFilter, falseFilter);
         assertFalse(falseAndFalse.matches(null));
