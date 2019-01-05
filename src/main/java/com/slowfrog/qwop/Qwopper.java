@@ -451,6 +451,8 @@ public class Qwopper {
     }
 
     private void refreshBrowser() {
+        Point before = MouseInfo.getPointerInfo().getLocation();
+
         // Click out of the flash rectangle to give focus to the browser
         clickAt(rob, origin[0] - 5, origin[1] - 5);
 
@@ -466,6 +468,8 @@ public class Qwopper {
         rob.keyRelease(KeyEvent.VK_META);
         rob.keyRelease(KeyEvent.VK_R);
 
+        rob.mouseMove(before.x, before.y);
+
         // Wait some time and try to find the window again
         for (int i = 0; i < 10; ++i) {
             doWait(2000);
@@ -479,7 +483,7 @@ public class Qwopper {
         throw new RuntimeException("Could not find origin after browser reload");
     }
 
-    public String captureDistance() {
+    private String captureDistance() {
         // TODO document that you might need to tune this box to pick up on digits
         Rectangle distRect = new Rectangle();
         distRect.x = origin[0] + 200;
@@ -523,16 +527,7 @@ public class Qwopper {
 
         long end = System.currentTimeMillis();
         doWait(1000);
-        String cap = captureDistance();
-        float distance;
-        try {
-            distance = Float.parseFloat(cap);
-        } catch (NumberFormatException e) {
-            if (qwopControl != null) {
-                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
-            }
-            distance = 0;
-        }
+        float distance = captureDistanceAsFloat();
 
         RunInfo info;
         if (stop) {
@@ -541,5 +536,16 @@ public class Qwopper {
             info = new RunInfo(str, DELAY, distance < 100, false, end - start, distance);
         }
         return info;
+    }
+
+    public float captureDistanceAsFloat() {
+        try {
+            return Float.parseFloat(captureDistance());
+        } catch (NumberFormatException e) {
+            if (qwopControl != null) {
+                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
+            }
+            return 0F;
+        }
     }
 }

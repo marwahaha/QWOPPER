@@ -1,6 +1,7 @@
 package com.slowfrog.qwop.ui;
 
 import com.slowfrog.qwop.Qwopper;
+import com.slowfrog.qwop.RunInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,8 +28,13 @@ public class QwopControl extends JFrame {
     private long startTime;
     private Random random;
     private Timer timer;
-    private int runsLeft;
-    private long timeLimit;
+    private int gamesLeft;
+
+    private JButton init;
+    private JButton goRandom;
+    private JButton go;
+    private JButton go10;
+    private JButton stop;
 
     public QwopControl() throws AWTException {
         super("QWOP control");
@@ -48,19 +54,15 @@ public class QwopControl extends JFrame {
         bar.setLayout(new BoxLayout(bar, BoxLayout.X_AXIS));
         c.add(bar, BorderLayout.SOUTH);
 
-        JButton init = new JButton("Find game area");
+        init = new JButton("Find game area");
+        goRandom = new JButton("Random...");
+        go = new JButton("Run, Qwop, run!");
+        go10 = new JButton("Run 3 times, 5s/run max");
+        stop = new JButton("Stop");
         bar.add(init);
-
-        final JButton goRandom = new JButton("Random...");
         bar.add(goRandom);
-
-        final JButton go = new JButton("Run, Qwop, run!");
         bar.add(go);
-
-        final JButton go10 = new JButton("Run 10 times 60 s. max");
         bar.add(go10);
-
-        final JButton stop = new JButton("Stop");
         bar.add(stop);
 
         JPanel top = new JPanel();
@@ -108,13 +110,13 @@ public class QwopControl extends JFrame {
         });
 
         go.addActionListener(ev -> {
-            runGame(sequence.getText(), 1, 0);
+            launchGames(sequence.getText(), 1, 0);
             go.setEnabled(false);
             go10.setEnabled(false);
         });
 
         go10.addActionListener(ev -> {
-            runGame(sequence.getText(), 10, 60000);
+            launchGames(sequence.getText(), 3, 5000);
             go.setEnabled(false);
             go10.setEnabled(false);
         });
@@ -134,14 +136,8 @@ public class QwopControl extends JFrame {
 
             String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
 
-            float runDistance = 0F;
-            try {
-                String ret = qwopper.captureDistance();
-                updateDistanceDisplay();
-                runDistance = Float.parseFloat(ret);
-            } catch (NumberFormatException e) {
-                // pass
-            }
+            float runDistance = qwopper.captureDistanceAsFloat();
+            updateDistanceDisplay();
             LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);
 
             float speed = (runDistance / duration);
@@ -153,20 +149,6 @@ public class QwopControl extends JFrame {
             LOGGER.debug("QwopControl Timer! speedStr {}", speedStr);
 
             distance3.setText(runDistance + "m, " + time + ", " + speedStr + "m/s");
-
-            if ((timeLimit != 0) && (now > timeLimit)) {
-                qwopper.stop();
-            }
-
-            if (!qwopper.isRunning()) {
-                timer.stop();
-                if (--runsLeft == 0) {
-                    go.setEnabled(true);
-                    go10.setEnabled(true);
-                } else {
-                    nextGame(sequence.getText(), 60000);
-                }
-            }
         });
         timer.setDelay(250);
     }
@@ -191,34 +173,36 @@ public class QwopControl extends JFrame {
         distance2.setIcon(icon2);
     }
 
-    private void runGame(final String dna, int count, int maxTime) {
-        this.runsLeft = count;
-        // This is to restore the mouse to its starting position
-        // after having clicked on the QWOP window to transfer keyboard focus
-        nextGame(dna, maxTime);
+    private void launchGames(final String dna, int count, int maxTimePerGame) {
+        this.gamesLeft = count;
+        nextGame(dna, maxTimePerGame);
     }
 
-    private void nextGame(final String dna, final int maxTime) {
-        execOutOfAWT(() -> {
+    private void nextGame(final String dna, final int maxTimePerGame) {
+        new Thread(() -> {
             Point screenPoint = MouseInfo.getPointerInfo().getLocation();
             startTime = System.currentTimeMillis();
-            timeLimit = (maxTime > 0) ? startTime + maxTime : 0;
             qwopper.startGame();
             rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
             timer.start();
 
-            qwopper.playOneGame(dna, maxTime);
-        });
-    }
+            RunInfo runInfo = qwopper.playOneGame(dna, maxTimePerGame);
+            log(runInfo.toString());
 
-    private void execOutOfAWT(Runnable r) {
-        Thread t = new Thread(r);
-        t.start();
+            if (!qwopper.isRunning()) {
+                timer.stop();
+                if (--gamesLeft == 0) {
+                    go.setEnabled(true);
+                    go10.setEnabled(true);
+                } else {
+                    nextGame(sequence.getText(), maxTimePerGame);
+                }
+            }
+        }).start();
     }
 
     public void log(final String message) {
         // Using setText() to enable auto-scrolling
         SwingUtilities.invokeLater(() -> logOutput.setText(logOutput.getText() + message + "\n"));
     }
-
 }
