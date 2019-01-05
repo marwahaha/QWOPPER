@@ -6,6 +6,8 @@ import com.slowfrog.qwop.filter.IFilter;
 import com.slowfrog.qwop.filter.MinDistFilter;
 import com.slowfrog.qwop.filter.MinRatioFilter;
 import com.slowfrog.qwop.filter.NotFilter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.io.BufferedReader;
@@ -45,7 +47,8 @@ public class Genetic {
     private static final String GEN_LOG_FILENAME = "gen_log_2019_26_1min_RND.txt";
     private static final int MAX_RUNS = 1;
     private static final int MAX_GENERATIONS = 100;
-    private static final Log LOG = new LogConsole();
+    private static final Logger LOGGER = LoggerFactory.getLogger(Genetic.class);
+
     private final Map<String, Individual> population;
     private float fitnessSum = 0;
     private Qwopper qwopper;
@@ -61,14 +64,14 @@ public class Genetic {
         } else {
             this.readPopulation("runs2.txt"); //contains an unfiltered list of random runners
         }
-        System.out.println("Population: " + this.population.size() + " individuals");
+        LOGGER.info("Population: {} individuals", this.population.size());
         int totalRuns = 0;
         float numRuns;
 
         for (Individual iRunner : this.population.values()) {
             totalRuns += iRunner.runs.size();
         }
-        System.out.println("Total runs: " + totalRuns);
+        LOGGER.info("Total runs: {}", totalRuns);
 
         List<Individual> goodRunnerList;
         if (!randomGen0) //alternate Gen0 is filtered from the randomly generated runner list
@@ -78,11 +81,11 @@ public class Genetic {
             IFilter<Individual> individualFilter = new MinRatioFilter(
                     twoMetersNotCrashed);
             goodRunnerList = this.filter(individualFilter);
-            System.out.println("Good Runners: ");
+            LOGGER.info("Good Runners: ");
             for (Individual aGoodRunnerList : goodRunnerList) {
-                System.out.println(aGoodRunnerList.toString());
-                System.out.println(aGoodRunnerList.str);
-                System.out.println(aGoodRunnerList.runs.get(0).distance);
+                LOGGER.info(aGoodRunnerList.toString());
+                LOGGER.info(aGoodRunnerList.str);
+                LOGGER.info(String.valueOf(aGoodRunnerList.runs.get(0).distance));
             }
         } else {
             goodRunnerList = new ArrayList<>();
@@ -109,7 +112,7 @@ public class Genetic {
 
         try {
             Robot rob = new Robot();
-            qwopper = new Qwopper(rob, LOG);
+            qwopper = new Qwopper(rob);
             qwopper.findRealOrigin();
             evoOut = new PrintStream(new FileOutputStream(EVO_LOG_FILENAME, true));
             genOut = new PrintStream(new FileOutputStream(GEN_LOG_FILENAME, true));
@@ -146,7 +149,7 @@ public class Genetic {
                 }
 
                 //log this generation's average fitness
-                LOG.log("Generation " + genCnt + " Average Fitness: " + genAvgFitness / POPULATION_MAX_SIZE);
+                LOGGER.info("Generation {} Average Fitness: {}", genCnt, genAvgFitness / POPULATION_MAX_SIZE);
                 evoOut.println("Generation " + genCnt + " Average Fitness: " + genAvgFitness / POPULATION_MAX_SIZE);
                 genOut.println("Generation " + genCnt + " Average Fitness: " + genAvgFitness / POPULATION_MAX_SIZE + "\n");
 
@@ -160,9 +163,9 @@ public class Genetic {
 
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            LOGGER.error("File not found", e);
         } catch (Exception e) {
-            LOG.log("Error: ", e);
+            LOGGER.error("Error: ", e);
         }
 
     }
@@ -180,7 +183,7 @@ public class Genetic {
     private void testString(Qwopper qwop, String str, int count, String filename) {
         fitnessSum = 0;
         for (int i = 0; i < count; ++i) {
-            LOG.logf("Run #%d\n", i);
+            LOGGER.info("Run #{}\n", i);
             RunInfo info = playGame(qwop, str);
             fitnessSum += info.distance;
             currentRunnerCrashed = info.crashed;
@@ -190,8 +193,8 @@ public class Genetic {
     private RunInfo playGame(Qwopper qwop, String str) {
         qwop.startGame();
         RunInfo info = qwop.playOneGame(str, RUN_TIME_LIMIT_MILLIS);
-        LOG.log(info.toString());
-        LOG.log(info.marshal());
+        LOGGER.info(info.toString());
+        LOGGER.info(info.marshal());
         evoOut.println(info.toString());
         evoOut.println(info.marshal());
         return info;
@@ -201,7 +204,7 @@ public class Genetic {
     private float testChild(Qwopper qwop, String str, int runLimit) {
         float fitness = 0;
         evoOut.println("Testing child: " + str);
-        LOG.log("Testing child: " + str);
+        LOGGER.info("Testing child: {}", str);
         for (int i = 0; i < runLimit; ++i) {    //currently we only test each child once
             RunInfo info = playGame(qwop, str);
             fitness += info.distance;
@@ -257,9 +260,9 @@ public class Genetic {
                 //find the mate for this individual
                 mate = fittestNeighbor(i, j, curPop);
 
-                LOG.log("Crossover: Finding the fittest neighbor");
-                LOG.log("Runner: " + current.str + "| fitness: " + current.fitness);
-                LOG.log("Fittest Neighbor: " + mate.str + "| fitness: " + mate.fitness);
+                LOGGER.info("Crossover: Finding the fittest neighbor");
+                LOGGER.info("Runner: {}| fitness: {}", current.str, current.fitness);
+                LOGGER.info("Fittest Neighbor: {}| fitness: {}", mate.str, mate.fitness);
 
                 evoOut.println("Crossover: Finding the fittest neighbor");
                 evoOut.println("Runner: " + current.str + "| fitness: " + current.fitness);
@@ -287,16 +290,14 @@ public class Genetic {
                 {
                     evoOut.println("Child 1 fit enough to join next generation: " + child1 + "|" + child1Fitness
                             + "\nReplacing: " + current.str + "|" + current.fitness);
-                    LOG.log("Child 1 fit enough to join next generation: " + child1 + "|" + child1Fitness
-                            + "\nReplacing: " + current.str + "|" + current.fitness);
+                    LOGGER.info("Child 1 fit enough to join next generation: {}|{}\nReplacing: {}|{}", child1, child1Fitness, current.str, current.fitness);
 
                     newPop.add(new Individual(child1, child1Fitness));
                 } else if (!child2Crashed && child2Fitness > child1Fitness && child2Fitness > current.fitness) //is child2 the best?
                 {
                     evoOut.println("Child 2 fit enough to join next generation: " + child2 + "|" + child2Fitness
                             + "\nReplacing: " + current.str + "|" + current.fitness);
-                    LOG.log("Child 2 fit enough to join next generation: " + child2 + "|" + child2Fitness
-                            + "\nReplacing: " + current.str + "|" + current.fitness);
+                    LOGGER.info("Child 2 fit enough to join next generation: {}|{}\nReplacing: {}|{}", child2, child2Fitness, current.str, current.fitness);
 
                     newPop.add(new Individual(child2, child2Fitness));
                 }
@@ -352,10 +353,10 @@ public class Genetic {
 		  inds[2] = indivs[rnd];
 		  fits[2] = avgFits[rnd];
 
-		  LOG.log("Crossover: 3 Runners picked at random");
-		  LOG.log("1: " + inds[0] + "| fitness: " + fits[0]);
-		  LOG.log("2: " + inds[1] + "| fitness: " + fits[1]);
-		  LOG.log("3: " + inds[2] + "| fitness: " + fits[2]);
+		  LOGGER.info("Crossover: 3 Runners picked at random");
+		  LOGGER.info("1: " + inds[0] + "| fitness: " + fits[0]);
+		  LOGGER.info("2: " + inds[1] + "| fitness: " + fits[1]);
+		  LOGGER.info("3: " + inds[2] + "| fitness: " + fits[2]);
 
 
 		  evoOut.println("Crossover: 3 Runners picked at random");
@@ -394,9 +395,9 @@ public class Genetic {
 			      }
 			    }
 
-		  LOG.log("Crossover: Parents selected\n");
-		  LOG.log("1: " + sel[0]);
-		  LOG.log("2: " + sel[1]);
+		  LOGGER.info("Crossover: Parents selected\n");
+		  LOGGER.info("1: " + sel[0]);
+		  LOGGER.info("2: " + sel[1]);
 
 		  evoOut.println("Crossover: Parents selected\n");
 		  evoOut.println("1: " + sel[0]);
@@ -424,7 +425,7 @@ public class Genetic {
 		  {
 			  evoOut.println("Child 1 fit enough to join next generation: " + child1 + "|" + child1Fitness
 					  + "\nReplacing: " + inds[weakest] + "|" + fits[weakest]);
-			  LOG.log("Child 1 fit enough to join next generation: " + child1 + "|" + child1Fitness
+			  LOGGER.info("Child 1 fit enough to join next generation: " + child1 + "|" + child1Fitness
 					  + "\nReplacing: " + inds[weakest] + "|" + fits[weakest]);
 			  newpop[newPopCnt] = child1;
 	          newPopCnt++;
@@ -442,7 +443,7 @@ public class Genetic {
 		  {
 			  evoOut.println("Child 2 fit enough to join next generation: " + child2 + "|" + child2Fitness
 					  + "\nReplacing: " + inds[weakest] + "|" + fits[weakest]);
-			  LOG.log("Child 2 fit enough to join next generation: " + child2 + "|" + child2Fitness
+			  LOGGER.info("Child 2 fit enough to join next generation: " + child2 + "|" + child2Fitness
 					  + "\nReplacing: " + inds[weakest] + "|" + fits[weakest]);
 			  newpop[newPopCnt] = child2;
 	          newPopCnt++;
@@ -484,7 +485,7 @@ public class Genetic {
                             }
                             indiv.runs.add(info);
                         } catch (RuntimeException e) {
-                            System.out.println("Error on line " + lineNum);
+                            LOGGER.error("Error on line {}", lineNum, e);
                             throw e;
                         }
                     }

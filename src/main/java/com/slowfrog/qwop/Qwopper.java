@@ -5,6 +5,10 @@
  */
 package com.slowfrog.qwop;
 
+import com.slowfrog.qwop.ui.QwopControl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -49,8 +53,9 @@ public class Qwopper {
      * keep CPU and memory usage reasonable.
      */
     private static final int MAX_RUNS_BETWEEN_RELOAD = 40;
+    private static final Logger LOGGER = LoggerFactory.getLogger(Qwopper.class);
     private final Robot rob;
-    private final Log log;
+    private QwopControl qwopControl;
     private int[] origin;
     private boolean finished;
     private long start;
@@ -63,9 +68,13 @@ public class Qwopper {
     private BufferedImage transformed;
 
 
-    public Qwopper(Robot rob, Log log) {
+    public Qwopper(Robot rob) {
         this.rob = rob;
-        this.log = log;
+    }
+
+    public Qwopper(Robot rob, QwopControl qwopControl) {
+        this.rob = rob;
+        this.qwopControl = qwopControl;
     }
 
     /**
@@ -447,7 +456,7 @@ public class Qwopper {
                     break;
 
                 default:
-                    System.out.println("Unkown 'note': " + c);
+                    LOGGER.info("Unknown 'note': " + c);
             }
 
             //pause after each input
@@ -460,7 +469,7 @@ public class Qwopper {
                 doWait(waitTime);
             }
             long newTick = System.currentTimeMillis();
-            // log.logf("w=%03d d=%03d\n", waitTime, newTick - lastTick);
+            LOGGER.info("w={} d={}\n", waitTime, newTick - lastTick);
             lastTick = newTick;
             if ((this.timeLimit != 0) && (newTick > this.timeLimit)) {
                 this.stop = true;
@@ -532,7 +541,7 @@ public class Qwopper {
                         doWait(waitTime);
                     }
                     long newTick = System.currentTimeMillis();
-                    // log.logf("w=%03d d=%03d\n", waitTime, newTick - lastTick);
+                     LOGGER.info("w={} d={}\n", waitTime, newTick - lastTick);
                     lastTick = newTick;
                     if ((this.timeLimit != 0) && (newTick > this.timeLimit)) {
                         this.stop = true;
@@ -545,7 +554,7 @@ public class Qwopper {
                     break;
 
                 default:
-                    System.out.println("Unkown 'note': " + c);
+                    LOGGER.info("Unknown 'note': {}", c);
             }
         }
     }
@@ -557,7 +566,9 @@ public class Qwopper {
         try {
             dist = Float.parseFloat(distStr);    //parsing an empty string throws exception
         } catch (NumberFormatException e) {
-            log.log("*****  captureDistance() returned empty string. Setting distance to 0");
+            if (qwopControl != null) {
+                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0");
+            }
             dist = 0;
         }
 
@@ -568,7 +579,7 @@ public class Qwopper {
         }
         // not used
         float speed = (dist * 1000) / dur;
-        //log.logf("%.1fm in %ds: speed=%.3f\n", dist, (dur / 1000), speed);
+        //qwopControl.logf("%.1fm in %ds: speed=%.3f\n", dist, (dur / 1000), speed);
     }
 
     public int[] getOrigin() {
@@ -702,7 +713,9 @@ public class Qwopper {
 
     public RunInfo playOneGame(String str, long maxDuration) {
 
-        log.log("Playing " + str);
+        if (qwopControl != null) {
+            qwopControl.log("Playing " + str);
+        }
         doWait(500); // 0.5s wait to be sure QWOP is ready to run
         this.start = System.currentTimeMillis();
         this.nextCheck = this.start + CHECK_INTERVAL;
@@ -721,7 +734,9 @@ public class Qwopper {
         if (++nbRuns == MAX_RUNS_BETWEEN_RELOAD) {
             nbRuns = 0;
             refreshBrowser();
-            log.log("Refreshing browser");
+            if (qwopControl != null) {
+                qwopControl.log("Refreshing browser");
+            }
         }
 
         long end = System.currentTimeMillis();
@@ -731,7 +746,9 @@ public class Qwopper {
         try {
             distance = Float.parseFloat(cap);    //parsing an empty string throws exception
         } catch (NumberFormatException e) {
-            log.log("*****  captureDistance() returned empty string. Setting distance to 0");
+            if (qwopControl != null) {
+                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
+            }
             distance = 0;
         }
 

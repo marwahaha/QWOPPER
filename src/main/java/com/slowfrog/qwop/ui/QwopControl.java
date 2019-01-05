@@ -1,7 +1,8 @@
 package com.slowfrog.qwop.ui;
 
-import com.slowfrog.qwop.Log;
 import com.slowfrog.qwop.Qwopper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,11 +14,13 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Random;
 
-public class QwopControl extends JFrame implements Log {
+
+public class QwopControl extends JFrame {
 
     private static final long serialVersionUID = 1;
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(QwopControl.class);
     private static final Font FONT = new Font("Lucida Sans", Font.BOLD, 24);
+
     protected Qwopper qwopper;
     private Robot rob;
     private JTextArea logOutput;
@@ -34,6 +37,8 @@ public class QwopControl extends JFrame implements Log {
 
     public QwopControl() throws AWTException {
         super("QWOP control");
+        LOGGER.info("Hello world!");
+
         this.setLocation(200, 0);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 

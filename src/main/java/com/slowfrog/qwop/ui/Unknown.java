@@ -1,9 +1,9 @@
 package com.slowfrog.qwop.ui;
 
-import com.slowfrog.qwop.LogConsole;
-import com.slowfrog.qwop.Log;
 import com.slowfrog.qwop.Qwopper;
 import com.slowfrog.qwop.RunInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.io.FileOutputStream;
@@ -12,12 +12,12 @@ import java.io.PrintStream;
 
 public class Unknown {
 
-    private static final Log LOG = new LogConsole();
+    private static final Logger LOGGER = LoggerFactory.getLogger(Unknown.class);
 
     public static void main(String[] args) {
 
         int tries = 1;
-        int count = 500;//1;
+        int count = 500;
         String str = null;
         if (args.length > 0) {
             try {
@@ -34,7 +34,7 @@ public class Unknown {
 
         try {
             Robot rob = new Robot();
-            Qwopper qwop = new Qwopper(rob, LOG);
+            Qwopper qwop = new Qwopper(rob);
             qwop.findRealOrigin();
             for (int round = 0; round < count; ++round) {
                 if (count > 1) {
@@ -43,18 +43,18 @@ public class Unknown {
                 testString(qwop, str, tries, round);
             }
 
-        } catch (Throwable t) {
-            LOG.log("Error", t);
+        } catch (Exception t) {
+            LOGGER.error("Error", t);
         }
     }
 
     private static void testString(Qwopper qwop, String str, int count, int round) {
         for (int i = 0; i < count; ++i) {
-            LOG.logf("Run #%d.%d\n", round, i);
+            LOGGER.info("Run #{}.{}\n", round, i);
             qwop.startGame();
             RunInfo info = qwop.playOneGame(str, 30000);
-            LOG.log(info.toString());
-            LOG.log(info.marshal());
+            LOGGER.info(info.toString());
+            LOGGER.info(info.marshal());
             saveRunInfo("runs2.txt", info);
         }
     }
@@ -69,7 +69,7 @@ public class Unknown {
                 out.close();
             }
         } catch (IOException ioe) {
-            LOG.log("Error marshalling", ioe);
+            LOGGER.error("Error marshalling", ioe);
         }
     }
 

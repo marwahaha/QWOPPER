@@ -1,5 +1,8 @@
 package com.slowfrog.qwop;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -13,7 +16,7 @@ import java.util.List;
  * And it's (partly) unit tested too!
  */
 class ImageReader {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(ImageReader.class);
     private static final BufferedImage REF_DIGITS = loadRefDigits();
     private static final String DIGITS = "-.0123456789";
     private static final int[] DIGIT_X = {3, 15, 24, 44, 57, 76, 93, 113, 130,
@@ -78,13 +81,13 @@ class ImageReader {
                 }
             }
             int match = (sum * 100) / (w * rect.height);
-//             System.out.printf("comp(%s)=%d: %d\n", d, sum, match);
+             LOGGER.info("comp({})={}: {}\n", d, sum, match);
             if ((bestMatch == -1) || (match > bestMatch)) {
                 bestMatch = match;
                 ret = d;
             }
         }
-//         System.out.println("==>" + ret + "   " + bestMatch);
+        LOGGER.info("==>{}   {}", ret, bestMatch);
         if (bestMatch < 90) {
             ret = "";
         }
