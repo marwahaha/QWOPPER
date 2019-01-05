@@ -28,25 +28,6 @@ public class Qwopper {
      */
     private static final int DELAY = 150;
 
-    /**
-     * Note    	Input
-     * A	1		Q
-     * B	2		W
-     * C	3		O
-     * D	4		P
-     * E	5		QW
-     * F	6		QO
-     * G	7		QP
-     * H	8		WO
-     * I	9		WP
-     * J	10		OP
-     * K	11		QWO
-     * L	12		QWP
-     * M	13		QOP
-     * N	14		WOP
-     * O	15		QWOP
-     * P	16		----  (no keys pressed)
-     */
     private static final String NOTES2 = "ABCDEFGHIJKLMNOP";
 
     /**

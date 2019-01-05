@@ -23,7 +23,9 @@ He along with his advisor [V. Scott Gordon](https://athena.ecs.csus.edu/~gordonv
 See the [Youtube video here](https://www.youtube.com/watch?v=eWxFI3NHtT8) or [download the paper here](http://athena.ecs.csus.edu/~gordonvs/papers/QWOPgecco14.pdf). The DOI is [10.1145/2576768.2598248](http://doi.org/10.1145/2576768.2598248).
 
 ### 2019, [Kunal Marwaha](http://kunalmarwaha.com/)
-I've cleaned up and updated this application for modern (circa-2019) tooling. With this program, I'm aiming to get a good walking gait in QWOP.I may or may not use genetic algorithms, as I have some idea of what "walking" looks like. 
+I've cleaned up and updated this application for modern (circa-2019) tooling.
+With this program, I'm aiming to get a good walking gait in QWOP.
+I may or may not use genetic algorithms, as I have some idea of what "walking" looks like.
 
 [My code is here](https://github.com/marwahaha/QWOPPER).
 
@@ -33,9 +35,31 @@ I've cleaned up and updated this application for modern (circa-2019) tooling. Wi
 3. Launch the graphical interface: `./gradlew run` (`gradlew.bat run` on Windows).
 4. Resize the graphical interface to half-screen, and open [QWOP](http://www.foddy.net/Athletics.html) in the other half screen.
 
+## Gait "DNA"
+The gait "DNA" is a string of letters A-P. Each letter encodes which of `[Q, W, O, P]` are pressed, each held for 150ms. Each of 2\*2\*2\*2=16 options are listed below.
+
+When the gait string is complete, the computer starts again from the first letter. This continues until the runner crashes, the game is complete (100 meters), or the program is stopped.
+
+| Letter | Input |
+| ---- | ----- |
+| A | Q |
+| B | W |
+| C | O |
+| D | P |
+| E | QW |
+| F | QO |
+| G | QP |
+| H | WO |
+| I | WP |
+| J | OP |
+| K | QWO |
+| L | QWP |
+| M | QOP |
+| N | WOP |
+| O | QWOP |
+| P | (none pressed) |
+
 ## Contributing tips
 * You'll need to [install Gradle](https://gradle.org/install/).
 * You can run the JAR directly with `java -jar build/libs/QWOPPER.jar`.
 * Lots of [Gradle tips here](https://github.com/shekhargulati/gradle-tips).
-
-More details coming soon!
