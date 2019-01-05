@@ -450,12 +450,15 @@ public class Qwopper {
     }
 
     /**
-     * Start a game, either by clicking on it (at first load) or pressing space
-     * for next games.
+     * Start a game.
+     *
+     * Changes stop=false.
+     * Clicks into the game and restarts it.
      */
     public void startGame() {
         stop = false;
-        clickAt(rob, origin[0], origin[1]);
+        clickAt(rob, origin[0], origin[1]); // clicks into game
+        clickAt(rob, origin[0], origin[1]); // clicks into game (in case the first click only selected the browser)
         if (isFinished()) {
             rob.keyPress(KeyEvent.VK_SPACE);
             rob.keyRelease(KeyEvent.VK_SPACE);

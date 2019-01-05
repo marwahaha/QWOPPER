@@ -130,17 +130,19 @@ public class QwopControl extends JFrame {
             LOGGER.debug("QwopControl Timer!");
             long now = System.currentTimeMillis();
             long duration = (long) Math.max(((double) (now - startTime)) / ((double) 1000), 0.1);
-            LOGGER.debug("QwopControl Timer! duration " + duration);
+            LOGGER.debug("QwopControl Timer! duration {}", duration);
 
             String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
 
             float runDistance = 0F;
             try {
-                runDistance = Float.parseFloat(captureAndDisplayDistance());
+                String ret = qwopper.captureDistance();
+                updateDistanceDisplay();
+                runDistance = Float.parseFloat(ret);
             } catch (NumberFormatException e) {
                 // pass
             }
-            LOGGER.debug("QwopControl Timer! runDistance " + runDistance);
+            LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);
 
             float speed = (runDistance / duration);
             DecimalFormatSymbols symbols = new DecimalFormat()
@@ -148,7 +150,7 @@ public class QwopControl extends JFrame {
             symbols.setDecimalSeparator('.');
             DecimalFormat df = new DecimalFormat("0.000", symbols);
             String speedStr = df.format(speed);
-            LOGGER.debug("QwopControl Timer! speedStr " + speedStr);
+            LOGGER.debug("QwopControl Timer! speedStr {}", speedStr);
 
             distance3.setText(runDistance + "m, " + time + ", " + speedStr + "m/s");
 
@@ -180,21 +182,16 @@ public class QwopControl extends JFrame {
         }
     }
 
-    private String captureAndDisplayDistance() {
-        String ret = qwopper.captureDistance();
-
+    private void updateDistanceDisplay() {
         ImageIcon icon = new ImageIcon();
         icon.setImage(qwopper.getLastCapture());
         distance.setIcon(icon);
         ImageIcon icon2 = new ImageIcon();
         icon2.setImage(qwopper.getLastTransformed());
         distance2.setIcon(icon2);
-
-        return ret;
     }
 
     private void runGame(final String dna, int count, int maxTime) {
-
         this.runsLeft = count;
         // This is to restore the mouse to its starting position
         // after having clicked on the QWOP window to transfer keyboard focus
@@ -207,10 +204,10 @@ public class QwopControl extends JFrame {
             startTime = System.currentTimeMillis();
             timeLimit = (maxTime > 0) ? startTime + maxTime : 0;
             qwopper.startGame();
-            rob.mouseMove(screenPoint.x, screenPoint.y);
+            rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
             timer.start();
 
-            qwopper.playOneGame(dna, 0);
+            qwopper.playOneGame(dna, maxTime);
         });
     }
 
