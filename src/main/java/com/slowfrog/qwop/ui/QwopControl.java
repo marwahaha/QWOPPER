@@ -129,7 +129,7 @@ public class QwopControl extends JFrame {
         timer = new Timer(1000, ev -> {
             LOGGER.debug("QwopControl Timer!");
             long now = System.currentTimeMillis();
-            long duration = (long) Math.max((now - startTime) / ((double) 1000), 0.1);
+            long duration = (long) Math.max(((double) (now - startTime)) / ((double) 1000), 0.1);
             LOGGER.debug("QwopControl Timer! duration " + duration);
 
             String time = (duration / 60) + ":" + new DecimalFormat("00").format(duration % 60);
@@ -150,7 +150,7 @@ public class QwopControl extends JFrame {
             String speedStr = df.format(speed);
             LOGGER.debug("QwopControl Timer! speedStr " + speedStr);
 
-            distance3.setText(runDistance + " in " + time + ", v=" + speedStr);
+            distance3.setText(runDistance + "m, " + time + ", " + speedStr + "m/s");
 
             if ((timeLimit != 0) && (now > timeLimit)) {
                 qwopper.stop();
