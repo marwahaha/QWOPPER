@@ -40,13 +40,25 @@ public class Qwopper {
     private static final int CHECK_INTERVAL = 1000;
 
     /**
-     * All possible 'notes'
+     * Note    	Input
+     * A	1		Q
+     * B	2		W
+     * C	3		O
+     * D	4		P
+     * E	5		QW
+     * F	6		QO
+     * G	7		QP
+     * H	8		WO
+     * I	9		WP
+     * J	10		OP
+     * K	11		QWO
+     * L	12		QWP
+     * M	13		QOP
+     * N	14		WOP
+     * O	15		QWOP
+     * P	16		----  (no keys pressed)
      */
-    private static final String NOTES = "QWOPqwop++";
-
-    //new encoding
     private static final String NOTES2 = "ABCDEFGHIJKLMNOP";
-
 
     /**
      * Number of consecutive runs before we trigger a reload of the browser to
@@ -151,67 +163,20 @@ public class Qwopper {
     }
 
     /**
-     * Simulates a key 'click' by sending a key press followed by a key release
-     * event.
-     */
-    private static void clickKey(Robot rob, int keycode) {
-        rob.keyPress(keycode);
-        rob.keyRelease(keycode);
-    }
-
-    /**
      * Wait for a few milliseconds, without fear of an InterruptedException.
      */
     private static void doWait(int millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
-            // Don't mind
+            LOGGER.debug("interrupted, but who cares?", e);
         }
-    }
-
-    private static int keyIndex(char key) {
-        switch (Character.toLowerCase(key)) {
-            case 'q':
-                return 0;
-            case 'w':
-                return 1;
-            case 'o':
-                return 2;
-            case 'p':
-                return 3;
-            default:
-                throw new IllegalArgumentException("Invalid key: " + key);
-        }
-    }
-
-    private static String indexKey(int index) {
-        return "qwop".substring(index, index + 1);
     }
 
     /**
      * This function creates a random string using Encoding 2 in which each
      * permutation of possible simultaneous inputs is encoded to a single
-     * character or "note." The notes are as follows:
-     * <p>
-     * Note    	Input
-     * <p>
-     * A	1		Q
-     * B	2		W
-     * C	3		O
-     * D	4		P
-     * E	5		QW
-     * F	6		QO
-     * G	7		QP
-     * H	8		WO
-     * I	9		WP
-     * J	10		OP
-     * K	11		QWO
-     * L	12		QWP
-     * M	13		QOP
-     * N	14		WOP
-     * O	15		QWOP
-     * P	16		----  (no keys pressed)
+     * character or "note."
      *
      * @param duration number of total inputs
      * @return the created string
@@ -233,64 +198,6 @@ public class Qwopper {
     }
 
     /**
-     * A realistic random string is one where:
-     * <ul>
-     * <li>a key press is always followed by a key release for the same key</li>
-     * <li>there is some time between a press and a release of a key</li>
-     * <li>there is also some time between a release and a press of a key.</li>
-     * </ul>
-     *
-     * @param duration duration of the sequence in 'ticks'
-     */
-    public static String makeRealisticRandomString(int duration) {
-        Random random = new Random(System.currentTimeMillis());
-        StringBuilder str = new StringBuilder();
-        boolean[] down = {false, false, false, false};
-        boolean[] justDown = {false, false, false, false};
-        boolean[] justUp = {false, false, false, false};
-        int cur = 0;
-        while (cur < duration) {
-            int rnd = random.nextInt(NOTES.length());
-            String k = NOTES.substring(rnd, rnd + 1);
-            char kc = k.charAt(0);
-            if (kc == '+') { // delay
-                ++cur;
-                for (int i = 0; i < 4; ++i) {
-                    justDown[i] = false;
-                    justUp[i] = false;
-                }
-            } else if (Character.isUpperCase(kc)) { // key press
-                int ki = keyIndex(kc);
-                if (!(down[ki] || justUp[ki])) {
-                    down[ki] = true;
-                    justDown[ki] = true;
-                } else {
-                    continue;
-                }
-
-            } else { // Lower case: key release
-                int ki = keyIndex(kc);
-                if (down[ki] && !justDown[ki]) {
-                    down[ki] = false;
-                    justUp[ki] = true;
-                } else {
-                    continue;
-                }
-            }
-
-            str.append(kc);
-        }
-
-        // Make sure all keys are released at the end (maybe without a delay)
-        for (int i = 0; i < down.length; ++i) {
-            if (down[i]) {
-                str.append(indexKey(i));
-            }
-        }
-        return str.toString();
-    }
-
-    /**
      * Look for the origin of the game area on screen.
      */
     private static int[] findOrigin(Robot rob) {
@@ -304,8 +211,7 @@ public class Qwopper {
                 }
             }
         }
-        throw new RuntimeException(
-                "Origin not found. Make sure the game is open and fully visible.");
+        throw new RuntimeException("Origin not found. Make sure the game is open and fully visible.");
     }
 
     /**
@@ -313,26 +219,7 @@ public class Qwopper {
      * <p>
      * Strings use a new encoding in which each
      * permutation of possible simultaneous inputs is encoded to a single
-     * character or "note." The notes are as follows:
-     * <p>
-     * Note    	Input
-     * <p>
-     * A	1		Q
-     * B	2		W
-     * C	3		O
-     * D	4		P
-     * E	5		QW
-     * F	6		QO
-     * G	7		QP
-     * H	8		WO
-     * I	9		WP
-     * J	10		OP
-     * K	11		QWO
-     * L	12		QWP
-     * M	13		QOP
-     * N	14		WOP
-     * O	15		QWOP
-     * P	16		----  (no keys pressed)
+     * character or "note."
      */
     private void playString2(String str) {
         this.string = str;
@@ -456,7 +343,7 @@ public class Qwopper {
                     break;
 
                 default:
-                    LOGGER.info("Unknown 'note': " + c);
+                    LOGGER.info("Unknown 'note': {}", c);
             }
 
             //pause after each input
@@ -469,7 +356,7 @@ public class Qwopper {
                 doWait(waitTime);
             }
             long newTick = System.currentTimeMillis();
-            LOGGER.info("w={} d={}\n", waitTime, newTick - lastTick);
+            LOGGER.info("wait={}ms diff={}ms", waitTime, newTick - lastTick);
             lastTick = newTick;
             if ((this.timeLimit != 0) && (newTick > this.timeLimit)) {
                 this.stop = true;
@@ -478,83 +365,6 @@ public class Qwopper {
             // After each DELAY, check the screen to see if it's finished
             if (isFinished()) {
                 return;
-            }
-        }
-    }
-
-    /**
-     * Play a string. Interpret a string of QWOPqwop+ as a music sheet.
-     * <ul>
-     * <li>QWOP means press the key Q, W, O or P</li>
-     * <li>qwop means release the key</li>
-     * <li>+ means wait for a small DELAY</li>
-     * </ul>
-     */
-    private void playString(String str) {
-        this.string = str;
-        long lastTick = System.currentTimeMillis();
-        for (int i = 0; i < str.length(); ++i) {
-            if (stop) {
-                return;
-            }
-            char c = str.charAt(i);
-            switch (c) {
-                case 'Q':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    break;
-
-                case 'W':
-                    rob.keyPress(KeyEvent.VK_W);
-                    break;
-
-                case 'O':
-                    rob.keyPress(KeyEvent.VK_O);
-                    break;
-
-                case 'P':
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'q':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    break;
-
-                case 'w':
-                    rob.keyRelease(KeyEvent.VK_W);
-                    break;
-
-                case 'o':
-                    rob.keyRelease(KeyEvent.VK_O);
-                    break;
-
-                case 'p':
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case '+':
-                    if (System.currentTimeMillis() > this.nextCheck) {
-                        checkSpeed();
-                    }
-
-                    int waitTime = (int) ((lastTick + DELAY) - System.currentTimeMillis());
-                    if (waitTime > 0) {
-                        doWait(waitTime);
-                    }
-                    long newTick = System.currentTimeMillis();
-                     LOGGER.info("w={} d={}\n", waitTime, newTick - lastTick);
-                    lastTick = newTick;
-                    if ((this.timeLimit != 0) && (newTick > this.timeLimit)) {
-                        this.stop = true;
-                        return;
-                    }
-                    // After each DELAY, check the screen to see if it's finished
-                    if (isFinished()) {
-                        return;
-                    }
-                    break;
-
-                default:
-                    LOGGER.info("Unknown 'note': {}", c);
             }
         }
     }
@@ -643,7 +453,8 @@ public class Qwopper {
         stop = false;
         clickAt(rob, origin[0], origin[1]);
         if (isFinished()) {
-            clickKey(rob, KeyEvent.VK_SPACE);
+            rob.keyPress(KeyEvent.VK_SPACE);
+            rob.keyRelease(KeyEvent.VK_SPACE);
         } else {
             // Press 'R' for restart
             rob.keyPress(KeyEvent.VK_R);
@@ -725,7 +536,6 @@ public class Qwopper {
             this.timeLimit = 0;
         }
         while (!(isFinished() || stop)) {
-            //playString(str);
             playString2(str);
         }
         stopRunning();
