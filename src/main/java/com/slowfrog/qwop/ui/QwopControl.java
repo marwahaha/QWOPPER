@@ -31,6 +31,7 @@ public class QwopControl extends JFrame implements Log {
     private Timer timer;
     private int runsLeft;
     private long timeLimit;
+
     public QwopControl() throws AWTException {
         super("QWOP control");
         this.setLocation(200, 0);

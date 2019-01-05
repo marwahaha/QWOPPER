@@ -1,6 +1,8 @@
 # Builds
 /bin/
 /dist/
+build/
+.gradle/
 
 # IntelliJ
 .idea/

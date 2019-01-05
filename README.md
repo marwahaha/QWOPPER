@@ -23,32 +23,19 @@ He along with his advisor [V. Scott Gordon](https://athena.ecs.csus.edu/~gordonv
 See the [Youtube video here](https://www.youtube.com/watch?v=eWxFI3NHtT8) or [download the paper here](http://athena.ecs.csus.edu/~gordonvs/papers/QWOPgecco14.pdf). The DOI is [10.1145/2576768.2598248](http://doi.org/10.1145/2576768.2598248).
 
 ### 2019, [Kunal Marwaha](http://kunalmarwaha.com/)
-So far, I'm just trying to make it work :-)
+I'm trying to make this application work with modern tooling. I'm also trying to get a good walking gait in QWOP.
 
-[Code is here](https://github.com/marwahaha/QWOPPER).
+[My code is here](https://github.com/marwahaha/QWOPPER).
 
-## Usage
-1. Install Apache Ant.
-* mac: `brew install ant`
-* windows: [follow instructions here](https://www.mkyong.com/ant/how-to-install-apache-ant-on-windows/)
-* fallback: [see the manual](https://ant.apache.org/manual/install.html)
-
-2. Clone project.
-```
-git clone https://github.com/marwahaha/QWOPPER.git
-cd QWOPPER
-```
-
-3. Make the JAR file by running `ant package` (or simply `ant`).
-
-4. Run the JAR, which opens a graphical interface:
-```
-java -jar dist/qwopper.jar
-```
-
+## Using
+1. Clone project: `git clone https://github.com/marwahaha/QWOPPER.git` (or [download the ZIP](https://github.com/marwahaha/QWOPPER/archive/master.zip))
+2. Navigate into the directory: `cd QWOPPER`
+3. Make the JAR file: `./gradlew build` (`gradlew.bat build` on Windows).
+4. Run the JAR, opening a graphical interface: `java -jar build/libs/QWOPPER.jar `
 5. Resize the graphical interface to half-screen, and open [QWOP](http://www.foddy.net/Athletics.html) in the other half screen.
 
-## Hints
-* See all ant tasks with `ant -p`
+## Contributing tips
+* You'll need to [install Gradle](https://gradle.org/install/).
+* Lots of [Gradle tips here](https://github.com/shekhargulati/gradle-tips).
 
 More details coming soon!
