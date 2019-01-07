@@ -21,6 +21,10 @@ public class EditDistanceTest {
         assertEquals(3, levenshtein("kitten", "sitting"));
         assertEquals(4, levenshtein("abc", "defg"));
         assertEquals(1, levenshtein("abc", "abac"));
+        assertEquals(1, levenshtein("supercali", "supercall"));
+        assertEquals(1, levenshtein("BLAH", "BLKH"));
+//        TODO ENABLE AFTER MEMOIZING
+//      assertEquals(1, levenshtein("supercalilongline", "supercalilonglines"));
     }
 
     @Test

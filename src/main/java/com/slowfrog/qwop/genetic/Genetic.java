@@ -252,7 +252,7 @@ public class Genetic {
     //perform crossover using a 2D wrap-around array of Individuals
     private WrapGrid<Individual> crossoverSteadyStateGrid(WrapGrid<Individual> curPop) {
         WrapGrid<Individual> newPop = new WrapGrid<Individual>(curPop.rows, curPop.cols, curPop.conNum);
-        Random random = new Random(System.currentTimeMillis());
+        Random random = new Random(System.currentTimeMillis() * 1000);
         Individual current;
         Individual mate;
 

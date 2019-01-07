@@ -21,6 +21,7 @@ public class Qwopper {
      * DNA Letter to QWOP values in binary
      */
     public static final Map<Character, Integer> letterMap;
+    public static final String NOTES2 = "ABCDEFGHIJKLMNOP";
     /**
      * Tolerance for color comparison.
      * // TODO document that you might need to tune this to pick up game
@@ -30,7 +31,6 @@ public class Qwopper {
      * Unit delay in milliseconds when playing a 'string'
      */
     private static final int DELAY = 150;
-    private static final String NOTES2 = "ABCDEFGHIJKLMNOP";
     /**
      * Number of consecutive runs before we trigger a reload of the browser to
      * keep CPU and memory usage reasonable.
@@ -165,7 +165,7 @@ public class Qwopper {
      * @return the created string
      */
     public static String makeRealisticRandomString2(int duration) {
-        Random random = new Random(System.currentTimeMillis());
+        Random random = new Random(System.currentTimeMillis() * 1000);
         StringBuilder str = new StringBuilder();
         int cur = 0;
         while (cur < duration) {

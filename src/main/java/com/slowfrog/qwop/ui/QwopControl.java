@@ -47,7 +47,7 @@ public class QwopControl extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         rob = new Robot();
-        random = new Random(System.currentTimeMillis());
+        random = new Random(System.currentTimeMillis() * 1000);
         qwopper = new Qwopper(rob);
 
         Container c = this.getContentPane();
