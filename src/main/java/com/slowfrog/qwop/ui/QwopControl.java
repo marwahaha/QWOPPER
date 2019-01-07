@@ -59,7 +59,7 @@ public class QwopControl extends JFrame {
 
         init = new JButton("Find game area");
         go = new JButton("Run, Qwop, run!");
-        goMultiple = new JButton("Run 3 times, 15s/run max");
+        goMultiple = new JButton("Run 5 times, 15s/run max");
         stop = new JButton("Stop");
         bar.add(init);
         bar.add(go);
@@ -78,6 +78,7 @@ public class QwopControl extends JFrame {
         top.add(topWest, BorderLayout.WEST);
 
         sequence = new JTextField();
+        sequence.setText("HHHIILL");
         top.add(sequence, BorderLayout.CENTER);
         goRandom = new JButton("Random...");
         top.add(goRandom, BorderLayout.EAST);
@@ -128,12 +129,12 @@ public class QwopControl extends JFrame {
     private void eventHandlerInit(ActionEvent _ev) {
         try {
             int[] origin = qwopper.findRealOrigin();
-            LOGGER.info("Origin at ({},{})", origin[0], origin[1]);
-            log("Origin at (" + origin[0] + "," + origin[1] + ")");
+            LOGGER.info("Game at ({},{})", origin[0], origin[1]);
+            log("Game at (" + origin[0] + "," + origin[1] + ")");
 
         } catch (Exception e) {
-            LOGGER.error("Error finding origin", e);
-            log("Error finding origin: " + e.getMessage());
+            LOGGER.error("Error finding game", e);
+            log("Error finding game: " + e.getMessage());
         }
     }
 
@@ -149,7 +150,7 @@ public class QwopControl extends JFrame {
     }
 
     private void eventHandlerGoMultiple(ActionEvent _ev) {
-        launchGames(sequence.getText(), 3, 15000);
+        launchGames(sequence.getText(), 5, 15000);
         go.setEnabled(false);
         goMultiple.setEnabled(false);
     }
@@ -197,6 +198,7 @@ public class QwopControl extends JFrame {
 
     private void launchGames(final String dna, int count, int maxTimePerGame) {
         this.gamesLeft = count;
+        log("Playing " + dna + " " + count + " time(s)");
         nextGame(dna, maxTimePerGame);
     }
 
@@ -208,7 +210,6 @@ public class QwopControl extends JFrame {
             rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
             timer.start();
 
-            log("Playing " + dna);
             RunInfo runInfo = qwopper.playOneGame(dna, maxTimePerGame, (int) yOffsetSpinner.getValue());
             log(runInfo.toString());
 
