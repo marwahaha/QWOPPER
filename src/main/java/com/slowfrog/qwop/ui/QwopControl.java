@@ -48,7 +48,7 @@ public class QwopControl extends JFrame {
 
         rob = new Robot();
         random = new Random(System.currentTimeMillis());
-        qwopper = new Qwopper(rob, this);
+        qwopper = new Qwopper(rob);
 
         Container c = this.getContentPane();
         c.setLayout(new BorderLayout());
@@ -58,12 +58,10 @@ public class QwopControl extends JFrame {
         c.add(bar, BorderLayout.SOUTH);
 
         init = new JButton("Find game area");
-        goRandom = new JButton("Random...");
         go = new JButton("Run, Qwop, run!");
         goMultiple = new JButton("Run 3 times, 15s/run max");
         stop = new JButton("Stop");
         bar.add(init);
-        bar.add(goRandom);
         bar.add(go);
         bar.add(goMultiple);
         bar.add(stop);
@@ -81,6 +79,9 @@ public class QwopControl extends JFrame {
 
         sequence = new JTextField();
         top.add(sequence, BorderLayout.CENTER);
+        goRandom = new JButton("Random...");
+        top.add(goRandom, BorderLayout.EAST);
+
         JPanel bottom = new JPanel();
         top.add(bottom, BorderLayout.SOUTH);
         bottom.setLayout(new FlowLayout());
@@ -169,6 +170,9 @@ public class QwopControl extends JFrame {
         LOGGER.debug("QwopControl Timer! duration {}", duration);
 
         float runDistance = qwopper.captureDistanceAsFloat((int) yOffsetSpinner.getValue());
+        if (Math.abs(-99F - runDistance) < 1e-10) {
+            log("*****  could not parse distance. Try adjusting the yOffset :-(");
+        }
         updateDistanceDisplay();
         LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);
 
@@ -204,6 +208,7 @@ public class QwopControl extends JFrame {
             rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
             timer.start();
 
+            log("Playing " + dna);
             RunInfo runInfo = qwopper.playOneGame(dna, maxTimePerGame, (int) yOffsetSpinner.getValue());
             log(runInfo.toString());
 

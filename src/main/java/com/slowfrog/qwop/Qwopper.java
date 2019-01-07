@@ -1,6 +1,5 @@
 package com.slowfrog.qwop;
 
-import com.slowfrog.qwop.ui.QwopControl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,7 +36,6 @@ public class Qwopper {
     private static final int MAX_RUNS_BETWEEN_RELOAD = 40;
     private static final Logger LOGGER = LoggerFactory.getLogger(Qwopper.class);
     private final Robot rob;
-    private QwopControl qwopControl;
     private int[] origin;
     private boolean finished;
     private long timeLimit;
@@ -47,14 +45,8 @@ public class Qwopper {
     private BufferedImage capture;
     private BufferedImage transformed;
 
-
     public Qwopper(Robot rob) {
         this.rob = rob;
-    }
-
-    public Qwopper(Robot rob, QwopControl qwopControl) {
-        this.rob = rob;
-        this.qwopControl = qwopControl;
     }
 
     /**
@@ -415,6 +407,7 @@ public class Qwopper {
 
         // Restore focus to QWOP (after a button click on QwopControl)
         clickAt(rob, origin[0], origin[1]);
+        clickAt(rob, origin[0], origin[1]); // clicks into game (in case the first click only selected the browser)
         // Make sure all possible keys are released
         rob.keyPress(KeyEvent.VK_Q);
         rob.keyPress(KeyEvent.VK_W);
@@ -484,17 +477,12 @@ public class Qwopper {
         try {
             return Float.parseFloat(captureDistance(yOffset));
         } catch (NumberFormatException e) {
-            if (qwopControl != null) {
-                qwopControl.log("*****  captureDistance() returned empty string. Setting distance to 0 :-(");
-            }
-            return 0F;
+            LOGGER.warn("**** could not parse distance: {}", e.getMessage());
+            return -99F;
         }
     }
 
     public RunInfo playOneGame(String str, long maxDuration, int yOffsetDistanceCapture) {
-        if (qwopControl != null) {
-            qwopControl.log("Playing " + str);
-        }
         doWait(500); // 0.5s wait to be sure QWOP is ready to run
         long start = System.currentTimeMillis();
         if (maxDuration > 0) {
@@ -516,10 +504,9 @@ public class Qwopper {
         if (++nbRuns == MAX_RUNS_BETWEEN_RELOAD) {
             nbRuns = 0;
             refreshBrowser();
-            if (qwopControl != null) {
-                qwopControl.log("Refreshed browser");
-            }
+            LOGGER.info("Refreshed browser");
         }
+        LOGGER.info(info.marshal());
         return info;
     }
 }
