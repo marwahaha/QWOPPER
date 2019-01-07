@@ -7,7 +7,9 @@ import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 /**
@@ -15,26 +17,47 @@ import java.util.Random;
  * hopefully. Game at {@link http://foddy.net/Athletics.html}
  */
 public class Qwopper {
-
+    /**
+     * DNA Letter to QWOP values in binary
+     */
+    public static final Map<Character, Integer> letterMap;
     /**
      * Tolerance for color comparison.
      * // TODO document that you might need to tune this to pick up game
      */
     private static final int RGB_TOLERANCE = 30;
-
     /**
      * Unit delay in milliseconds when playing a 'string'
      */
     private static final int DELAY = 150;
-
     private static final String NOTES2 = "ABCDEFGHIJKLMNOP";
-
     /**
      * Number of consecutive runs before we trigger a reload of the browser to
      * keep CPU and memory usage reasonable.
      */
     private static final int MAX_RUNS_BETWEEN_RELOAD = 40;
     private static final Logger LOGGER = LoggerFactory.getLogger(Qwopper.class);
+
+    static {
+        letterMap = new HashMap<>();
+        letterMap.put('A', 0b1000);
+        letterMap.put('B', 0b0100);
+        letterMap.put('C', 0b0010);
+        letterMap.put('D', 0b0001);
+        letterMap.put('E', 0b1100);
+        letterMap.put('F', 0b1010);
+        letterMap.put('G', 0b1001);
+        letterMap.put('H', 0b0110);
+        letterMap.put('I', 0b0101);
+        letterMap.put('J', 0b0011);
+        letterMap.put('K', 0b1110);
+        letterMap.put('L', 0b1101);
+        letterMap.put('M', 0b1011);
+        letterMap.put('N', 0b0111);
+        letterMap.put('O', 0b1111);
+        letterMap.put('P', 0b0000);
+    }
+
     private final Robot rob;
     private int[] origin;
     private boolean finished;
@@ -175,6 +198,29 @@ public class Qwopper {
         throw new RuntimeException("Origin not found. Make sure the game is open and fully visible.");
     }
 
+    private void makeKeystrokes(int n) {
+        if (1 == ((n >> 3) & 1)) {
+            rob.keyPress(KeyEvent.VK_Q);
+        } else {
+            rob.keyRelease(KeyEvent.VK_Q);
+        }
+        if (1 == ((n >> 2) & 1)) {
+            rob.keyPress(KeyEvent.VK_W);
+        } else {
+            rob.keyRelease(KeyEvent.VK_W);
+        }
+        if (1 == ((n >> 1) & 1)) {
+            rob.keyPress(KeyEvent.VK_O);
+        } else {
+            rob.keyRelease(KeyEvent.VK_O);
+        }
+        if (1 == ((n >> 0) & 1)) {
+            rob.keyPress(KeyEvent.VK_P);
+        } else {
+            rob.keyRelease(KeyEvent.VK_P);
+        }
+    }
+
     /**
      * Play a string. Interpret a string of ABCDEFGHIJKLMNOP as a music sheet.
      * <p>
@@ -190,121 +236,10 @@ public class Qwopper {
                 return;
             }
             char c = str.charAt(i);
-            switch (c) {
-                case 'A':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'B':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'C':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'D':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'E':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'F':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'G':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'H':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'I':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'J':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'K':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                case 'L':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'M':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'N':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'O':
-                    rob.keyPress(KeyEvent.VK_Q);
-                    rob.keyPress(KeyEvent.VK_W);
-                    rob.keyPress(KeyEvent.VK_O);
-                    rob.keyPress(KeyEvent.VK_P);
-                    break;
-
-                case 'P':
-                    rob.keyRelease(KeyEvent.VK_Q);
-                    rob.keyRelease(KeyEvent.VK_W);
-                    rob.keyRelease(KeyEvent.VK_O);
-                    rob.keyRelease(KeyEvent.VK_P);
-                    break;
-
-                default:
-                    LOGGER.warn("Unknown 'note': {}", c);
+            try {
+                makeKeystrokes(letterMap.get(c));
+            } catch (NullPointerException npe) {
+                LOGGER.warn("Unknown letter: {}", c);
             }
 
             int waitTime = (int) ((lastTick + DELAY) - System.currentTimeMillis());
@@ -477,7 +412,7 @@ public class Qwopper {
         try {
             return Float.parseFloat(captureDistance(yOffset));
         } catch (NumberFormatException e) {
-            LOGGER.warn("**** could not parse distance: {}", e.getMessage());
+            LOGGER.warn("**** Could not parse distance: {}", e.getMessage());
             return -99F;
         }
     }

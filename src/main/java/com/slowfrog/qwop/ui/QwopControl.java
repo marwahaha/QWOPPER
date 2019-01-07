@@ -172,7 +172,7 @@ public class QwopControl extends JFrame {
 
         float runDistance = qwopper.captureDistanceAsFloat((int) yOffsetSpinner.getValue());
         if (Math.abs(-99F - runDistance) < 1e-10) {
-            log("*****  could not parse distance. Try adjusting the yOffset :-(");
+            log("*****  Could not parse distance. Try adjusting the yOffset :-(");
         }
         updateDistanceDisplay();
         LOGGER.debug("QwopControl Timer! runDistance {}", runDistance);

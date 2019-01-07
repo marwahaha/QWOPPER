@@ -1,34 +1,8 @@
 package com.slowfrog.qwop.genetic;
 
-import java.util.HashMap;
-import java.util.Map;
+import static com.slowfrog.qwop.Qwopper.letterMap;
 
 public class EditDistance {
-
-    /**
-     * DNA Letter to QWOP values in binary
-     */
-    private static final Map<Character, Integer> letterMap;
-
-    static {
-        letterMap = new HashMap<>();
-        letterMap.put('A', 0b1000);
-        letterMap.put('B', 0b0100);
-        letterMap.put('C', 0b0010);
-        letterMap.put('D', 0b0001);
-        letterMap.put('E', 0b1100);
-        letterMap.put('F', 0b1010);
-        letterMap.put('G', 0b1001);
-        letterMap.put('H', 0b0110);
-        letterMap.put('I', 0b0101);
-        letterMap.put('J', 0b0011);
-        letterMap.put('K', 0b1110);
-        letterMap.put('L', 0b1101);
-        letterMap.put('M', 0b1011);
-        letterMap.put('N', 0b0111);
-        letterMap.put('O', 0b1111);
-        letterMap.put('P', 0b0000);
-    }
 
     /**
      * Considers a "cost" of each change that depends on the character.

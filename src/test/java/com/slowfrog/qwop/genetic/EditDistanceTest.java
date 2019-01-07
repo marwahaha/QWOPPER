@@ -49,7 +49,7 @@ public class EditDistanceTest {
         assertEquals(1, cost("A"));
         assertEquals(1, cost("B"));
         assertEquals(1, cost("C"));
-        assertEquals(8, cost("OPOP"));
+        assertEquals(10, cost("OPOP"));
         assertEquals(0, cost(""));
         assertEquals(10, cost("HILL"));
     }
