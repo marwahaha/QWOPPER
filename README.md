@@ -76,4 +76,5 @@ Thanks also to:
 * Other projects ([here](http://whsieh.github.io/qwop-ai/), [here](https://github.com/unixpickle/qwop-ai), [here](http://cs229.stanford.edu/proj2012/BrodmanVoldstad-QWOPLearning.pdf), [here](https://github.com/bpgeck/QwopStyle), [here](https://www.youtube.com/watch?v=e27TUmMkOA0)) about computers learning to play QWOP.
 * Projects ([here](http://osim-rl.stanford.edu/), [here](https://github.com/Eelis/GrappleMap/blob/master/README.md), [here](https://github.com/CMU-Perceptual-Computing-Lab/openpose)) about computers detecting and manipulating humanoid shapes.
 * Articles ([here](12341234123412341234123412341234244), [here](https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3), [here](http://www.ai-junkie.com/ga/intro/gat1.html)) about gradient descent and genetic algorithms.
+* Documentation about [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance).
 * (humorous) The [Ministry of Silly Walks](https://www.youtube.com/watch?v=iV2ViNJFZC8)!

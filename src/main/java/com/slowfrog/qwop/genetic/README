@@ -1,2 +1,8 @@
 Note from Kunal (2019.01.05):
 I have not explored this code much.
+
+I don't understand the use of reproduction by mating multiple input sequences (i.e. with crossover).  I see the point when you can institute many beneficial changes in parallel (e.g. the input sequence is long and genes in different parts of the sequence have little interaction). However, with QWOP, the input sequence represents the runner taking a small number of "steps", which the program loops over and over again. So, I don't expect different strategies to take a step will share enough in common for "mating" to be specifically useful.
+
+I use a simpler strategy: Develop children via mutation (i.e. single-parent reproduction). Calculate the success of each child. Then, as in a steady-state genetic algorithm, choose the best candidates among both the children and their parents. Repeat using the best candidates as parents. Stop when the best candidates have not changed or after X iterations.
+
+I'd like to record the success of each input sequence (perhaps averaged over a number of trials, since QWOP responds stochastically to the inputs) so one only needs to test the children in each round.
