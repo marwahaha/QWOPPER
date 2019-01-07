@@ -2,6 +2,7 @@ package com.slowfrog.qwop.ui;
 
 import com.slowfrog.qwop.Qwopper;
 import com.slowfrog.qwop.RunInfo;
+import com.slowfrog.qwop.genetic.Evolution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,10 +33,11 @@ public class QwopControl extends JFrame {
     private int gamesLeft;
 
     private JButton init;
-    private JButton goRandom;
     private JButton go;
     private JButton goMultiple;
     private JButton stop;
+    private JButton makeInputRandom;
+    private JButton mutateInput;
 
     private JSpinner yOffsetSpinner;
 
@@ -80,8 +82,12 @@ public class QwopControl extends JFrame {
         sequence = new JTextField();
         sequence.setText("HHHIILL");
         top.add(sequence, BorderLayout.CENTER);
-        goRandom = new JButton("Random...");
-        top.add(goRandom, BorderLayout.EAST);
+        JPanel topEast = new JPanel();
+        makeInputRandom = new JButton("Random...");
+        mutateInput = new JButton("Mutate");
+        topEast.add(makeInputRandom);
+        topEast.add(mutateInput);
+        top.add(topEast, BorderLayout.EAST);
 
         JPanel bottom = new JPanel();
         top.add(bottom, BorderLayout.SOUTH);
@@ -106,10 +112,11 @@ public class QwopControl extends JFrame {
 
         // Add event handlers
         init.addActionListener(this::eventHandlerInit);
-        goRandom.addActionListener(this::eventHandlerGoRandom);
         go.addActionListener(this::eventHandlerGo);
         goMultiple.addActionListener(this::eventHandlerGoMultiple);
         stop.addActionListener(this::eventHandlerStop);
+        makeInputRandom.addActionListener(this::eventHandlermakeInputRandom);
+        mutateInput.addActionListener(this::eventHandlerMutateInput);
 
         timer = new Timer(500, this::createTimer);
     }
@@ -138,11 +145,6 @@ public class QwopControl extends JFrame {
         }
     }
 
-    private void eventHandlerGoRandom(ActionEvent _ev) {
-        String dna = Qwopper.makeRealisticRandomString2(4 + random.nextInt(8));
-        sequence.setText(dna);
-    }
-
     private void eventHandlerGo(ActionEvent _ev) {
         launchGames(sequence.getText(), 1, 0);
         go.setEnabled(false);
@@ -160,6 +162,14 @@ public class QwopControl extends JFrame {
         go.setEnabled(true);
         goMultiple.setEnabled(true);
         timer.stop();
+    }
+
+    private void eventHandlermakeInputRandom(ActionEvent _ev) {
+        sequence.setText(Qwopper.makeRealisticRandomString2(4 + random.nextInt(8)));
+    }
+
+    private void eventHandlerMutateInput(ActionEvent _ev) {
+        sequence.setText(Evolution.mutateString(sequence.getText()));
     }
 
     private void createTimer(ActionEvent _ev) {

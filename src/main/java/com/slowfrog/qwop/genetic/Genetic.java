@@ -460,15 +460,6 @@ public class Genetic {
 
   }*/
 
-//  private String mutate(String runner){
-//	  Random random = new Random(System.currentTimeMillis());
-//	  int mutateLocation = random.nextInt(runner.length());
-//	  int mutationIndex = random.nextInt(NOTES.length());
-//      String theMutation = NOTES.substring(mutationIndex, mutationIndex + 1);
-//
-//      return runner.substring(0, mutateLocation) + theMutation + runner.substring(mutateLocation + 1);
-//  }
-
     private void readPopulation(String filename) {
         try {
             BufferedReader input = new BufferedReader(new FileReader(filename));
