@@ -40,7 +40,8 @@ public class EditDistanceTest {
         assertEquals(3, cost('M'));
         assertEquals(3, cost('N'));
         assertEquals(4, cost('O'));
-        assertEquals(0, cost('P'));
+        // the P should have a cost too
+        assertEquals(1, cost('P'));
     }
 
     @Test
@@ -105,12 +106,11 @@ public class EditDistanceTest {
         assertEquals(2, modifiedLevenshtein("BOB", "COB"));
         assertEquals(4, modifiedLevenshtein("MOO", "MOP"));
         assertEquals(3, modifiedLevenshtein("POO", "POD"));
-        assertEquals(3, modifiedLevenshtein("OO", "POD"));
+        assertEquals(4, modifiedLevenshtein("OO", "POD"));
         assertEquals(3, modifiedLevenshtein("OO", "OD"));
         assertEquals(7, modifiedLevenshtein("OO", "PD"));
-        // TODO letters cost nothing, should cost 1(?)
         assertEquals(4, modifiedLevenshtein("PP", "POP"));
-        assertEquals(0, modifiedLevenshtein("OO", "OPO"));
-        assertEquals(0, modifiedLevenshtein("", "PP"));
+        assertEquals(1, modifiedLevenshtein("OO", "OPO"));
+        assertEquals(2, modifiedLevenshtein("", "PP"));
     }
 }

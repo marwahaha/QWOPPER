@@ -84,9 +84,10 @@ public class EditDistance {
      * Cost of a letter in the A-P encoding.
      * <p>
      * This is the number of enabled inputs (of [Q,W,O,P]) encoded in the letter.
+     * All letters should cost at least 1.
      */
     static int cost(char letter) {
-        return Integer.bitCount(letterMap.get(letter));
+        return Math.max(Integer.bitCount(letterMap.get(letter)), 1);
     }
 
     static int cost(String word) {
