@@ -473,7 +473,7 @@ public class Genetic {
                             RunInfo info = RunInfo.unmarshal(line);
                             Individual indiv = this.population.get(info.getString());    //gets a string from pop
                             if (indiv == null) {
-                                indiv = new Individual(info.getString(), null);
+                                indiv = new Individual(info.getString());
                                 this.population.put(info.getString(), indiv);
                             }
                             indiv.runs.add(info);

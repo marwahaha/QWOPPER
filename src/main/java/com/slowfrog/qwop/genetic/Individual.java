@@ -7,23 +7,21 @@ import java.util.List;
 
 public class Individual {
 
-    final String str;
+    final List<RunInfo> runs = new ArrayList<>();
+    String str;
     float fitness;
-    List<RunInfo> runs;
 
-    public Individual(String pstr, List<RunInfo> pruns) {
+    public Individual(String pstr) {
         this.str = pstr;
-        if (pruns != null) {
-            this.runs = new ArrayList<>(pruns);
-        } else {
-            this.runs = new ArrayList<>();
-        }
+    }
+
+    public Individual(List<RunInfo> pruns) {
+        this.runs.addAll(pruns);
     }
 
     public Individual(String pstr, float fit) {
         this.str = pstr;
         this.fitness = fit;
-        this.runs = new ArrayList<>();
     }
 
     public String getStr() {
