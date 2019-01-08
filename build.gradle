@@ -28,5 +28,5 @@ jar {
 }
 
 run {
-    systemProperties['org.slf4j.simpleLogger.defaultLogLevel']='INFO'
+    systemProperties['org.slf4j.simpleLogger.defaultLogLevel'] = 'INFO'
 }

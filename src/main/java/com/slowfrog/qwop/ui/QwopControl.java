@@ -49,7 +49,7 @@ public class QwopControl extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         rob = new Robot();
-        random = new Random(System.currentTimeMillis() * 1000);
+        random = new Random();
         qwopper = new Qwopper(rob);
 
         Container c = this.getContentPane();
@@ -169,7 +169,7 @@ public class QwopControl extends JFrame {
     }
 
     private void eventHandlerMutateInput(ActionEvent _ev) {
-        sequence.setText(Evolution.mutateString(sequence.getText()));
+        sequence.setText(Evolution.mutateString(sequence.getText(), 0.1, 0.1));
     }
 
     private void createTimer(ActionEvent _ev) {

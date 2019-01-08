@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.regex.Pattern;
 
 /**
  * This class will try to play QWOP and evolve some way to play well...
@@ -22,6 +23,9 @@ public class Qwopper {
      */
     public static final Map<Character, Integer> letterMap;
     public static final String NOTES2 = "ABCDEFGHIJKLMNOP";
+    public static final String COST_1_CHARS = "ABCDP";
+    public static final Pattern COST_1_CHARS_REGEX = Pattern.compile("[" + COST_1_CHARS + "]");
+
     /**
      * Tolerance for color comparison.
      * // TODO document that you might need to tune this to pick up game
@@ -165,7 +169,7 @@ public class Qwopper {
      * @return the created string
      */
     public static String makeRealisticRandomString2(int duration) {
-        Random random = new Random(System.currentTimeMillis() * 1000);
+        Random random = new Random();
         StringBuilder str = new StringBuilder();
         int cur = 0;
         while (cur < duration) {
