@@ -1,13 +1,16 @@
 package com.slowfrog.qwop.genetic;
 
+import com.slowfrog.qwop.RunInfo;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
 import static com.slowfrog.qwop.genetic.EditDistance.levenshtein;
 import static com.slowfrog.qwop.genetic.EditDistance.modifiedLevenshtein;
+import static com.slowfrog.qwop.genetic.Evolution.computeFitness;
 import static com.slowfrog.qwop.genetic.Evolution.generateDescendants;
 import static com.slowfrog.qwop.genetic.Evolution.generateDescendantsModified;
 import static org.junit.Assert.assertEquals;
@@ -94,5 +97,24 @@ public class EvolutionTest {
                 }
             }
         }
+    }
+
+    @Test
+    public void testComputeFitness() {
+        double delta = 1e-5;
+        assertEquals(0, computeFitness(Collections.emptyList()), delta);
+        assertEquals(.35 * 4.0 / 3, computeFitness(Collections.singletonList(
+                new RunInfo(null, 150, false, true, 15000, 10))), delta);
+        assertEquals(.35 * 4.0 / 3, computeFitness(Arrays.asList(
+                new RunInfo(null, 150, false, true, 15000, 10),
+                new RunInfo(null, 150, false, true, 15000, 10))), delta);
+        assertEquals(.35, computeFitness(Arrays.asList(
+                new RunInfo(null, 150, true, false, 15000, 10),
+                new RunInfo(null, 150, false, true, 15000, 10))), delta);
+        assertEquals(-.083333, computeFitness(Arrays.asList(
+                new RunInfo(null, 150, true, true, 15000, 0),
+                new RunInfo(null, 150, false, true, 15000, 2))), delta);
+        assertEquals(-.066666, computeFitness(Collections.singletonList(
+                new RunInfo(null, 150, false, true, 15000, 2))), delta);
     }
 }

@@ -1,8 +1,25 @@
-Note from Kunal (2019.01.05):
-I have not explored this code much.
+Goal: develop a walking, lunging, or otherwise human-imitable gait
+Goal: develop an algorithm that can competitively play QWOP
 
 I don't understand the use of reproduction by mating multiple input sequences (i.e. with crossover).  I see the point when you can institute many beneficial changes in parallel (e.g. the input sequence is long and genes in different parts of the sequence have little interaction). However, with QWOP, the input sequence represents the runner taking a small number of "steps", which the program loops over and over again. So, I don't expect different strategies to take a step will share enough in common for "mating" to be specifically useful.
 
 I use a simpler strategy: Develop children via mutation (i.e. single-parent reproduction). Calculate the success of each child. Then, as in a steady-state genetic algorithm, choose the best candidates among both the children and their parents. Repeat using the best candidates as parents. Stop when the best candidates have not changed or after X iterations.
 
+This approach is in the space of "genetic algorithms" because I couldn't find a simple way to convert input sequences into a proper parameter space to run gradient descent. Genetic algorithms are designed for input sequences!
+
 I'd like to record the success of each input sequence (perhaps averaged over a number of trials, since QWOP responds stochastically to the inputs) so one only needs to test the children in each round.
+
+For now, I'll use a steady-state approach (i.e. test the children against the parents). There are lots of possible parameters that affect performance:
+1. Try with "Encoding 2", the current syntax (the previous work tested a steady-state genetic algorithm with the "QWOPqwop+" syntax, which they called "Encoding 1")
+2. Try with a new reproduction strategies (i.e. single-parent reproduction via mutation)
+3. Try increasing number of mutations per generation (this corresponds to higher "learning rates" in gradient descent)
+4. Try with different mutation strategies (i.e. modified edit distance based on which of [Q,W,O,P] are pressed, rate of insertions, rate of deletions, )
+5. Investigate comparisons that honor the `looped` nature of input sequences
+6. Change fitness calculations to prioritize "faster" strategies over "stable" strategies.
+7. Change test time and number of trials for each input sequence time
+
+All this makes it hard to compare directly against the Cellular GA results.
+
+As mentioned in previous work, the program takes a long time to train (especially since serial) and uses the mouse/keyboard when training. This might be mitigated with (1) memoizing results, (2) using smaller trial times (i.e. 15s instead of 1min), or (3) (exploratory) using VMs or multiple devices.
+
+Note that there are (2**4) options in each letter; so there are (2**4)**6 = 2**24 ≈ 16 million size-6 sequences. Testing each of them (serially) would take on the order of years.

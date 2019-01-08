@@ -1,5 +1,7 @@
 package com.slowfrog.qwop.genetic;
 
+import com.slowfrog.qwop.RunInfo;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -123,5 +125,18 @@ public class Evolution {
             output.add(mutateStringModified(inputStr, insertionChance, deletionChance));
         }
         return new HashSet<>(output);
+    }
+
+    /**
+     * This computes the fitness of an input sequence given a list of trials.
+     * <p>
+     * It prioritizes speed, but encourages running at least 3m and discounts if the runner crashes.
+     * <p>
+     * This method is adjustable to tune the learning algorihtm!
+     */
+    public static double computeFitness(List<RunInfo> runs) {
+        return runs.stream()
+                .mapToDouble(run -> ((run.getDistance() - 3) / run.getDuration()) * (run.isCrashed() ? 500 : 1000))
+                .average().orElse(0D);
     }
 }

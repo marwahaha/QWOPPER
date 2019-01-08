@@ -421,11 +421,11 @@ public class Qwopper {
         }
     }
 
-    public RunInfo playOneGame(String str, long maxDuration, int yOffsetDistanceCapture) {
+    public RunInfo playOneGame(String str, long maxDurationMs, int yOffsetDistanceCapture) {
         doWait(500); // 0.5s wait to be sure QWOP is ready to run
         long start = System.currentTimeMillis();
-        if (maxDuration > 0) {
-            this.timeLimit = start + maxDuration;
+        if (maxDurationMs > 0) {
+            this.timeLimit = start + maxDurationMs;
         } else {
             this.timeLimit = 0;
         }

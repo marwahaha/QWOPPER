@@ -11,7 +11,21 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import static com.slowfrog.qwop.genetic.Evolution.computeFitness;
+import static com.slowfrog.qwop.genetic.Evolution.generateDescendants;
+import static com.slowfrog.qwop.genetic.Evolution.generateDescendantsModified;
 
 
 public class QwopControl extends JFrame {
@@ -35,6 +49,7 @@ public class QwopControl extends JFrame {
     private JButton init;
     private JButton go;
     private JButton goMultiple;
+    private JButton goAndEvolve;
     private JButton stop;
     private JButton makeInputRandom;
     private JButton mutateInput;
@@ -60,12 +75,19 @@ public class QwopControl extends JFrame {
         c.add(bar, BorderLayout.SOUTH);
 
         init = new JButton("Find game area");
-        go = new JButton("Run, Qwop, run!");
-        goMultiple = new JButton("Run 5 times, 15s/run max");
+        go = new JButton("Run once");
+        goMultiple = new JButton("Run 5 times (<15s/run)");
+        goAndEvolve = new JButton("Evolve (3 rounds)");
         stop = new JButton("Stop");
+        // disable some buttons on default
+        go.setEnabled(false);
+        goMultiple.setEnabled(false);
+        goAndEvolve.setEnabled(false);
+
         bar.add(init);
         bar.add(go);
         bar.add(goMultiple);
+        bar.add(goAndEvolve);
         bar.add(stop);
 
         JPanel top = new JPanel();
@@ -114,8 +136,9 @@ public class QwopControl extends JFrame {
         init.addActionListener(this::eventHandlerInit);
         go.addActionListener(this::eventHandlerGo);
         goMultiple.addActionListener(this::eventHandlerGoMultiple);
+        goAndEvolve.addActionListener(this::eventHandlerGoAndEvolve);
         stop.addActionListener(this::eventHandlerStop);
-        makeInputRandom.addActionListener(this::eventHandlermakeInputRandom);
+        makeInputRandom.addActionListener(this::eventHandlerMakeInputRandom);
         mutateInput.addActionListener(this::eventHandlerMutateInput);
 
         timer = new Timer(500, this::createTimer);
@@ -133,38 +156,74 @@ public class QwopControl extends JFrame {
         }
     }
 
+    private static List<String> displayScores(List<String> candidates, Map<String, List<RunInfo>> results) {
+        return candidates.stream().map(str -> new DecimalFormat("#.##").format(computeFitness(results.get(str)))).collect(Collectors.toList());
+    }
+
     private void eventHandlerInit(ActionEvent _ev) {
         try {
             int[] origin = qwopper.findRealOrigin();
             LOGGER.info("Game at ({},{})", origin[0], origin[1]);
             log("Game at (" + origin[0] + "," + origin[1] + ")");
-
+            go.setEnabled(true);
+            goMultiple.setEnabled(true);
+            goAndEvolve.setEnabled(true);
         } catch (Exception e) {
             LOGGER.error("Error finding game", e);
             log("Error finding game: " + e.getMessage());
+            go.setEnabled(false);
+            goMultiple.setEnabled(false);
+            goAndEvolve.setEnabled(false);
         }
     }
 
     private void eventHandlerGo(ActionEvent _ev) {
-        launchGames(sequence.getText(), 1, 0);
+        String dna = sequence.getText();
+        new Thread(() -> {
+            playAll(Collections.singleton(dna), 1, 0);
+            go.setEnabled(true);
+            goMultiple.setEnabled(true);
+            goAndEvolve.setEnabled(true);
+        }).start();
         go.setEnabled(false);
         goMultiple.setEnabled(false);
+        goAndEvolve.setEnabled(false);
     }
 
     private void eventHandlerGoMultiple(ActionEvent _ev) {
-        launchGames(sequence.getText(), 5, 15000);
+        String dna = sequence.getText();
+        new Thread(() -> {
+            playAll(Collections.singleton(dna), 5, 15000);
+            go.setEnabled(true);
+            goMultiple.setEnabled(true);
+            goAndEvolve.setEnabled(true);
+        }).start();
         go.setEnabled(false);
         goMultiple.setEnabled(false);
+        goAndEvolve.setEnabled(false);
+    }
+
+    private void eventHandlerGoAndEvolve(ActionEvent _ev) {
+        new Thread(() -> {
+            runEvolution(Collections.singletonList(sequence.getText()),
+                    1, 15000,
+                    5, 0.1, 0.1,
+                    3, 3, true);
+            go.setEnabled(true);
+            goMultiple.setEnabled(true);
+            goAndEvolve.setEnabled(true);
+        }).start();
+        go.setEnabled(false);
+        goMultiple.setEnabled(false);
+        goAndEvolve.setEnabled(false);
     }
 
     private void eventHandlerStop(ActionEvent _ev) {
         qwopper.stop();
-        go.setEnabled(true);
-        goMultiple.setEnabled(true);
         timer.stop();
     }
 
-    private void eventHandlermakeInputRandom(ActionEvent _ev) {
+    private void eventHandlerMakeInputRandom(ActionEvent _ev) {
         sequence.setText(Qwopper.makeRealisticRandomString2(4 + random.nextInt(8)));
     }
 
@@ -206,36 +265,61 @@ public class QwopControl extends JFrame {
         distance2.setIcon(icon2);
     }
 
-    private void launchGames(final String dna, int count, int maxTimePerGame) {
-        this.gamesLeft = count;
-        log("Playing " + dna + " " + count + " time(s)");
-        nextGame(dna, maxTimePerGame);
-    }
+    private Map<String, List<RunInfo>> playAll(Set<String> candidates, int numGames, long maxDurationMs) {
+        HashMap<String, List<RunInfo>> output = new HashMap<>();
+        for (String str : candidates) {
+            List<RunInfo> runs = new ArrayList<>();
+            log("Playing " + str + " " + numGames + " time(s)");
+            for (int idx = 0; idx < numGames; idx++) {
+                Point screenPoint = MouseInfo.getPointerInfo().getLocation();
+                startTime = System.currentTimeMillis();
+                qwopper.startGame();
+                timer.start();
+                rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
 
-    private void nextGame(final String dna, final int maxTimePerGame) {
-        new Thread(() -> {
-            Point screenPoint = MouseInfo.getPointerInfo().getLocation();
-            startTime = System.currentTimeMillis();
-            qwopper.startGame();
-            rob.mouseMove(screenPoint.x, screenPoint.y); // Move cursor back to button that was pressed
-            timer.start();
-
-            RunInfo runInfo = qwopper.playOneGame(dna, maxTimePerGame, (int) yOffsetSpinner.getValue());
-            log(runInfo.toString());
-
-            if (!qwopper.isRunning()) {
+                RunInfo runInfo = qwopper.playOneGame(str, maxDurationMs, (int) yOffsetSpinner.getValue());
+                log(runInfo.toString());
                 timer.stop();
-                if (--gamesLeft == 0) {
-                    go.setEnabled(true);
-                    goMultiple.setEnabled(true);
-                } else {
-                    nextGame(sequence.getText(), maxTimePerGame);
-                }
+                runs.add(runInfo);
             }
-        }).start();
+            output.put(str, runs);
+        }
+        return output;
     }
 
-    public void log(final String message) {
+    private Map<String, List<RunInfo>> runEvolution(List<String> initialCandidates,
+                                                    int numGames, long maxDurationMs,
+                                                    int maxNumDescendants, double insertionChance, double deletionChance,
+                                                    int survivorsPerRound, int numEvolutions, boolean modifiedLevenshtein) {
+
+        List<String> candidates = initialCandidates;
+        Map<String, List<RunInfo>> results = playAll(new HashSet<>(candidates), numGames, maxDurationMs);
+        for (int idx = 0; idx < numEvolutions; idx++) {
+            log("surviving candidates: " + candidates);
+            log("scores: " + displayScores(candidates, results));
+            log("Evolution #" + (idx + 1) + ":");
+            // TODO make mutation step adjustable (instead of just 1 mutation away)
+            Set<String> descendants = candidates.stream()
+                    .map(str -> modifiedLevenshtein
+                            ? generateDescendantsModified(str, maxNumDescendants, insertionChance, deletionChance)
+                            : generateDescendants(str, maxNumDescendants, insertionChance, deletionChance))
+                    .flatMap(Collection::stream)
+                    .filter(str -> !results.keySet().contains(str))
+                    .collect(Collectors.toSet());
+            log("descendants: " + descendants);
+            results.putAll(playAll(descendants, numGames, maxDurationMs));
+            candidates = results.keySet().stream()
+                    .sorted(Comparator.comparingDouble(s -> 0 - computeFitness(results.get(s))))
+                    .limit(survivorsPerRound)
+                    .collect(Collectors.toList());
+        }
+        log("Evolution results:");
+        log("winning: " + candidates);
+        log("scores: " + displayScores(candidates, results));
+        return results;
+    }
+
+    private void log(final String message) {
         // Using setText() to enable auto-scrolling
         SwingUtilities.invokeLater(() -> logOutput.setText(logOutput.getText() + message + "\n"));
     }
