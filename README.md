@@ -69,7 +69,7 @@ When the gait string is complete, the computer starts again from the first lette
 * To Bennett Foddy for creating the game and thoughts on [physics in game design](https://www.youtube.com/watch?v=NwPIoVW65pE).
 * To Laurent Vaucher and Steven Ray for [previous work](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/42902.pdf), and allowing their code to be MIT-licensed.
 * To Henry Chang for testing the software and discussions on gradient descent, genetic algorithms, and image processing.
-* To Allan Peng and Madison Ashley for discussions about programmatically playing QWOP.
+* To Allan Peng, Madison Ashley, and Mike Singletary for discussions about programmatically playing QWOP.
 
 Thanks also to:
 * Discussions ([here](https://slowfrog.blogspot.com/2011/03/genetically-engineered-qwop-part-1.html#comments), [here](https://www.speedrun.com/QWOP/forum), [here](https://www.wikihow.com/Play-Qwop)) and videos ([here](https://web.archive.org/web/20130417203240/http://challengers.guinnessworldrecords.com/challenges/160-fastest-100m-run-qwop-flash-game), [here](https://www.youtube.com/watch?v=GRYHtI__lJg), [here](https://www.youtube.com/watch?v=YbYOsE7JyXs), [here](https://www.youtube.com/watch?v=hRRURUjqmG0), [here](https://www.youtube.com/watch?v=uts1GuVpvfM), [here](https://www.youtube.com/watch?v=HBFYJvq_o_4)) about running in QWOP.
